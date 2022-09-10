@@ -132,19 +132,19 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
 
         static void Exercicio6()
         {
-            const string SENHA = "1234";
+            const string SENHA_ACESSO = "1234";
 
             Console.WriteLine("-------- VALIDAÇÃO DE SENHA --------");
 
-            Console.Write("Digite a senha: ");
+            Console.Write("Informe a senha para acessar o sistema: ");
             string senhaInput = Console.ReadLine();
 
-            if (senhaInput == SENHA)
+            if (senhaInput.Equals(SENHA_ACESSO))
             {
                 Console.WriteLine("ACESSO PERMITIDO");
             } else
             {
-                Console.WriteLine("ACESSO NEGADO");
+                Console.WriteLine("ACESSO NEGADO!");
             }
         }
     }
