@@ -1,0 +1,8 @@
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\bin\Debug\Devs2Blu.ProjAula03.exe.config
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\bin\Debug\Devs2Blu.ProjAula03.exe
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\bin\Debug\Devs2Blu.ProjAula03.pdb
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\obj\Debug\Devs2Blu.ProjAula03.csproj.AssemblyReference.cache
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\obj\Debug\Devs2Blu.ProjAula03.csproj.SuggestedBindingRedirects.cache
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\obj\Debug\Devs2Blu.ProjAula03.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\obj\Debug\Devs2Blu.ProjAula03.exe
+C:\Projetos-C#\Aula03\Devs2Blu.ProjAula03\obj\Debug\Devs2Blu.ProjAula03.pdb
