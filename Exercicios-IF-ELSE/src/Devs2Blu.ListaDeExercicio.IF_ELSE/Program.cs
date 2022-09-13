@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
+namespace Devs2Blu.ListaDeExercicio.IF_ELSE
 {
     internal class Program
     {
@@ -38,12 +37,13 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
                     if (!exercicioValido)
                     {
                         Console.WriteLine("Valor inválido!");
-                    } else
+                    }
+                    else
                     {
                         exercicio = Convert.ToInt32(exercicioInput);
                     }
                 }
-                
+
                 Console.Clear();
                 if (exercicio == 1)
                 {
@@ -68,7 +68,7 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
                 else if (exercicio == 6)
                 {
                     Exercicio06();
-                } 
+                }
                 else if (exercicio == 7)
                 {
                     Exercicio07();
@@ -106,10 +106,12 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             if (valor1 > valor2)
             {
                 maiorValor = valor1;
-            } else if (valor2 > valor1)
+            }
+            else if (valor2 > valor1)
             {
                 maiorValor = valor2;
-            } else
+            }
+            else
             {
                 Console.WriteLine("Os valores são iguais");
             }
@@ -132,7 +134,7 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             int n4 = random.Next(0, 100);
             int menorValor = 0;
 
-            Console.WriteLine("Números gerados: \n" + 
+            Console.WriteLine("Números gerados: \n" +
                 $"N1 = {n1}\n" +
                 $"N2 = {n2}\n" +
                 $"N3 = {n3}\n" +
@@ -143,20 +145,23 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
                 (n1 < n4))
             {
                 menorValor = n1;
-            } else if ((n2 < n3) &&
-                       (n2 < n4)) 
+            }
+            else if ((n2 < n3) &&
+                       (n2 < n4))
             {
                 menorValor = n2;
-            } else if (n3 < n4)
+            }
+            else if (n3 < n4)
             {
-                menorValor = n3;  
-            } else
+                menorValor = n3;
+            }
+            else
             {
                 menorValor = n4;
             }
 
             Console.WriteLine($"Menor valor gerado: {menorValor}");
-            
+
         }
 
         static void Exercicio03()
@@ -187,8 +192,8 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             string produto = "";
 
             Console.Write("Produtos: \n" +
-                "001 - Arroz\n" + 
-                "002 - Feijão\n" + 
+                "001 - Arroz\n" +
+                "002 - Feijão\n" +
                 "003 - Farinha\n");
 
             Console.Write("Digite o código do produto: ");
@@ -197,11 +202,16 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             if (codigo == "001")
             {
                 produto = "Arroz";
-            } else if (codigo == "002") {
+            }
+            else if (codigo == "002")
+            {
                 produto = "Feijão";
-            } else if (codigo == "003") {
+            }
+            else if (codigo == "003")
+            {
                 produto = "Farinha";
-            } else
+            }
+            else
             {
                 produto = "Diversos";
             }
@@ -228,7 +238,8 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             if (podeVotar)
             {
                 Console.WriteLine("Você pode votar");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Você não pode votar");
             }
@@ -246,7 +257,8 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             if (senhaInput.Equals(SENHA_ACESSO))
             {
                 Console.WriteLine("ACESSO PERMITIDO");
-            } else
+            }
+            else
             {
                 Console.WriteLine("ACESSO NEGADO!");
             }
@@ -268,7 +280,8 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
             if (numDeMacas < 12)
             {
                 totalPagamento = numDeMacas * PRECO_MACAS_ATE_11;
-            } else
+            }
+            else
             {
                 totalPagamento = numDeMacas * PRECO_MACAS_1DUZIA;
             }
@@ -302,29 +315,34 @@ namespace Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais
                 if (n2 < n3)
                 {
                     textoFormatado += $"{n2} - {n3}";
-                } else
+                }
+                else
                 {
                     textoFormatado += $"{n3} - {n2}";
                 }
-            } else if ((n2 < n1) &&
+            }
+            else if ((n2 < n1) &&
                        (n2 < n3))
             {
                 textoFormatado += $"{n2} - ";
                 if (n1 < n3)
                 {
                     textoFormatado += $"{n1} - {n3}";
-                } else
+                }
+                else
                 {
                     textoFormatado += $"{n3} - {n1}";
                 }
-            } else if ((n3 < n1) &&
+            }
+            else if ((n3 < n1) &&
                        (n3 < n2))
             {
                 textoFormatado += $"{n3} - ";
                 if (n1 < n2)
                 {
                     textoFormatado += $"{n1} - {n2}";
-                } else
+                }
+                else
                 {
                     textoFormatado += $"{n2} - {n1}";
                 }

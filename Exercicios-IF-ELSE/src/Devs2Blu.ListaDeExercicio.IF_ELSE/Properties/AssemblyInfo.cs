@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais")]
+[assembly: AssemblyTitle("Devs2Blu.ListaDeExercicio.IF_ELSE")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais")]
+[assembly: AssemblyProduct("Devs2Blu.ListaDeExercicio.IF_ELSE")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0094d435-09c2-4ffc-bde9-f0bcc58773a9")]
+[assembly: Guid("64ea23c0-3280-44cf-b477-a976ab95018c")]
 
 // Version information for an assembly consists of the following four values:
 //

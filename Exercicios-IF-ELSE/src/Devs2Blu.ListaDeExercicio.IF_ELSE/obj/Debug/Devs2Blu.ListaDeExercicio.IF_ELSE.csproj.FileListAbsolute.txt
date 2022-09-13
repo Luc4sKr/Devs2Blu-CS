@@ -1,0 +1,8 @@
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\obj\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.csproj.AssemblyReference.cache
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\obj\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.csproj.SuggestedBindingRedirects.cache
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\obj\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\bin\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.exe.config
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\bin\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.exe
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\bin\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.pdb
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\obj\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.exe
+C:\Projetos-C#\Exercicios-IF-ELSE\src\Devs2Blu.ListaDeExercicio.IF_ELSE\obj\Debug\Devs2Blu.ListaDeExercicio.IF_ELSE.pdb

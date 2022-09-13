@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0094D435-09C2-4FFC-BDE9-F0BCC58773A9}</ProjectGuid>
+    <ProjectGuid>{64EA23C0-3280-44CF-B477-A976AB95018C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais</RootNamespace>
-    <AssemblyName>Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais</AssemblyName>
+    <RootNamespace>Devs2Blu.ListaDeExercicio.IF_ELSE</RootNamespace>
+    <AssemblyName>Devs2Blu.ListaDeExercicio.IF_ELSE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,8 +1,0 @@
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\bin\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.exe.config
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\bin\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.exe
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\bin\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.pdb
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\obj\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.csproj.AssemblyReference.cache
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\obj\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.csproj.SuggestedBindingRedirects.cache
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\obj\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.csproj.CoreCompileInputs.cache
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\obj\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.exe
-C:\Projetos-C#\Exercicios-IF-ELSE\src\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais\obj\Debug\Dev2Blu.ProjetosAula3.ListaDeExercicioCondicionais.pdb
