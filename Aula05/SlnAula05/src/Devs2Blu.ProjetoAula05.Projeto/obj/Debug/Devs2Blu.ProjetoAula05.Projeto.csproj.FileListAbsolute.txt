@@ -1,0 +1,8 @@
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\bin\Debug\Devs2Blu.ProjetoAula05.Projeto.exe.config
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\bin\Debug\Devs2Blu.ProjetoAula05.Projeto.exe
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\bin\Debug\Devs2Blu.ProjetoAula05.Projeto.pdb
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\obj\Debug\Devs2Blu.ProjetoAula05.Projeto.csproj.AssemblyReference.cache
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\obj\Debug\Devs2Blu.ProjetoAula05.Projeto.csproj.SuggestedBindingRedirects.cache
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\obj\Debug\Devs2Blu.ProjetoAula05.Projeto.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\obj\Debug\Devs2Blu.ProjetoAula05.Projeto.exe
+C:\Projetos-C#\Aula05\SlnAula05\src\Devs2Blu.ProjetoAula05.Projeto\obj\Debug\Devs2Blu.ProjetoAula05.Projeto.pdb
