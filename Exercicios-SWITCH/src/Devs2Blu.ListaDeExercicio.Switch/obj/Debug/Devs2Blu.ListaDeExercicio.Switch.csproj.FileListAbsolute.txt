@@ -1,0 +1,8 @@
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\bin\Debug\Devs2Blu.ListaDeExercicio.Switch.exe.config
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\bin\Debug\Devs2Blu.ListaDeExercicio.Switch.exe
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\bin\Debug\Devs2Blu.ListaDeExercicio.Switch.pdb
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\obj\Debug\Devs2Blu.ListaDeExercicio.Switch.csproj.AssemblyReference.cache
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\obj\Debug\Devs2Blu.ListaDeExercicio.Switch.csproj.SuggestedBindingRedirects.cache
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\obj\Debug\Devs2Blu.ListaDeExercicio.Switch.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\obj\Debug\Devs2Blu.ListaDeExercicio.Switch.exe
+C:\Projetos-C#\Exercicios-SWITCH\src\Devs2Blu.ListaDeExercicio.Switch\obj\Debug\Devs2Blu.ListaDeExercicio.Switch.pdb
