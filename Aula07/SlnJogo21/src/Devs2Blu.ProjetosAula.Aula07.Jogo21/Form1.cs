@@ -95,55 +95,6 @@ namespace Devs2Blu.ProjetosAula.Aula07.Jogo21
             txtConsole.Text += $"\r\n O número aleatório gerado foi: {NumeroAleatorio}";
         }
 
-        private int CalcularPontos(int valor, int pontos)
-        {
-            valor += Convert.ToInt32(NumeroAleatorio);
-
-            switch (valor)
-            {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                    pontos += 1;
-                    break;
-                case 7:
-                    pontos += 10;
-                    break;
-
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                case 12:
-                case 13:
-                    pontos += 5;
-                    break;
-                case 14:
-                    pontos += 20;
-                    break;
-
-                case 15:
-                case 16:
-                case 17:
-                case 18:
-                case 19:
-                case 20:
-                    pontos += 6;
-                    break;
-                case 21:
-                    pontos += 30;
-                    break;
-
-                default:
-                    break;
-            }
-
-            return pontos;
-        }
-
         private void btnNovoJogo_Click(object sender, EventArgs e)
         {
             PontuacaoP1 = 0;
