@@ -146,6 +146,10 @@ namespace Devs2Blu.ProjetosAula.Aula07.Jogo21
 
         private void btnNovoJogo_Click(object sender, EventArgs e)
         {
+            PontuacaoP1 = 0;
+            PontuacaoP2 = 0;
+            Rodada = 0;
+
             txtConsole.Text = "\r Pressione \"Iniciar\" para começar o jogo.";
             txtPlayer1.Text = "";
             txtPlayer2.Text = "";
