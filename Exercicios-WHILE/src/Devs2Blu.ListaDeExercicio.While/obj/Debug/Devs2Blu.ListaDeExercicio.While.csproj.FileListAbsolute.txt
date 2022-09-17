@@ -1,0 +1,8 @@
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\bin\Debug\Devs2Blu.ListaDeExercicio.While.exe.config
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\bin\Debug\Devs2Blu.ListaDeExercicio.While.exe
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\bin\Debug\Devs2Blu.ListaDeExercicio.While.pdb
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\obj\Debug\Devs2Blu.ListaDeExercicio.While.csproj.AssemblyReference.cache
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\obj\Debug\Devs2Blu.ListaDeExercicio.While.csproj.SuggestedBindingRedirects.cache
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\obj\Debug\Devs2Blu.ListaDeExercicio.While.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\obj\Debug\Devs2Blu.ListaDeExercicio.While.exe
+C:\Projetos-C#\Exercicios-WHILE\src\Devs2Blu.ListaDeExercicio.While\obj\Debug\Devs2Blu.ListaDeExercicio.While.pdb
