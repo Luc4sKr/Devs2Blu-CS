@@ -1,0 +1,6 @@
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\bin\Debug\Devs2Blu.ProjetosAula.AulaClasses.dll
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\bin\Debug\Devs2Blu.ProjetosAula.AulaClasses.pdb
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\obj\Debug\Devs2Blu.ProjetosAula.AulaClasses.csproj.AssemblyReference.cache
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\obj\Debug\Devs2Blu.ProjetosAula.AulaClasses.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\obj\Debug\Devs2Blu.ProjetosAula.AulaClasses.dll
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2Blu.ProjetosAula.AulaClasses\obj\Debug\Devs2Blu.ProjetosAula.AulaClasses.pdb
