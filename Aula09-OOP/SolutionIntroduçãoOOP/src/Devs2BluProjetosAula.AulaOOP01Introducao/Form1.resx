@@ -117,4 +117,523 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="labelAnos.Text" xml:space="preserve">
+    <value>anos</value>
+  </data>
+  <data name="&gt;&gt;btnSalvar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rdDiretor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbCadastroDeFuncionarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="labelNome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MingLiU_HKSCS-ExtB, 10.2pt, style=Bold</value>
+  </data>
+  <data name="labelNascimento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtEndereco.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNome.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbCadastroDeFuncionarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelSobrenome.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="gbCadastroDeFuncionarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 426</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtAnos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="btnLimpar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 91</value>
+  </data>
+  <data name="labelEndereco.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 132</value>
+  </data>
+  <data name="labelSobrenome.Text" xml:space="preserve">
+    <value>Sobrenome:</value>
+  </data>
+  <data name="rdDiretor.Text" xml:space="preserve">
+    <value>Diretor</value>
+  </data>
+  <data name="labelNascimento.Text" xml:space="preserve">
+    <value>Nascimento:</value>
+  </data>
+  <data name="txtEndereco.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="gbStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 12</value>
+  </data>
+  <data name="gbStatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;rdDiretor.Parent" xml:space="preserve">
+    <value>gbTipoFuncionario</value>
+  </data>
+  <data name="rdDiretor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelNascimento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 97</value>
+  </data>
+  <data name="txtNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="rdDiretor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 44</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Name" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtSobrenome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtEndereco.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelEndereco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbTipoFuncionario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbTipoFuncionario.Text" xml:space="preserve">
+    <value>Tipo Funcionário</value>
+  </data>
+  <data name="&gt;&gt;labelNascimento.Name" xml:space="preserve">
+    <value>labelNascimento</value>
+  </data>
+  <data name="&gt;&gt;gbTipoFuncionario.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="btnSalvar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 46</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;rdRecepcionista.Name" xml:space="preserve">
+    <value>rdRecepcionista</value>
+  </data>
+  <data name="labelSobrenome.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;rdDiretor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbControles.Text" xml:space="preserve">
+    <value>Controles</value>
+  </data>
+  <data name="&gt;&gt;rdRecepcionista.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtConsole.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbTipoFuncionario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 188</value>
+  </data>
+  <data name="labelAnos.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtConsole.Name" xml:space="preserve">
+    <value>txtConsole</value>
+  </data>
+  <data name="gbCadastroDeFuncionarios.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="labelEndereco.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnLimpar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="txtNascimento.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelEndereco.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="txtNome.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdRecepcionista.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="txtAnos.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="gbCadastroDeFuncionarios.Text" xml:space="preserve">
+    <value>Cadastro de Funcionários</value>
+  </data>
+  <data name="&gt;&gt;labelSobrenome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAnos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 102</value>
+  </data>
+  <data name="&gt;&gt;labelNascimento.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;rdDiretor.Name" xml:space="preserve">
+    <value>rdDiretor</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Name" xml:space="preserve">
+    <value>btnLimpar</value>
+  </data>
+  <data name="txtConsole.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 225</value>
+  </data>
+  <data name="rdRecepcionista.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnLimpar.Text" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Aula OOP 01 - Sistema de cadastro</value>
+  </data>
+  <data name="txtNascimento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 96</value>
+  </data>
+  <data name="&gt;&gt;gbControles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbControles.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;txtNascimento.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelAnos.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="txtAnos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 96</value>
+  </data>
+  <data name="labelNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 32</value>
+  </data>
+  <data name="&gt;&gt;labelAnos.Name" xml:space="preserve">
+    <value>labelAnos</value>
+  </data>
+  <data name="&gt;&gt;rdRecepcionista.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="gbControles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 270</value>
+  </data>
+  <data name="&gt;&gt;txtAnos.Name" xml:space="preserve">
+    <value>txtAnos</value>
+  </data>
+  <data name="txtConsole.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="&gt;&gt;gbCadastroDeFuncionarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNascimento.Name" xml:space="preserve">
+    <value>txtNascimento</value>
+  </data>
+  <data name="&gt;&gt;labelNascimento.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;rdRecepcionista.Parent" xml:space="preserve">
+    <value>gbTipoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;btnSalvar.Name" xml:space="preserve">
+    <value>btnSalvar</value>
+  </data>
+  <data name="&gt;&gt;labelNome.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelSobrenome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 63</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbControles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 168</value>
+  </data>
+  <data name="rdRecepcionista.Text" xml:space="preserve">
+    <value>Recepsionista</value>
+  </data>
+  <data name="gbCadastroDeFuncionarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="labelSobrenome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelAnos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="labelNome.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gbCadastroDeFuncionarios.Name" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="btnSalvar.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="labelNascimento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="btnLimpar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 39</value>
+  </data>
+  <data name="&gt;&gt;txtAnos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gbControles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rdRecepcionista.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 44</value>
+  </data>
+  <data name="&gt;&gt;txtNome.Name" xml:space="preserve">
+    <value>txtNome</value>
+  </data>
+  <data name="txtNascimento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="&gt;&gt;btnSalvar.Parent" xml:space="preserve">
+    <value>gbControles</value>
+  </data>
+  <data name="&gt;&gt;labelSobrenome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtSobrenome.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;txtEndereco.Name" xml:space="preserve">
+    <value>txtEndereco</value>
+  </data>
+  <data name="txtNome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 30</value>
+  </data>
+  <data name="gbStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gbStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 252</value>
+  </data>
+  <data name="labelNome.Text" xml:space="preserve">
+    <value>Nome:</value>
+  </data>
+  <data name="gbTipoFuncionario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>421, 100</value>
+  </data>
+  <data name="txtSobrenome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="labelEndereco.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAnos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 16</value>
+  </data>
+  <data name="txtEndereco.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 130</value>
+  </data>
+  <data name="&gt;&gt;gbCadastroDeFuncionarios.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelAnos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSobrenome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 64</value>
+  </data>
+  <data name="txtSobrenome.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gbTipoFuncionario.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelSobrenome.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="txtConsole.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalvar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelSobrenome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 20</value>
+  </data>
+  <data name="labelAnos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelNome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbControles.Name" xml:space="preserve">
+    <value>gbControles</value>
+  </data>
+  <data name="&gt;&gt;txtNascimento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelEndereco.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="rdDiretor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="btnSalvar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtConsole.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="&gt;&gt;labelNome.Name" xml:space="preserve">
+    <value>labelNome</value>
+  </data>
+  <data name="&gt;&gt;txtAnos.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="labelEndereco.Text" xml:space="preserve">
+    <value>Endereço:</value>
+  </data>
+  <data name="&gt;&gt;gbTipoFuncionario.Name" xml:space="preserve">
+    <value>gbTipoFuncionario</value>
+  </data>
+  <data name="&gt;&gt;txtConsole.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEndereco.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelNascimento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnLimpar.Parent" xml:space="preserve">
+    <value>gbControles</value>
+  </data>
+  <data name="rdRecepcionista.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtConsole.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtEndereco.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtNome.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="labelNascimento.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelNome.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtAnos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbControles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtSobrenome.Name" xml:space="preserve">
+    <value>txtSobrenome</value>
+  </data>
+  <data name="&gt;&gt;txtNome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSobrenome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtConsole.Text" xml:space="preserve">
+    <value>Sistema de Cadastro de Funcionários...</value>
+  </data>
+  <data name="btnSalvar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 39</value>
+  </data>
+  <data name="&gt;&gt;txtEndereco.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbControles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;txtNascimento.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbTipoFuncionario.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelSobrenome.Name" xml:space="preserve">
+    <value>labelSobrenome</value>
+  </data>
+  <data name="gbControles.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rdDiretor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;txtConsole.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;labelEndereco.Name" xml:space="preserve">
+    <value>labelEndereco</value>
+  </data>
+  <data name="&gt;&gt;labelEndereco.Parent" xml:space="preserve">
+    <value>gbCadastroDeFuncionarios</value>
+  </data>
+  <data name="&gt;&gt;labelNascimento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>pt-BR</value>
+  </metadata>
 </root>

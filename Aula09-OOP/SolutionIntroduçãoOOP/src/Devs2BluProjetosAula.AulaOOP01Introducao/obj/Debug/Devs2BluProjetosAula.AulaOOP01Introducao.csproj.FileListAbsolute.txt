@@ -12,3 +12,6 @@ C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaO
 C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\obj\Debug\Devs2BluProjetosAula.AulaOOP01Introducao.csproj.CopyComplete
 C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\obj\Debug\Devs2BluProjetosAula.AulaOOP01Introducao.exe
 C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\obj\Debug\Devs2BluProjetosAula.AulaOOP01Introducao.pdb
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\bin\Debug\pt-BR\Devs2BluProjetosAula.AulaOOP01Introducao.resources.dll
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\obj\Debug\Devs2BluProjetosAula.AulaOOP01Introducao.Form1.pt-BR.resources
+C:\Projetos-C#\Aula09-OOP\SolutionIntroduçãoOOP\src\Devs2BluProjetosAula.AulaOOP01Introducao\obj\Debug\pt-BR\Devs2BluProjetosAula.AulaOOP01Introducao.resources.dll

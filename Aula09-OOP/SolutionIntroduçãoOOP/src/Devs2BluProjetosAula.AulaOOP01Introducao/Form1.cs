@@ -73,8 +73,7 @@ namespace Devs2BluProjetosAula.AulaOOP01Introducao
             txtNascimento.Text = "";
             txtEndereco.Text = "";
         }
-        #endregion
 
-        
+        #endregion
     }
 }
