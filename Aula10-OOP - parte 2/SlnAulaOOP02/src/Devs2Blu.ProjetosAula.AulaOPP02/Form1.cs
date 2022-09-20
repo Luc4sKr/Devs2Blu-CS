@@ -41,9 +41,10 @@ namespace Devs2Blu.ProjetosAula.AulaOPP02
             Contato.Email = txbEmail.Text;
             Contato.Cep = txbCEP.Text;
             Contato.Rua = txbRua.Text;
-            Contato.Numero = txbNumero.Text;
-            Contato.Nome = txbNome.Text;
-
+            Contato.Numero = Int32.Parse(txbNumero.Text);
+            Contato.Bairro = txbBairro.Text;
+            Contato.Cidade = txbCidade.Text;
+            Contato.Estado = txbEstado.Text;
 
             string txtMsg = $"{txbNome.Text}, texto enviado com sucesso.";
             string txtTitulo = "Formulário de contato";
