@@ -33,6 +33,8 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 Console.Write("-> ");
                 Int32.TryParse(Console.ReadLine(), out opcao);
 
+                Console.Clear();
+
                 switch (opcao)
                 {
                     case (int)MenuEnums.LISTAR:
@@ -40,6 +42,9 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                         break;
                     case (int)MenuEnums.CADASTRAR:
                         CadastarPaciente();
+                        break;
+                    case (int)MenuEnums.ALTERAR:
+                        AlterarPaciente();
                         break;
                     default:
                         break;
@@ -68,7 +73,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
         {
             Console.WriteLine("------------- CADASTRAR PACIENTE -------------");
 
-            Console.WriteLine("Código: ");
+            Console.Write("Código: ");
             Int32 codigo;
             Int32.TryParse(Console.ReadLine(), out codigo);
 
@@ -78,7 +83,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             Console.Write("CPF: ");
             String cpf = Console.ReadLine();
 
-            Console.WriteLine("Convenio: ");
+            Console.Write("Convenio: ");
             String convenio = Console.ReadLine();
 
             Paciente paciente = new Paciente(codigo, nome, cpf, convenio);
@@ -91,12 +96,49 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
 
         public void AlterarPaciente()
         {
-
+            Console.WriteLine("-------------- ALTERAR PACIENTE --------------");
+            Console.WriteLine("Pacientes: ");
+            ListarSemDetalhes();
+            
+            Console.WriteLine("----------------------------------------------");
         }
         
         public void ExcluirPaciete()
         {
+            ListarSemDetalhes();
 
+            do
+            {
+                Console.WriteLine("Código do Paciente que deseja alterar ['0' para parar] ");
+                Console.Write("-> ");
+                Int32 codigoPaciente;
+                Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+                foreach (Paciente paciente in Program.Mock.ListaPacientes)
+                {
+                    if (paciente.CodigoPaciente == codigoPaciente)
+                    {
+                        Program.Mock.ListaPacientes.Remove(paciente);
+                        Console.WriteLine("Pciente removido");
+                    }
+                    else if (codigoPaciente == 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Paciente não encontrado");
+                    }
+                }
+            } while (true);
+        }
+
+        public void ListarSemDetalhes()
+        {
+            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            {
+                Console.WriteLine($"{paciente.CodigoPaciente}, {paciente.Nome}, {paciente.CGCCPF}, {paciente.Convenio}\n");
+            }
         }
     }
 }
