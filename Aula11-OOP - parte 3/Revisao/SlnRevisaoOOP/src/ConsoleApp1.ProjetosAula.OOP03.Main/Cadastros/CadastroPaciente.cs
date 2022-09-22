@@ -22,10 +22,12 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
 
             do
             {
+                Console.Clear();
+
                 Console.WriteLine("------------- CADASTRO PACIENTES -------------");
-                Console.WriteLine("1 - Lista pacientes");
-                Console.WriteLine("2 - Cadastro de pacientes");
-                Console.WriteLine("3 - Alterar pacientes");
+                Console.WriteLine("1 - Listar pacientes");
+                Console.WriteLine("2 - Cadastrar paciente");
+                Console.WriteLine("3 - Alterar paciente");
                 Console.WriteLine("0 - Sair");
                 Console.WriteLine("----------------------------------------------");
                 Console.Write("-> ");
@@ -43,13 +45,14 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                         break;
                 }
 
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+
             } while (opcao != (int)MenuEnums.SAIR);
         }
 
         public void ListarPacientes()
         {
-            Console.Clear();
-
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
                 Console.WriteLine("\n----------------------------------------------");
@@ -57,13 +60,33 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 Console.WriteLine($"Nome: {paciente.Nome}");
                 Console.WriteLine($"CPF: {paciente.CGCCPF}");
                 Console.WriteLine($"Convenio: {paciente.Convenio}");
-                Console.WriteLine("----------------------------------------------\n");
+                Console.WriteLine("----------------------------------------------");
             }
         }
 
         public void CadastarPaciente()
         {
+            Console.WriteLine("------------- CADASTRAR PACIENTE -------------");
 
+            Console.WriteLine("Código: ");
+            Int32 codigo;
+            Int32.TryParse(Console.ReadLine(), out codigo);
+
+            Console.Write("Nome: ");
+            String nome = Console.ReadLine();
+
+            Console.Write("CPF: ");
+            String cpf = Console.ReadLine();
+
+            Console.WriteLine("Convenio: ");
+            String convenio = Console.ReadLine();
+
+            Paciente paciente = new Paciente(codigo, nome, cpf, convenio);
+            Program.Mock.ListaPacientes.Add(paciente);
+
+            Console.WriteLine("\nPaciete cadastrado!");
+
+            Console.WriteLine("----------------------------------------------");
         }
 
         public void AlterarPaciente()

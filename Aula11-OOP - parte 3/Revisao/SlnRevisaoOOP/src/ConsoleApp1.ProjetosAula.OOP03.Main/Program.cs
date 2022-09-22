@@ -22,6 +22,8 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main
 
             do
             {
+                Console.Clear();
+
                 Console.WriteLine("---- SISTEMA DE GERENCIAMENTO DE CLÍNICAS ----");
                 Console.WriteLine("10 - Cadastro de Pacientes");
                 Console.WriteLine("20 - Cadastro de Médicos");
@@ -41,27 +43,20 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main
                         CadastroPaciente ModuloCadastroPacientes = new CadastroPaciente();
                         ModuloCadastroPacientes.MunuCadastro();
                         break;
+                    case (int)MenuEnums.CAD_MEDICO:
+                        CadastroMedico ModuloCadastroMedico = new CadastroMedico();
+                        ModuloCadastroMedico.MenuCadastro();
+                        break;
+                    case (int)MenuEnums.CAD_RECEPCIONISTA:
+                        CadastroRecepcionista ModulocadastroRecepcionista = new CadastroRecepcionista();
+                        ModulocadastroRecepcionista.MenuCadastro();
+                        break;
                     default:
                         break;
                 }
 
             } while (opcao != (int)MenuEnums.SAIR);
             
-        }
-
-        public static void ViewListPacientes()
-        {
-            Console.Clear();
-
-            foreach (Paciente paciente in Mock.ListaPacientes)
-            {
-                Console.WriteLine("\n---------------------------------------------");
-                Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
-                Console.WriteLine($"Nome: {paciente.Nome}");
-                Console.WriteLine($"CPF: {paciente.CGCCPF}");
-                Console.WriteLine($"Convenio: {paciente.Convenio}");
-                Console.WriteLine("---------------------------------------------\n");
-            }
         }
     }
 }
