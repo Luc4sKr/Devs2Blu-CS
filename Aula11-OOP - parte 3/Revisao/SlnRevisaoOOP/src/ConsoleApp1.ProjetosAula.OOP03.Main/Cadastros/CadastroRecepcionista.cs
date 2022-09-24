@@ -26,6 +26,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 Console.WriteLine("1 - Listar Recepcionistas");
                 Console.WriteLine("2 - Cadastrar Recepcionista");
                 Console.WriteLine("3 - Alterar Recepcionista");
+                Console.WriteLine("4 - Excluir Recepcionista");
                 Console.WriteLine("0 - Sair");
                 Console.WriteLine("----------------------------------------------");
                 Console.Write("-> ");

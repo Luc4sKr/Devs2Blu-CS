@@ -28,6 +28,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 Console.WriteLine("1 - Listar pacientes");
                 Console.WriteLine("2 - Cadastrar paciente");
                 Console.WriteLine("3 - Alterar paciente");
+                Console.WriteLine("4 - Excluir paciente");
                 Console.WriteLine("0 - Sair");
                 Console.WriteLine("----------------------------------------------");
                 Console.Write("-> ");
@@ -45,6 +46,9 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                         break;
                     case (int)MenuEnums.ALTERAR:
                         AlterarPaciente();
+                        break;
+                    case (int)MenuEnums.EXCLUIR:
+                        ExcluirPaciete();
                         break;
                     default:
                         break;
@@ -99,38 +103,80 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             Console.WriteLine("-------------- ALTERAR PACIENTE --------------");
             Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
-            
+
+            Int32 codigoPaciente;
+            Boolean pacienteEncontrado = false;
+
+            Console.WriteLine("Código do Paciente que deseja remover");
+            Console.Write("-> ");
+            Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+            int index = 0;
+            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            {
+                if (paciente.CodigoPaciente == codigoPaciente)
+                {
+                    pacienteEncontrado = true;
+
+                    Console.Write("Nome: ");
+                    String nome = Console.ReadLine();
+
+                    Console.Write("CPF: ");
+                    String cpf = Console.ReadLine();
+
+                    Console.Write("Convenio: ");
+                    String convenio = Console.ReadLine();
+
+                    paciente.Nome = nome;
+                    paciente.CGCCPF = cpf;
+                    paciente.Convenio = convenio;
+
+                    Console.WriteLine("Paciente alterado!");
+                }
+                index++;
+            }
+
+            if (!pacienteEncontrado)
+            {
+                Console.WriteLine("Paciente não encontrado");
+                return;
+            }
+
             Console.WriteLine("----------------------------------------------");
         }
         
         public void ExcluirPaciete()
         {
+            Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
 
-            do
-            {
-                Console.WriteLine("Código do Paciente que deseja alterar ['0' para parar] ");
-                Console.Write("-> ");
-                Int32 codigoPaciente;
-                Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+            Int32 codigoPaciente;
+            Boolean pacienteEncontrado = false;
 
-                foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            Console.WriteLine("Código do Paciente que deseja alterar");
+            Console.Write("-> ");
+            Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+            int index = 0;
+            foreach (Paciente paciente in Program.Mock.ListaPacientes)
+            {
+                if (paciente.CodigoPaciente == codigoPaciente)
                 {
-                    if (paciente.CodigoPaciente == codigoPaciente)
-                    {
-                        Program.Mock.ListaPacientes.Remove(paciente);
-                        Console.WriteLine("Pciente removido");
-                    }
-                    else if (codigoPaciente == 0)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Paciente não encontrado");
-                    }
+                    pacienteEncontrado = true;
+
                 }
-            } while (true);
+                index++;
+            }
+
+            if (pacienteEncontrado)
+            {
+                Program.Mock.ListaPacientes.RemoveAt(index-1);
+                Console.WriteLine("Paciente removido");
+            } else
+            {
+                Console.WriteLine("Paciente não encontrado");
+            }
+            
         }
 
         public void ListarSemDetalhes()
