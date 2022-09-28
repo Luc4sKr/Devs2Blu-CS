@@ -33,7 +33,9 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             Console.WriteLine("0 - Sair");
             Console.WriteLine("----------------------------------------------");
             Console.Write("-> ");
-            Int32.TryParse(Console.ReadLine(), out opcao);       
+            Int32.TryParse(Console.ReadLine(), out opcao);
+
+            Console.Clear();
 
             return opcao;
         }
@@ -76,17 +78,17 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
         {
             Console.WriteLine("------------- CADASTRAR PACIENTE -------------");
 
-            Console.Write("Código: ");
+            Console.Write("Informe código do paciente: ");
             Int32 codigo;
             Int32.TryParse(Console.ReadLine(), out codigo);
 
-            Console.Write("Nome: ");
+            Console.Write("Informe o nome do paciente: ");
             String nome = Console.ReadLine();
 
-            Console.Write("CPF: ");
+            Console.Write("Informe o CPF do paciete: ");
             String cpf = Console.ReadLine();
 
-            Console.Write("Convenio: ");
+            Console.Write("Informe o Convenio do paciente: ");
             String convenio = Console.ReadLine();
 
             Paciente paciente = new Paciente(codigo, nome, cpf, convenio);
@@ -105,10 +107,13 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
 
             Int32 codigoPaciente;
             Boolean pacienteEncontrado = false;
+            Paciente pacienteParaAlterar = new Paciente();
 
             Console.WriteLine("Código do Paciente que deseja remover");
             Console.Write("-> ");
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+            Console.Clear();
 
             int index = 0;
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
@@ -116,21 +121,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 if (paciente.CodigoPaciente == codigoPaciente)
                 {
                     pacienteEncontrado = true;
-
-                    Console.Write("Nome: ");
-                    String nome = Console.ReadLine();
-
-                    Console.Write("CPF: ");
-                    String cpf = Console.ReadLine();
-
-                    Console.Write("Convenio: ");
-                    String convenio = Console.ReadLine();
-
-                    paciente.Nome = nome;
-                    paciente.CGCCPF = cpf;
-                    paciente.Convenio = convenio;
-
-                    Console.WriteLine("Paciente alterado!");
+                    pacienteParaAlterar = paciente;
                 }
                 index++;
             }
@@ -140,6 +131,51 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
                 Console.WriteLine("Paciente não encontrado");
                 return;
             }
+
+            int opcaoAlterar;
+            bool alterar = true;
+
+            do
+            {
+                Console.WriteLine($"\nPaciente: {pacienteParaAlterar.Codigo}/{pacienteParaAlterar.CodigoPaciente} | Nome: {pacienteParaAlterar.Nome} | CPF: {pacienteParaAlterar.CGCCPF} | Convênio: {pacienteParaAlterar.Convenio}");
+                Console.WriteLine("Qual campo deseja alterar?");
+                Console.WriteLine("01 - Nome");
+                Console.WriteLine("02 - CPF");
+                Console.WriteLine("03 - Convênio");
+                Console.WriteLine("00 - Sair");
+                Console.Write("-> ");
+                Int32.TryParse(Console.ReadLine(), out opcaoAlterar);
+
+                switch (opcaoAlterar)
+                {
+                    case (int)MenuEnums.NOME_PACIENTE:
+                        Console.Write("Informe um novo nome: ");
+                        pacienteParaAlterar.Nome = Console.ReadLine();
+                        break;
+                    case (int)MenuEnums.CPF_PACIENTE:
+                        Console.Write("Informe um novo CPF: ");
+                        pacienteParaAlterar.CGCCPF = Console.ReadLine();
+                        break;
+                    case (int)MenuEnums.CONVENIO_PACIENTE:
+                        Console.Write("Informe um novo Convênio: ");
+                        pacienteParaAlterar.Convenio = Console.ReadLine();
+                        break;
+                    case (int)MenuEnums.SAIR:
+                        alterar = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        break;
+                }
+
+                if (alterar)
+                { 
+                    Console.WriteLine("Dado Alterado com Sucesso!");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+
+            } while (alterar);
 
             Console.WriteLine("----------------------------------------------");
         }
