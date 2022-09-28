@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.ProjetosAula.OOP03.Main.Utils;
+﻿using ConsoleApp1.ProjetosAula.OOP03.Main.Interfaces;
+using ConsoleApp1.ProjetosAula.OOP03.Main.Utils;
 using ConsoleApp1.ProjetosAula.OOP03.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP03.Models.Model;
 using System;
@@ -9,58 +10,56 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
 {
-    public class CadastroPaciente
+    public class CadastroPaciente : IMenuCadastro
     {
         public CadastroPaciente()
         {
 
         }
 
-        public void MunuCadastro()
+        // A "FACADE" é a implementação do método
+        #region FACADE
+        public Int32 MenuCadastro()
         {
             Int32 opcao = 0;
 
-            do
-            {
-                Console.Clear();
+            Console.Clear();
 
-                Console.WriteLine("------------- CADASTRO PACIENTES -------------");
-                Console.WriteLine("1 - Listar pacientes");
-                Console.WriteLine("2 - Cadastrar paciente");
-                Console.WriteLine("3 - Alterar paciente");
-                Console.WriteLine("4 - Excluir paciente");
-                Console.WriteLine("0 - Sair");
-                Console.WriteLine("----------------------------------------------");
-                Console.Write("-> ");
-                Int32.TryParse(Console.ReadLine(), out opcao);
+            Console.WriteLine("------------- CADASTRO PACIENTES -------------");
+            Console.WriteLine("1 - Listar pacientes");
+            Console.WriteLine("2 - Cadastrar paciente");
+            Console.WriteLine("3 - Alterar paciente");
+            Console.WriteLine("4 - Excluir paciente");
+            Console.WriteLine("0 - Sair");
+            Console.WriteLine("----------------------------------------------");
+            Console.Write("-> ");
+            Int32.TryParse(Console.ReadLine(), out opcao);       
 
-                Console.Clear();
-
-                switch (opcao)
-                {
-                    case (int)MenuEnums.LISTAR:
-                        ListarPacientes();
-                        break;
-                    case (int)MenuEnums.CADASTRAR:
-                        CadastarPaciente();
-                        break;
-                    case (int)MenuEnums.ALTERAR:
-                        AlterarPaciente();
-                        break;
-                    case (int)MenuEnums.EXCLUIR:
-                        ExcluirPaciete();
-                        break;
-                    default:
-                        break;
-                }
-
-                Console.WriteLine("\nPressione qualquer tecla para continuar...");
-                Console.ReadKey();
-
-            } while (opcao != (int)MenuEnums.SAIR);
+            return opcao;
         }
 
-        public void ListarPacientes()
+        public void Listar()
+        {
+            ListarPacientes();
+        }
+
+        public void Cadastrar()
+        {
+            CadastarPaciente();
+        }
+
+        public void Alterar()
+        {
+            AlterarPaciente();
+        }
+
+        public void Excluir()
+        {
+            ExcluirPaciete();
+        }
+        #endregion
+
+        private void ListarPacientes()
         {
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
@@ -73,7 +72,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             }
         }
 
-        public void CadastarPaciente()
+        private void CadastarPaciente()
         {
             Console.WriteLine("------------- CADASTRAR PACIENTE -------------");
 
@@ -98,7 +97,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             Console.WriteLine("----------------------------------------------");
         }
 
-        public void AlterarPaciente()
+        private void AlterarPaciente()
         {
             Console.WriteLine("-------------- ALTERAR PACIENTE --------------");
             Console.WriteLine("Pacientes: ");
@@ -144,8 +143,8 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
 
             Console.WriteLine("----------------------------------------------");
         }
-        
-        public void ExcluirPaciete()
+
+        private void ExcluirPaciete()
         {
             Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
@@ -179,7 +178,7 @@ namespace ConsoleApp1.ProjetosAula.OOP03.Main.Cadastros
             
         }
 
-        public void ListarSemDetalhes()
+        private void ListarSemDetalhes()
         {
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
