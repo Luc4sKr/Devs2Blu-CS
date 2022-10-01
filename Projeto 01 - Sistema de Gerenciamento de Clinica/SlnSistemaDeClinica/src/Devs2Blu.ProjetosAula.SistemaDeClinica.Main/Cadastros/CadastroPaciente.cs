@@ -18,12 +18,9 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
         public Int32 MenuCadastro()
         {
             Int32 opcao = 0;
-
             Console.Clear();
 
-
-            DesenharTexto.Titulo(ConstantesDeTexto.TXT_CADASTRO_PACIENTES);
-
+            Console.WriteLine("╔═ Cadastro de Pacientes ══════════════════════╗");
             Console.WriteLine("║1 - Listar pacientes                          ║");
             Console.WriteLine("║2 - Cadastrar paciente                        ║");
             Console.WriteLine("║3 - Alterar paciente                          ║");
@@ -34,7 +31,6 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Int32.TryParse(Console.ReadLine(), out opcao);
 
             Console.Clear();
-
             return opcao;
         }
 
@@ -74,20 +70,22 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
         private void CadastarPaciente()
         {
-            Console.WriteLine("------------- CADASTRAR PACIENTE -------------");
+            Console.WriteLine("╠══════════════════════ CADASTRAR PACIENTE ══════════════════════╣");
 
-            Console.Write("Informe código do paciente: ");
-            Int32 codigo;
-            Int32.TryParse(Console.ReadLine(), out codigo);
-
-            Console.Write("Informe o nome do paciente: ");
+            Console.WriteLine("║Informe o nome do paciente");
+            Console.Write("╚══ > ");
             String nome = Console.ReadLine();
 
-            Console.Write("Informe o CPF do paciete: ");
+            Console.WriteLine("║Informe o CPF do paciete");
+            Console.Write("╚══ > ");
             String cpf = Console.ReadLine();
 
-            Console.Write("Informe o Convenio do paciente: ");
+            Console.WriteLine("║Informe o Convenio do paciente");
+            Console.Write("╚══ > ");
             String convenio = Console.ReadLine();
+
+            Random random = new Random();
+            Int32 codigo = random.Next(1, 100) + DateTime.Now.Second;
 
             Paciente paciente = new Paciente(codigo, nome, cpf, convenio);
             Program.Mock.ListaPacientes.Add(paciente);
@@ -191,11 +189,13 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
 
             int index = 0;
+            int indexPaciente = 0;
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
                 if (paciente.CodigoPaciente == codigoPaciente)
                 {
                     pacienteEncontrado = true;
+                    indexPaciente = index;
 
                 }
                 index++;
@@ -203,14 +203,13 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
             if (pacienteEncontrado)
             {
-                Program.Mock.ListaPacientes.RemoveAt(index - 1);
+                Program.Mock.ListaPacientes.RemoveAt(indexPaciente);
                 Console.WriteLine("Paciente removido");
             }
             else
             {
                 Console.WriteLine("Paciente não encontrado");
             }
-
         }
 
         private void ListarSemDetalhes()
