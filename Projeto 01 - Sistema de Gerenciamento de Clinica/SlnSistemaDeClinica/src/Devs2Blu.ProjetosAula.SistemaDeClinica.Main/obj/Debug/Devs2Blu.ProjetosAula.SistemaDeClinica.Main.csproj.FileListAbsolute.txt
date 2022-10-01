@@ -1,0 +1,11 @@
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.csproj.SuggestedBindingRedirects.cache
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\bin\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.exe.config
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\bin\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.exe
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\bin\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.pdb
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\bin\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Models.dll
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\bin\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Models.pdb
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.csproj.CopyComplete
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.exe
+C:\Curso-CS-Devs2Blu\Projeto 01 - Sistema de Gerenciamento de Clinica\SlnSistemaDeClinica\src\Devs2Blu.ProjetosAula.SistemaDeClinica.Main\obj\Debug\Devs2Blu.ProjetosAula.SistemaDeClinica.Main.pdb
