@@ -1,11 +1,9 @@
 ﻿using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Interfaces;
 using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Enums;
+using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Texto;
 using Devs2Blu.ProjetosAula.SistemaDeClinica.Models.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 {
@@ -16,7 +14,6 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
         }
 
-        // A "FACADE" é a implementação do método
         #region FACADE
         public Int32 MenuCadastro()
         {
@@ -24,13 +21,15 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
             Console.Clear();
 
-            Console.WriteLine("------------- CADASTRO PACIENTES -------------");
-            Console.WriteLine("1 - Listar pacientes");
-            Console.WriteLine("2 - Cadastrar paciente");
-            Console.WriteLine("3 - Alterar paciente");
-            Console.WriteLine("4 - Excluir paciente");
-            Console.WriteLine("0 - Sair");
-            Console.WriteLine("----------------------------------------------");
+
+            DesenharTexto.Titulo(ConstantesDeTexto.TXT_CADASTRO_PACIENTES);
+
+            Console.WriteLine("║1 - Listar pacientes                          ║");
+            Console.WriteLine("║2 - Cadastrar paciente                        ║");
+            Console.WriteLine("║3 - Alterar paciente                          ║");
+            Console.WriteLine("║4 - Excluir paciente                          ║");
+            Console.WriteLine("║0 - Sair                                      ║");
+            Console.WriteLine("╚══════════════════════════════════════════════╝");
             Console.Write("-> ");
             Int32.TryParse(Console.ReadLine(), out opcao);
 
@@ -64,12 +63,12 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
         {
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
-                Console.WriteLine("\n----------------------------------------------");
+                Console.WriteLine("══════════════════════════════════════════════");
                 Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
                 Console.WriteLine($"Nome: {paciente.Nome}");
                 Console.WriteLine($"CPF: {paciente.CGCCPF}");
                 Console.WriteLine($"Convenio: {paciente.Convenio}");
-                Console.WriteLine("----------------------------------------------");
+                Console.WriteLine("══════════════════════════════════════════════");
             }
         }
 

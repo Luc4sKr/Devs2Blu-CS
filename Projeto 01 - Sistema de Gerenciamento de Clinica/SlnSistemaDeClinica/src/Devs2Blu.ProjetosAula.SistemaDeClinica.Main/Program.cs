@@ -3,10 +3,7 @@ using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Interfaces;
 using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Texto;
 
 namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
 {
@@ -27,7 +24,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
                 {
                     Console.Clear();
 
-                    Console.WriteLine("---- SISTEMA DE GERENCIAMENTO DE CLÍNICAS ----");
+                    Console.WriteLine(ConstantesDeTexto.TXT_SISTEMA_DE_GERENCIAMENTO_DE_CLINICA);
                     Console.WriteLine("10 - Cadastro de Pacientes");
                     Console.WriteLine("20 - Cadastro de Médicos");
                     Console.WriteLine("30 - Cadastro de Recepcionistas");
