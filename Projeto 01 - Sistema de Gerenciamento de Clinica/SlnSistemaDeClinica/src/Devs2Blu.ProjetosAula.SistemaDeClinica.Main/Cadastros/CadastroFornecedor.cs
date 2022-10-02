@@ -5,9 +5,9 @@ using System;
 
 namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 {
-    public class CadastroRecepcionista : IMenuCadastro
+    internal class CadastroFornecedor : IMenuCadastro
     {
-        public CadastroRecepcionista()
+        public CadastroFornecedor()
         {
 
         }
@@ -18,11 +18,11 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Int32 opcao = 0;
             Console.Clear();
 
-            Console.WriteLine("╔═ Cadastro de Recepcionista ══════════════════╗");
-            Console.WriteLine("║1 - Listar recepcionista                      ║");
-            Console.WriteLine("║2 - Cadastrar recepcionista                   ║");
-            Console.WriteLine("║3 - Alterar recepcionista                     ║");
-            Console.WriteLine("║4 - Excluir recepcionista                     ║");
+            Console.WriteLine("╔═ Cadastro de Fornecedores ═══════════════════╗");
+            Console.WriteLine("║1 - Listar fornecedores                       ║");
+            Console.WriteLine("║2 - Cadastrar fornecedores                    ║");
+            Console.WriteLine("║3 - Alterar fornecedor                        ║");
+            Console.WriteLine("║4 - Excluir fornecedor                        ║");
             Console.WriteLine("║0 - Sair                                      ║");
             Console.WriteLine("╚══════════════════════════════════════════════╝");
             Console.Write("-> ");
@@ -31,37 +31,38 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Console.Clear();
             return opcao;
         }
+
         public void Listar()
         {
-            ListarRecepcionista();
+            ListarFornecedores();
         }
 
         public void Cadastrar()
         {
-            CadastrarRecepcionista();
+            CadastrarFornecedor();
         }
 
         public void Alterar()
         {
-            AlterarRecepcionista();
+            AlterarFornecedor();
         }
 
         public void Excluir()
         {
-            ExcluirRecepcionista();
+            ExcluirFornecedor();
         }
         #endregion
 
-        private void ListarRecepcionista()
+        private void ListarFornecedores()
         {
             int i = 1;
-            foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
+            foreach (Fornecedor fornecedor in Program.Mock.ListaFornecedores)
             {
-                Console.WriteLine($"╔═ Recepcionsta {i} ═══════════════════════════");
-                Console.WriteLine($"║Recepcionista: {recepcionista.CodigoRecepcionista}");
-                Console.WriteLine($"║Nome: {recepcionista.Nome}                  ");
-                Console.WriteLine($"║CPF: {recepcionista.CGCCPF}                 ");
-                Console.WriteLine($"║Setor: {recepcionista.Setor}                ");
+                Console.WriteLine($"╔═ Fornecedor {i} ═════════════════════════════");
+                Console.WriteLine($"║Fornecedor: {fornecedor.CodigoFornecedor}   ");
+                Console.WriteLine($"║Nome: {fornecedor.Nome}                     ");
+                Console.WriteLine($"║CPF: {fornecedor.CGCCPF}                    ");
+                Console.WriteLine($"║Tipo fornecedor: {fornecedor.TipoFornecedor}");
                 Console.WriteLine($"╚════════════════════════════════════════════");
 
                 i++;
@@ -71,72 +72,72 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Console.ReadKey();
         }
 
-        private void CadastrarRecepcionista()
+        private void CadastrarFornecedor()
         {
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("╠════════════════════ CADASTRAR RECEPCIONISTA ═══════════════════╣");
+            Console.WriteLine("╠═════════════════════ CADASTRAR FORNECEDOR ═════════════════════╣");
             Console.WriteLine("╠════════════════════════════════════════════════════════════════╝");
 
-            Console.WriteLine("║Informe o nome da recepcionista");
+            Console.WriteLine("║Informe o nome do fornecedor");
             Console.Write("╠══ > ");
             String nome = Console.ReadLine();
 
-            Console.WriteLine("║Informe o CPF da recepcionista");
+            Console.WriteLine("║Informe o CPF do fornecedor");
             Console.Write("╠══ > ");
             String cpf = Console.ReadLine();
 
-            Console.WriteLine("║Informe o setor da recepcionista");
+            Console.WriteLine("║Informe o tipo do fornecedor");
             Console.Write("╠══ > ");
-            String setor = Console.ReadLine();
+            String tipoFornecedor = Console.ReadLine();
 
             Random random = new Random();
             Int32 codigo = random.Next(1, 100) + DateTime.Now.Second;
 
-            Recepcionista recepcionista = new Recepcionista(codigo, nome, cpf, setor);
-            Program.Mock.ListaRecepcionistas.Add(recepcionista);
+            Fornecedor fornecedor = new Fornecedor(codigo, nome, cpf, tipoFornecedor);
+            Program.Mock.ListaFornecedores.Add(fornecedor);
 
             Console.WriteLine("╠════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("║Recepcionista cadastrada!                                       ║");
+            Console.WriteLine("║Fornecedor cadastrado!                                          ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
 
             Console.ReadKey();
             Console.WriteLine("\nPressione 'ENTER' para continuar... ");
         }
 
-        public void AlterarRecepcionista()
+        private void AlterarFornecedor()
         {
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("╠═════════════════════ ALTERAR RECEPCIONISTA ════════════════════╣");
-            Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+            Console.WriteLine("╠══════════════════════ ALTERAR FORNECEDOR ══════════════════════╣");
+            Console.WriteLine("╠════════════════════════════════════════════════════════════════╝");
 
-            Console.WriteLine("Recepcionistas: ");
+            Console.WriteLine("Fornecedores: ");
             ListarSemDetalhes();
 
-            Int32 codigoRecepcionista;
-            Boolean recepcionistaEncontrada = false;
-            Recepcionista recepcionistaParaAlterar = new Recepcionista();
+            Int32 codigoFornecedor;
+            Boolean fornecedorEncontrado = false;
+            Fornecedor fornecedorParaAlterar = new Fornecedor();
 
-            Console.WriteLine("Código da Recepcionista que deseja alterar");
-            Console.WriteLine("-> ");
-            Int32.TryParse(Console.ReadLine(), out codigoRecepcionista);
+            Console.WriteLine("Código do Paciente que deseja alterar");
+            Console.Write("-> ");
+            Int32.TryParse(Console.ReadLine(), out codigoFornecedor);
 
             Console.Clear();
 
             int index = 0;
-            foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
+            foreach (Fornecedor fornecedor in Program.Mock.ListaFornecedores)
             {
-                if (recepcionista.CodigoRecepcionista == codigoRecepcionista)
+                if (fornecedor.CodigoFornecedor == codigoFornecedor)
                 {
-                    recepcionistaEncontrada = true;
-                    recepcionistaParaAlterar = recepcionista;
+                    fornecedorEncontrado = true;
+                    fornecedorParaAlterar = fornecedor;
                 }
                 index++;
             }
 
-            if (!recepcionistaEncontrada)
+            if (!fornecedorEncontrado)
             {
                 Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-                Console.WriteLine("║Recepcionista não encontrada!                                   ║");
+                Console.WriteLine("║Paciete não encontrado!                                         ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
                 Console.WriteLine("\nPressione 'ENTER' para continuar... ");
                 return;
@@ -147,12 +148,13 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
             do
             {
-                Console.WriteLine($"Recepcionista: {recepcionistaParaAlterar.Codigo}/{recepcionistaParaAlterar.CodigoRecepcionista}, Nome: {recepcionistaParaAlterar.Nome}, CPF: {recepcionistaParaAlterar.CGCCPF}, Setor: {recepcionistaParaAlterar.Setor}");
+
+                Console.WriteLine($"Fornecedor: {fornecedorParaAlterar.Codigo}/{fornecedorParaAlterar.CodigoFornecedor} | Nome: {fornecedorParaAlterar.Nome} | CPF: {fornecedorParaAlterar.CGCCPF} | Convênio: {fornecedorParaAlterar.TipoFornecedor}");
                 Console.WriteLine($"╔══════════════════════════════════════════════════════════════════════════╗");
                 Console.WriteLine($"║Qual campo deseja alterar?                                                ║");
                 Console.WriteLine($"║01 - Nome                                                                 ║");
                 Console.WriteLine($"║02 - CPF                                                                  ║");
-                Console.WriteLine($"║03 - Setor                                                                ║");
+                Console.WriteLine($"║03 - Tipo fornecedor                                                      ║");
                 Console.WriteLine($"║00 - Sair                                                                 ║");
                 Console.WriteLine($"╚══════════════════════════════════════════════════════════════════════════╝");
                 Console.Write("-> ");
@@ -161,17 +163,17 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 bool opcaoValida = true;
                 switch (opcaoAlterar)
                 {
-                    case (int)MenuEnums.NOME_RECEPCIONISTA:
+                    case (int)MenuEnums.NOME_FORNECEDOR:
                         Console.Write("Informe um novo nome: ");
-                        recepcionistaParaAlterar.Nome = Console.ReadLine();
+                        fornecedorParaAlterar.Nome = Console.ReadLine();
                         break;
-                    case (int)MenuEnums.CPF_RECEPCIONISTA:
+                    case (int)MenuEnums.CPF_FORNECEDOR:
                         Console.Write("Informe um novo CPF: ");
-                        recepcionistaParaAlterar.CGCCPF = Console.ReadLine();
+                        fornecedorParaAlterar.CGCCPF = Console.ReadLine();
                         break;
-                    case (int)MenuEnums.SETOR_RECEPCIONISTA:
-                        Console.Write("Informe um novo setor: ");
-                        recepcionistaParaAlterar.Setor = Console.ReadLine();
+                    case (int)MenuEnums.CONVENIO_PACIENTE:
+                        Console.Write("Informe um novo tipo de fornecedor: ");
+                        fornecedorParaAlterar.TipoFornecedor = Console.ReadLine();
                         break;
                     case (int)MenuEnums.SAIR:
                         alterar = false;
@@ -196,59 +198,60 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             } while (alterar);
         }
 
-        public void ExcluirRecepcionista()
+        private void ExcluirFornecedor()
         {
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("╠═════════════════════ EXCLUIR RECEPCIONISTA ════════════════════╣");
+            Console.WriteLine("╠══════════════════════ EXCLUIR FORNECEDOR ══════════════════════╣");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
 
-            Console.WriteLine("Recepcionistas: ");
+            Console.WriteLine("Fornecedores: ");
             ListarSemDetalhes();
 
-            Int32 codigoRecepcionista;
-            Boolean recepcionistaEncontrada = false;
+            Int32 codigoFornecedor;
+            Boolean fornecedorEncontrado = false;
 
-            Console.WriteLine("Código da Recepcionista que deseja alterar");
-            Console.WriteLine("-> ");
-            Int32.TryParse(Console.ReadLine(), out codigoRecepcionista);
+            Console.WriteLine("Código do Fornecedor que deseja excluir");
+            Console.Write("-> ");
+            Int32.TryParse(Console.ReadLine(), out codigoFornecedor);
 
             Console.Clear();
 
             int index = 0;
-            int indexRecepcionista = 0;
-            foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
+            int indexFornecedor = 0;
+            foreach (Fornecedor fornecedor in Program.Mock.ListaFornecedores)
             {
-                if (recepcionista.CodigoRecepcionista == codigoRecepcionista)
+                if (fornecedor.CodigoFornecedor == codigoFornecedor)
                 {
-                    recepcionistaEncontrada = true;
-                    indexRecepcionista = index;
+                    fornecedorEncontrado = true;
+                    indexFornecedor = index;
+
                 }
                 index++;
             }
 
-            if (!recepcionistaEncontrada)
+            if (!fornecedorEncontrado)
             {
                 Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-                Console.WriteLine("║Recepcionista não encontrada!                                   ║");
+                Console.WriteLine("║Paciete não encontrado!                                         ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
                 Console.WriteLine("\nPressione 'ENTER' para continuar... ");
                 return;
             }
 
-            Program.Mock.ListaPacientes.RemoveAt(indexRecepcionista);
+            Program.Mock.ListaPacientes.RemoveAt(indexFornecedor);
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
-            Console.WriteLine("║Recepcionista removida!                                         ║");
+            Console.WriteLine("║Fornecedor removido!                                            ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
 
             Console.WriteLine("\nPressione 'ENTER' para continuar... ");
             Console.ReadKey();
         }
 
-        public void ListarSemDetalhes()
+        private void ListarSemDetalhes()
         {
-            foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
+            foreach (Fornecedor fornecedor in Program.Mock.ListaFornecedores)
             {
-                Console.WriteLine($"{recepcionista.CodigoRecepcionista}, {recepcionista.Nome}, {recepcionista.CGCCPF}, {recepcionista.Setor}");
+                Console.WriteLine($"{fornecedor.CodigoFornecedor}, {fornecedor.Nome}, {fornecedor.CGCCPF}, {fornecedor.TipoFornecedor}\n");
             }
         }
     }

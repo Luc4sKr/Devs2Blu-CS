@@ -110,7 +110,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
         {
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("╠═══════════════════════ ALTERAR PACIENTE ═══════════════════════╣");
-            Console.WriteLine("╠════════════════════════════════════════════════════════════════╝");
+            Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
 
             Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
@@ -162,6 +162,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 Console.Write("-> ");
                 Int32.TryParse(Console.ReadLine(), out opcaoAlterar);
 
+                bool opcaoValida = true;
                 switch (opcaoAlterar)
                 {
                     case (int)MenuEnums.NOME_PACIENTE:
@@ -181,10 +182,11 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                         break;
                     default:
                         Console.WriteLine("Opção inválida");
+                        opcaoValida = false;
                         break;
                 }
 
-                if (alterar)
+                if (alterar && opcaoValida)
                 {
                     Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
                     Console.WriteLine("║Dado alterado com sucesso!                                      ║");
@@ -200,6 +202,10 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
         private void ExcluirPaciete()
         {
+            Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("╠═══════════════════════ EXCLUIR PACIENTE ═══════════════════════╣");
+            Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+
             Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
 
@@ -235,7 +241,13 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             }
 
             Program.Mock.ListaPacientes.RemoveAt(indexPaciente);
-            Console.WriteLine("Paciente removido");
+            Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║Paciete removido!                                               ║");
+            Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+
+            Console.WriteLine("\nPressione 'ENTER' para continuar... ");
+            Console.ReadKey();
+            
         }
 
         private void ListarSemDetalhes()

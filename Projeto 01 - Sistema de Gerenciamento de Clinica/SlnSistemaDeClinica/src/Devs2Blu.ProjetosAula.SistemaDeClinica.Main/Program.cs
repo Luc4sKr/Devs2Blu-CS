@@ -56,6 +56,10 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
                         menuCadastros = new CadastroRecepcionista();
                         opcaoMenuCadastros = menuCadastros.MenuCadastro();
                         break;
+                    case (int)MenuEnums.CAD_FORNECEDOR:
+                        menuCadastros = new CadastroFornecedor();
+                        opcaoMenuCadastros = menuCadastros.MenuCadastro();
+                        break;
                     default:
                         menuCadastros = new CadastroPadrao();
                         opcaoMenuCadastros = (int)MenuEnums.SAIR;

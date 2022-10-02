@@ -38,6 +38,11 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Enums
         // Menu alterar recepcionistas
         NOME_RECEPCIONISTA = 1,
         CPF_RECEPCIONISTA = 2,
-        SETOR_RECEPCIONISTA = 3
+        SETOR_RECEPCIONISTA = 3,
+
+        // Menu alterar fornecedor
+        NOME_FORNECEDOR = 1,
+        CPF_FORNECEDOR = 2,
+        TIPO_FORNECEDOR = 3
     }
 }
