@@ -52,6 +52,10 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
                         menuCadastros = new CadastroMedico();
                         opcaoMenuCadastros = menuCadastros.MenuCadastro();
                         break;
+                    case (int)MenuEnums.CAD_RECEPCIONISTA:
+                        menuCadastros = new CadastroRecepcionista();
+                        opcaoMenuCadastros = menuCadastros.MenuCadastro();
+                        break;
                     default:
                         menuCadastros = new CadastroPadrao();
                         opcaoMenuCadastros = (int)MenuEnums.SAIR;
@@ -76,8 +80,6 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
                         opcaoMenuCadastros = (int)MenuEnums.SAIR;
                         break;
                 }
-
-                Console.ReadKey();
 
             } while (opcao != (int)MenuEnums.SAIR);
         }

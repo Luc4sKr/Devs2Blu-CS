@@ -33,6 +33,11 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Utils.Enums
         NOME_MEDICO = 1,
         CPF_MEICO = 2,
         ESPECIALIDADE_MEDICO = 3,
-        CRM_MEDICO = 4
+        CRM_MEDICO = 4,
+
+        // Menu alterar recepcionistas
+        NOME_RECEPCIONISTA = 1,
+        CPF_RECEPCIONISTA = 2,
+        SETOR_RECEPCIONISTA = 3
     }
 }

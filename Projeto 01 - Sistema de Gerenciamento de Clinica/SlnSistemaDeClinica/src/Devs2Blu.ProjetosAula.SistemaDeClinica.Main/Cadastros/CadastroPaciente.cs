@@ -57,31 +57,39 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
         private void ListarPacientes()
         {
+            int i = 1;
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
-                Console.WriteLine("══════════════════════════════════════════════");
-                Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
-                Console.WriteLine($"Nome: {paciente.Nome}");
-                Console.WriteLine($"CPF: {paciente.CGCCPF}");
-                Console.WriteLine($"Convenio: {paciente.Convenio}");
-                Console.WriteLine("══════════════════════════════════════════════");
+                Console.WriteLine($"╔═ Paciente {i} ═══════════════════════════════");
+                Console.WriteLine($"║Paciente: {paciente.CodigoPaciente}         ");
+                Console.WriteLine($"║Nome: {paciente.Nome}                       ");
+                Console.WriteLine($"║CPF: {paciente.CGCCPF}                      ");
+                Console.WriteLine($"║Convenio: {paciente.Convenio}               ");
+                Console.WriteLine($"╚════════════════════════════════════════════");
+
+                i++;
             }
+
+            Console.WriteLine("\nPressione 'ENTER' para continuar... ");
+            Console.ReadKey();
         }
 
         private void CadastarPaciente()
         {
+            Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("╠══════════════════════ CADASTRAR PACIENTE ══════════════════════╣");
+            Console.WriteLine("╠════════════════════════════════════════════════════════════════╝");
 
             Console.WriteLine("║Informe o nome do paciente");
-            Console.Write("╚══ > ");
+            Console.Write("╠══ > ");
             String nome = Console.ReadLine();
 
             Console.WriteLine("║Informe o CPF do paciete");
-            Console.Write("╚══ > ");
+            Console.Write("╠══ > ");
             String cpf = Console.ReadLine();
 
             Console.WriteLine("║Informe o Convenio do paciente");
-            Console.Write("╚══ > ");
+            Console.Write("╠══ > ");
             String convenio = Console.ReadLine();
 
             Random random = new Random();
@@ -90,14 +98,20 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Paciente paciente = new Paciente(codigo, nome, cpf, convenio);
             Program.Mock.ListaPacientes.Add(paciente);
 
-            Console.WriteLine("\nPaciete cadastrado!");
+            Console.WriteLine("╠════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║Paciete cadastrado!                                             ║");
+            Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
 
-            Console.WriteLine("----------------------------------------------");
+            Console.ReadKey();
+            Console.WriteLine("\nPressione 'ENTER' para continuar... ");
         }
 
         private void AlterarPaciente()
         {
-            Console.WriteLine("-------------- ALTERAR PACIENTE --------------");
+            Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("╠═══════════════════════ ALTERAR PACIENTE ═══════════════════════╣");
+            Console.WriteLine("╠════════════════════════════════════════════════════════════════╝");
+
             Console.WriteLine("Pacientes: ");
             ListarSemDetalhes();
 
@@ -105,7 +119,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Boolean pacienteEncontrado = false;
             Paciente pacienteParaAlterar = new Paciente();
 
-            Console.WriteLine("Código do Paciente que deseja remover");
+            Console.WriteLine("Código do Paciente que deseja alterar");
             Console.Write("-> ");
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
 
@@ -124,7 +138,10 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
             if (!pacienteEncontrado)
             {
-                Console.WriteLine("Paciente não encontrado");
+                Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+                Console.WriteLine("║Paciete não encontrado!                                         ║");
+                Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+                Console.WriteLine("\nPressione 'ENTER' para continuar... ");
                 return;
             }
 
@@ -133,12 +150,15 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
             do
             {
-                Console.WriteLine($"\nPaciente: {pacienteParaAlterar.Codigo}/{pacienteParaAlterar.CodigoPaciente} | Nome: {pacienteParaAlterar.Nome} | CPF: {pacienteParaAlterar.CGCCPF} | Convênio: {pacienteParaAlterar.Convenio}");
-                Console.WriteLine("Qual campo deseja alterar?");
-                Console.WriteLine("01 - Nome");
-                Console.WriteLine("02 - CPF");
-                Console.WriteLine("03 - Convênio");
-                Console.WriteLine("00 - Sair");
+                
+                Console.WriteLine($"Paciente: {pacienteParaAlterar.Codigo}/{pacienteParaAlterar.CodigoPaciente} | Nome: {pacienteParaAlterar.Nome} | CPF: {pacienteParaAlterar.CGCCPF} | Convênio: {pacienteParaAlterar.Convenio}");
+                Console.WriteLine($"╔══════════════════════════════════════════════════════════════════════════╗");
+                Console.WriteLine($"║Qual campo deseja alterar?                                                ║");
+                Console.WriteLine($"║01 - Nome                                                                 ║");
+                Console.WriteLine($"║02 - CPF                                                                  ║");
+                Console.WriteLine($"║03 - Convênio                                                             ║");
+                Console.WriteLine($"║00 - Sair                                                                 ║");
+                Console.WriteLine($"╚══════════════════════════════════════════════════════════════════════════╝");
                 Console.Write("-> ");
                 Int32.TryParse(Console.ReadLine(), out opcaoAlterar);
 
@@ -166,14 +186,16 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
 
                 if (alterar)
                 {
-                    Console.WriteLine("Dado Alterado com Sucesso!");
+                    Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+                    Console.WriteLine("║Dado alterado com sucesso!                                      ║");
+                    Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+
+                    Console.WriteLine("\nPressione 'ENTER' para continuar... ");
                     Console.ReadKey();
                     Console.Clear();
                 }
 
             } while (alterar);
-
-            Console.WriteLine("----------------------------------------------");
         }
 
         private void ExcluirPaciete()
@@ -184,9 +206,11 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
             Int32 codigoPaciente;
             Boolean pacienteEncontrado = false;
 
-            Console.WriteLine("Código do Paciente que deseja alterar");
+            Console.WriteLine("Código do Paciente que deseja excluir");
             Console.Write("-> ");
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
+
+            Console.Clear();
 
             int index = 0;
             int indexPaciente = 0;
@@ -201,15 +225,17 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 index++;
             }
 
-            if (pacienteEncontrado)
+            if (!pacienteEncontrado)
             {
-                Program.Mock.ListaPacientes.RemoveAt(indexPaciente);
-                Console.WriteLine("Paciente removido");
+                Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
+                Console.WriteLine("║Paciete não encontrado!                                         ║");
+                Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
+                Console.WriteLine("\nPressione 'ENTER' para continuar... ");
+                return;
             }
-            else
-            {
-                Console.WriteLine("Paciente não encontrado");
-            }
+
+            Program.Mock.ListaPacientes.RemoveAt(indexPaciente);
+            Console.WriteLine("Paciente removido");
         }
 
         private void ListarSemDetalhes()
