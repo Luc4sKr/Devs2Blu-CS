@@ -33,9 +33,9 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main
                     Console.WriteLine("║20 - Cadastro de Médicos                      ║");
                     Console.WriteLine("║30 - Cadastro de Recepcionistas               ║");
                     Console.WriteLine("║40 - Cadastro de Fornecedores                 ║");
-                    Console.WriteLine("║50 - Agenda                                   ║");
-                    Console.WriteLine("║60 - Prontuario                               ║");
-                    Console.WriteLine("║70 - Financeiro                               ║");
+                    Console.WriteLine("║50 - Agenda (não implementado)                ║");
+                    Console.WriteLine("║60 - Prontuario (não implementado)            ║");
+                    Console.WriteLine("║70 - Financeiro (não implementado)            ║");
                     Console.WriteLine("║00 - Sair                                     ║");
                     Console.WriteLine("╚══════════════════════════════════════════════╝");
                     Console.Write("-> ");

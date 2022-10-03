@@ -253,7 +253,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 return;
             }
 
-            Program.Mock.ListaPacientes.RemoveAt(indexMedico);
+            Program.Mock.ListaMedicos.RemoveAt(indexMedico);
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("║Médico removido!                                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");

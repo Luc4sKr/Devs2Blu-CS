@@ -235,7 +235,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 return;
             }
 
-            Program.Mock.ListaPacientes.RemoveAt(indexRecepcionista);
+            Program.Mock.ListaRecepcionistas.RemoveAt(indexRecepcionista);
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("║Recepcionista removida!                                         ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");

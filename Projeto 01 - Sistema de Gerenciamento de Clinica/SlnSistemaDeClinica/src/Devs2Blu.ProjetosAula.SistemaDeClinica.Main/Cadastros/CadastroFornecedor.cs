@@ -238,7 +238,7 @@ namespace Devs2Blu.ProjetosAula.SistemaDeClinica.Main.Cadastros
                 return;
             }
 
-            Program.Mock.ListaPacientes.RemoveAt(indexFornecedor);
+            Program.Mock.ListaFornecedores.RemoveAt(indexFornecedor);
             Console.WriteLine("╔════════════════════════════════════════════════════════════════╗");
             Console.WriteLine("║Fornecedor removido!                                            ║");
             Console.WriteLine("╚════════════════════════════════════════════════════════════════╝");
