@@ -1,0 +1,6 @@
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\bin\Debug\Devs2Blu.ProjetosAula.OOP03.Models.dll
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\bin\Debug\Devs2Blu.ProjetosAula.OOP03.Models.pdb
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP03.Models.csproj.AssemblyReference.cache
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP03.Models.csproj.CoreCompileInputs.cache
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP03.Models.dll
+C:\Projetos-C#\Aula11-OOP - parte 3\Revisao\SlnRevisaoOOP\src\Devs2Blu.ProjetosAula.OOP03.Models\obj\Debug\Devs2Blu.ProjetosAula.OOP03.Models.pdb
