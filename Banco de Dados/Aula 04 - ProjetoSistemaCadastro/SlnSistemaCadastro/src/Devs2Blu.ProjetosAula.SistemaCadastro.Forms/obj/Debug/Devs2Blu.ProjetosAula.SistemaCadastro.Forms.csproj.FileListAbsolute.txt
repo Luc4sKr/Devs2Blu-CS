@@ -24,6 +24,11 @@ C:\devs2blu\BancoDados\ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.Pr
 C:\devs2blu\BancoDados\ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.CopyComplete
 C:\devs2blu\BancoDados\ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe
 C:\devs2blu\BancoDados\ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.pdb
+C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.SuggestedBindingRedirects.cache
+C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe.config
+C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Form1.resources
+C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.GenerateResource.cache
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe.config
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.pdb
@@ -34,19 +39,12 @@ C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaC
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\BouncyCastle.Crypto.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Ubiety.Dns.Core.dll
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\System.Memory.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\System.Buffers.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\K4os.Compression.LZ4.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\K4os.Hash.xxHash.dll
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\System.Numerics.Vectors.dll
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Models.pdb
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\bin\Debug\MySql.Data.xml
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.AssemblyReference.cache
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.SuggestedBindingRedirects.cache
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe.config
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Form1.resources
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Properties.Resources.resources
-C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.GenerateResource.cache
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.CoreCompileInputs.cache
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.csproj.CopyComplete
 C:\Curso-CS-Devs2Blu\Banco de Dados\Aula 04 - ProjetoSistemaCadastro\SlnSistemaCadastro\src\Devs2Blu.ProjetosAula.SistemaCadastro.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaCadastro.Forms.exe

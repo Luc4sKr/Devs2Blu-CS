@@ -29,9 +29,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gpFormCadastro = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.txtCGCCPF = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.gpEnderecoCadastro = new System.Windows.Forms.GroupBox();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
@@ -64,6 +64,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
             this.gpFormCadastro.SuspendLayout();
             this.gpEnderecoCadastro.SuspendLayout();
             this.gpTipoPessoa.SuspendLayout();
@@ -76,8 +77,8 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // gpFormCadastro
             // 
             this.gpFormCadastro.BackColor = System.Drawing.Color.White;
-            this.gpFormCadastro.Controls.Add(this.btnLimpar);
             this.gpFormCadastro.Controls.Add(this.txtCGCCPF);
+            this.gpFormCadastro.Controls.Add(this.btnLimpar);
             this.gpFormCadastro.Controls.Add(this.txtNome);
             this.gpFormCadastro.Controls.Add(this.gpEnderecoCadastro);
             this.gpFormCadastro.Controls.Add(this.lblCGCCPF);
@@ -86,9 +87,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gpFormCadastro.Controls.Add(this.label1);
             this.gpFormCadastro.Controls.Add(this.cboConvenio);
             this.gpFormCadastro.Location = new System.Drawing.Point(16, 42);
-            this.gpFormCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpFormCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.gpFormCadastro.Name = "gpFormCadastro";
-            this.gpFormCadastro.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpFormCadastro.Padding = new System.Windows.Forms.Padding(4);
             this.gpFormCadastro.Size = new System.Drawing.Size(477, 404);
             this.gpFormCadastro.TabIndex = 3;
             this.gpFormCadastro.TabStop = false;
@@ -100,25 +101,17 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.ForeColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(19, 338);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(105, 38);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             // 
-            // txtCGCCPF
-            // 
-            this.txtCGCCPF.Location = new System.Drawing.Point(85, 66);
-            this.txtCGCCPF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCGCCPF.Name = "txtCGCCPF";
-            this.txtCGCCPF.Size = new System.Drawing.Size(137, 22);
-            this.txtCGCCPF.TabIndex = 13;
-            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(85, 34);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(332, 22);
             this.txtNome.TabIndex = 12;
@@ -139,9 +132,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gpEnderecoCadastro.Controls.Add(this.label4);
             this.gpEnderecoCadastro.Controls.Add(this.label3);
             this.gpEnderecoCadastro.Location = new System.Drawing.Point(8, 174);
-            this.gpEnderecoCadastro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpEnderecoCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.gpEnderecoCadastro.Name = "gpEnderecoCadastro";
-            this.gpEnderecoCadastro.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpEnderecoCadastro.Padding = new System.Windows.Forms.Padding(4);
             this.gpEnderecoCadastro.Size = new System.Drawing.Size(461, 117);
             this.gpEnderecoCadastro.TabIndex = 11;
             this.gpEnderecoCadastro.TabStop = false;
@@ -150,7 +143,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // mskCEP
             // 
             this.mskCEP.Location = new System.Drawing.Point(52, 27);
-            this.mskCEP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskCEP.Margin = new System.Windows.Forms.Padding(4);
             this.mskCEP.Mask = "00.000-00";
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(84, 22);
@@ -159,7 +152,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(52, 82);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(188, 22);
             this.txtBairro.TabIndex = 19;
@@ -167,7 +160,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(361, 54);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(76, 22);
             this.txtNumero.TabIndex = 18;
@@ -175,7 +168,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // txtCidade
             // 
             this.txtCidade.Location = new System.Drawing.Point(301, 26);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(137, 22);
             this.txtCidade.TabIndex = 17;
@@ -184,7 +177,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // 
             this.cboUF.FormattingEnabled = true;
             this.cboUF.Location = new System.Drawing.Point(172, 26);
-            this.cboUF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboUF.Margin = new System.Windows.Forms.Padding(4);
             this.cboUF.Name = "cboUF";
             this.cboUF.Size = new System.Drawing.Size(71, 24);
             this.cboUF.TabIndex = 16;
@@ -192,7 +185,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // txtRua
             // 
             this.txtRua.Location = new System.Drawing.Point(52, 54);
-            this.txtRua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRua.Margin = new System.Windows.Forms.Padding(4);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(249, 22);
             this.txtRua.TabIndex = 15;
@@ -288,9 +281,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gpTipoPessoa.Controls.Add(this.rdJuridica);
             this.gpTipoPessoa.Controls.Add(this.rdFisica);
             this.gpTipoPessoa.Location = new System.Drawing.Point(232, 71);
-            this.gpTipoPessoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpTipoPessoa.Margin = new System.Windows.Forms.Padding(4);
             this.gpTipoPessoa.Name = "gpTipoPessoa";
-            this.gpTipoPessoa.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpTipoPessoa.Padding = new System.Windows.Forms.Padding(4);
             this.gpTipoPessoa.Size = new System.Drawing.Size(187, 52);
             this.gpTipoPessoa.TabIndex = 8;
             this.gpTipoPessoa.TabStop = false;
@@ -300,7 +293,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // 
             this.rdJuridica.AutoSize = true;
             this.rdJuridica.Location = new System.Drawing.Point(88, 20);
-            this.rdJuridica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdJuridica.Margin = new System.Windows.Forms.Padding(4);
             this.rdJuridica.Name = "rdJuridica";
             this.rdJuridica.Size = new System.Drawing.Size(75, 20);
             this.rdJuridica.TabIndex = 9;
@@ -313,7 +306,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.rdFisica.AutoSize = true;
             this.rdFisica.Checked = true;
             this.rdFisica.Location = new System.Drawing.Point(8, 20);
-            this.rdFisica.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdFisica.Margin = new System.Windows.Forms.Padding(4);
             this.rdFisica.Name = "rdFisica";
             this.rdFisica.Size = new System.Drawing.Size(64, 20);
             this.rdFisica.TabIndex = 8;
@@ -336,7 +329,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // 
             this.cboConvenio.FormattingEnabled = true;
             this.cboConvenio.Location = new System.Drawing.Point(85, 101);
-            this.cboConvenio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboConvenio.Margin = new System.Windows.Forms.Padding(4);
             this.cboConvenio.Name = "cboConvenio";
             this.cboConvenio.Size = new System.Drawing.Size(137, 24);
             this.cboConvenio.TabIndex = 3;
@@ -348,36 +341,41 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.panelControles.Controls.Add(this.btnExcluir);
             this.panelControles.Controls.Add(this.btnInfo);
             this.panelControles.Location = new System.Drawing.Point(16, 455);
-            this.panelControles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelControles.Margin = new System.Windows.Forms.Padding(4);
             this.panelControles.Name = "panelControles";
             this.panelControles.Size = new System.Drawing.Size(1035, 89);
             this.panelControles.TabIndex = 4;
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvar.BackgroundImage")));
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalvar.Location = new System.Drawing.Point(8, 5);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalvar.Location = new System.Drawing.Point(15, 6);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(92, 80);
+            this.btnSalvar.Size = new System.Drawing.Size(136, 80);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluir.BackgroundImage")));
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExcluir.Location = new System.Drawing.Point(113, 4);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Location = new System.Drawing.Point(170, 6);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(92, 80);
+            this.btnExcluir.Size = new System.Drawing.Size(134, 80);
             this.btnExcluir.TabIndex = 1;
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnInfo
             // 
+            this.btnInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInfo.BackgroundImage")));
             this.btnInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInfo.Location = new System.Drawing.Point(939, 5);
-            this.btnInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(4);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(92, 80);
             this.btnInfo.TabIndex = 0;
@@ -387,9 +385,9 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // 
             this.gpConteudo.Controls.Add(this.gridPacientes);
             this.gpConteudo.Location = new System.Drawing.Point(501, 32);
-            this.gpConteudo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpConteudo.Margin = new System.Windows.Forms.Padding(4);
             this.gpConteudo.Name = "gpConteudo";
-            this.gpConteudo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpConteudo.Padding = new System.Windows.Forms.Padding(4);
             this.gpConteudo.Size = new System.Drawing.Size(548, 416);
             this.gpConteudo.TabIndex = 5;
             this.gpConteudo.TabStop = false;
@@ -400,7 +398,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gridPacientes.AllowUserToOrderColumns = true;
             this.gridPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridPacientes.Location = new System.Drawing.Point(0, 10);
-            this.gridPacientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridPacientes.Margin = new System.Windows.Forms.Padding(4);
             this.gridPacientes.Name = "gridPacientes";
             this.gridPacientes.ReadOnly = true;
             this.gridPacientes.RowHeadersWidth = 51;
@@ -448,6 +446,14 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
             // 
+            // txtCGCCPF
+            // 
+            this.txtCGCCPF.Location = new System.Drawing.Point(85, 67);
+            this.txtCGCCPF.Mask = "000.000.000-00";
+            this.txtCGCCPF.Name = "txtCGCCPF";
+            this.txtCGCCPF.Size = new System.Drawing.Size(137, 22);
+            this.txtCGCCPF.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,7 +464,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.Controls.Add(this.gpFormCadastro);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "+Devs2Blu - Sistema de Cadastro Hospitalar";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -489,7 +495,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private System.Windows.Forms.Label lblCGCCPF;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gpEnderecoCadastro;
-        private System.Windows.Forms.TextBox txtCGCCPF;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtNumero;
@@ -515,6 +520,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.MaskedTextBox txtCGCCPF;
     }
 }
 
