@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8DDD1FC-9569-4C0E-900E-7485E4F4940E}</ProjectGuid>
+    <ProjectGuid>{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Devs2Blu.ProjetosAula.SistemaCadastro.Forms</RootNamespace>
-    <AssemblyName>Devs2Blu.ProjetosAula.SistemaCadastro.Forms</AssemblyName>
+    <RootNamespace>Devs2Blu.ProjetosAula.SistemaAgenda.Forms</RootNamespace>
+    <AssemblyName>Devs2Blu.ProjetosAula.SistemaAgenda.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,10 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\ConnectionMySQL.cs" />
-    <Compile Include="Data\ConvenioRepository.cs" />
-    <Compile Include="Data\EnderecoRepository.cs" />
-    <Compile Include="Data\PacienteRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,23 +54,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -84,18 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Devs2Blu.ProjetosAula.OOP3.Models\Devs2Blu.ProjetosAula.SistemaCadastro.Models.csproj">
-      <Project>{65eefe8e-a5c9-470b-a2e4-78a175df2615}</Project>
-      <Name>Devs2Blu.ProjetosAula.SistemaCadastro.Models</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="assets\img\btnIconExcluir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnSalvar.BackgroundImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,6 +31,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gpFormCadastro = new System.Windows.Forms.GroupBox();
+            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.gpEnderecoCadastro = new System.Windows.Forms.GroupBox();
@@ -64,7 +65,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
             this.gpFormCadastro.SuspendLayout();
             this.gpEnderecoCadastro.SuspendLayout();
             this.gpTipoPessoa.SuspendLayout();
@@ -94,6 +94,14 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.gpFormCadastro.TabIndex = 3;
             this.gpFormCadastro.TabStop = false;
             this.gpFormCadastro.Text = "Formulário de Cadastro";
+            // 
+            // txtCGCCPF
+            // 
+            this.txtCGCCPF.Location = new System.Drawing.Point(85, 67);
+            this.txtCGCCPF.Mask = "000.000.000-00";
+            this.txtCGCCPF.Name = "txtCGCCPF";
+            this.txtCGCCPF.Size = new System.Drawing.Size(137, 22);
+            this.txtCGCCPF.TabIndex = 16;
             // 
             // btnLimpar
             // 
@@ -318,7 +326,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 111);
+            this.label1.Location = new System.Drawing.Point(12, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 16);
@@ -445,14 +453,6 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // txtCGCCPF
-            // 
-            this.txtCGCCPF.Location = new System.Drawing.Point(85, 67);
-            this.txtCGCCPF.Mask = "000.000.000-00";
-            this.txtCGCCPF.Name = "txtCGCCPF";
-            this.txtCGCCPF.Size = new System.Drawing.Size(137, 22);
-            this.txtCGCCPF.TabIndex = 16;
             // 
             // Form1
             // 

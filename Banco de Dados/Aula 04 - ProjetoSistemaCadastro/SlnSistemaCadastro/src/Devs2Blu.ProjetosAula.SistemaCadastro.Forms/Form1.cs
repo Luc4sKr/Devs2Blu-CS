@@ -2,13 +2,6 @@
 using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
@@ -31,6 +24,11 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
             cboConvenio.DataSource = new BindingSource(listConvenios, null);
             cboConvenio.DisplayMember = "nome";
             cboConvenio.ValueMember = "id";
+        }
+        private void PopulaDataGridPessoa()
+        {
+            var listPessoa = PacienteRepository.GetPessoas();
+            gridPacientes.DataSource = new BindingSource(listPessoa, null);
         }
 
         private bool ValidaFormCadastro()
@@ -74,20 +72,13 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
 
             return true;
         }
-
-        private void PopulaDataGridPessoa()
-        {
-            var listPessoa = PacienteRepository.GetPessoas();
-            gridPacientes.DataSource = new BindingSource(listPessoa, null);
-        }
-
-
         #endregion
 
         #region Events
         private void Form1_Load(object sender, EventArgs e)
         {
             PopulaComboConvenio();
+            PopulaDataGridPessoa();
         }
 
         private void rdFisica_CheckedChanged(object sender, EventArgs e)
@@ -111,20 +102,28 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms
                 paciente.Pessoa.CGCCPF = txtCGCCPF.Text.Replace(",", ".");
                 paciente.Convenio.Id = (int)cboConvenio.SelectedValue;
 
-                MessageBox.Show($"Convenio: {paciente.Convenio.Id}");
+                Endereco endereco = new Endereco();
+                endereco.CEP = mskCEP.Text;
+                endereco.Rua = txtRua.Text;
+                endereco.Bairro = txtBairro.Text;
+                endereco.UF = cboUF.Text;
+                endereco.Cidade = txtCidade.Text;
+                endereco.Numero = Int32.Parse(txtNumero.Text);
 
-                var pacienteResult = PacienteRepository.Save(paciente);
+                var pacienteResult = PacienteRepository.Save(paciente, endereco);
                 if (pacienteResult.Pessoa.Id > 0)
                 {
                     MessageBox.Show($"Pessoa {paciente.Pessoa.Id} - {paciente.Pessoa.Nome} - {paciente.Pessoa.CGCCPF} salva com sucesso!", "Adicionar Pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    PopulaDataGridPessoa();
                 }
             }
         }
-        #endregion
-
         private void btnExcluir_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
+
+
     }
 }

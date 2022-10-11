@@ -1,7 +1,7 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 {
-    public class ConvenioRepository
+    public class EnderecoRepository
     {
         public MySqlDataReader FetchAll()
         {
@@ -17,7 +17,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
 
             try
             {
-                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_CONVENIO, conn);
+                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_ENDERECO, conn);
                 MySqlDataReader dataReader = cmd.ExecuteReader();
 
                 return dataReader;
@@ -30,7 +30,7 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
         }
 
         #region SQLS
-        private const String SQL_SELECT_CONVENIO = "SELECT * FROM convenio";
+        private const String SQL_SELECT_ENDERECO = "SELECT * FROM endereco";
         #endregion
     }
 }

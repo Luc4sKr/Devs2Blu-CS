@@ -67,22 +67,21 @@ CREATE TABLE IF NOT EXISTS `sistemacadastro`.`paciente` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `id_pessoa` INT NOT NULL,
   `convenio_id` INT NOT NULL,
-  `numero_prontuario` INT NOT NULL,
+  `numero_prontuario` INT NULL,
   `paciente_risco` VARCHAR(5) NULL,
   `flstatus` ENUM('E', 'A') NOT NULL DEFAULT 'A' COMMENT 'E - Excluído\nA - Ativo',
   `flobito` TINYINT NOT NULL DEFAULT 0 COMMENT '0 - Não\n1 - Sim',
   PRIMARY KEY (`id`),
-  INDEX `index_nrprontuario`,
-  INDEX `fk_paciente_pessoa1_idx` (`id_pessoa`),
   INDEX `fk_paciente_convenio1_idx` (`convenio_id`),
-  CONSTRAINT `fk_paciente_pessoa1`
-    FOREIGN KEY (`id_pessoa`)
-    REFERENCES `sistemacadastro`.`pessoa` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  INDEX `fk_paciente_pessoa1_idx` (`id_pessoa`),
   CONSTRAINT `fk_paciente_convenio1`
     FOREIGN KEY (`convenio_id`)
     REFERENCES `sistemacadastro`.`convenio` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_paciente_pessoa1`
+    FOREIGN KEY (`id_pessoa`)
+    REFERENCES `sistemacadastro`.`pessoa` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
