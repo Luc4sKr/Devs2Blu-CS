@@ -8,18 +8,20 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Models.Models
 {
     public class Estado
     {
-        public int Id_estado { get; set; }
+        public int Id { get; set; }
         public String Nome { get; set; }
+        public String Descricao { get; set; }
 
         public Estado()
         {
 
         }
 
-        public Estado(int id, String nome)
+        public Estado(int id, String nome, String descricao)
         {
-            Id_estado = id;
+            Id = id;
             Nome = nome;
+            Descricao = descricao;
         }
     }
 }

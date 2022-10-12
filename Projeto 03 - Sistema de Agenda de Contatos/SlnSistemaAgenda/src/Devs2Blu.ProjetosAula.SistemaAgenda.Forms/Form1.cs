@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
 {
-    public partial class Form1 : Form
+    public partial class FormCadastro : Form
     {
-        public Form1()
+        public FormCadastro()
         {
             InitializeComponent();
         }

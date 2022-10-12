@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.SistemaAgenda.Models.Enum
 {
-    internal enum EnumFlstatus
+    public enum EnumFlstatus
     {
-        [Description("Ativo")]
-        A = 1,
         [Description("Inativo")]
-        I = 2
+        I = 1,
+        [Description("Ativo")]
+        A = 2,
+        [Description("Concluído")]
+        C = 3,
+        [Description("Remarcado")]
+        R = 4
     }
 }

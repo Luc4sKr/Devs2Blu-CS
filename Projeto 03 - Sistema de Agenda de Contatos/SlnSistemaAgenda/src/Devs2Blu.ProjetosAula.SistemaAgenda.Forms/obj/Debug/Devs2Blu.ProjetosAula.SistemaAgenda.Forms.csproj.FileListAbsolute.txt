@@ -1,0 +1,11 @@
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.exe.config
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.exe
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.pdb
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj.SuggestedBindingRedirects.cache
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Properties.Resources.resources
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj.GenerateResource.cache
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.exe
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.pdb
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.FormCadastro.resources

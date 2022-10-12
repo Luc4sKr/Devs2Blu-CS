@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.ProjetosAula.SistemaAgenda.Forms", "src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj", "{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.ProjetosAula.SistemaAgenda.Models", "Devs2Blu.ProjetosAula.SistemaAgenda.Models\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj", "{FE3D5E1E-E47F-4177-AFBF-7751E0AC0A86}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F7AF53-DA35-4722-88B0-CA5A3E5F8FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3D5E1E-E47F-4177-AFBF-7751E0AC0A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3D5E1E-E47F-4177-AFBF-7751E0AC0A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3D5E1E-E47F-4177-AFBF-7751E0AC0A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3D5E1E-E47F-4177-AFBF-7751E0AC0A86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
