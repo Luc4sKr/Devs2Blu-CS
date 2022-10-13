@@ -52,8 +52,6 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data
                 cmd.Parameters.Add("@rua", MySqlDbType.VarChar, 45).Value = FormCadastro.EnderecoCompromisso.Rua;
                 cmd.Parameters.Add("@numero", MySqlDbType.Int32).Value = FormCadastro.EnderecoCompromisso.Numero;
 
-                MessageBox.Show($"{FormCadastro.EnderecoCompromisso.Cep}");
-
                 cmd.ExecuteNonQuery();
             }
             catch (MySqlException myExc)

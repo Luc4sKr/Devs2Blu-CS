@@ -32,13 +32,14 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.gbContato = new System.Windows.Forms.GroupBox();
-            this.txtNumeroTel = new System.Windows.Forms.TextBox();
+            this.mskNumeroTel = new System.Windows.Forms.MaskedTextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNumeroTel = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.gbEndereco = new System.Windows.Forms.GroupBox();
+            this.numNumero = new System.Windows.Forms.NumericUpDown();
             this.txtRua = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -51,25 +52,24 @@
             this.lblBirro = new System.Windows.Forms.Label();
             this.lblRua = new System.Windows.Forms.Label();
             this.gbCompromisso = new System.Windows.Forms.GroupBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblDescricao = new System.Windows.Forms.Label();
-            this.lblDataInicio = new System.Windows.Forms.Label();
-            this.lblDataFim = new System.Windows.Forms.Label();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.numNumero = new System.Windows.Forms.NumericUpDown();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.lblDataFim = new System.Windows.Forms.Label();
+            this.lblDataInicio = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gbButtons = new System.Windows.Forms.GroupBox();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.gbContato.SuspendLayout();
             this.gbEndereco.SuspendLayout();
-            this.gbCompromisso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNumero)).BeginInit();
+            this.gbCompromisso.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbButtons.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             // gbContato
             // 
             this.gbContato.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.gbContato.Controls.Add(this.txtNumeroTel);
+            this.gbContato.Controls.Add(this.mskNumeroTel);
             this.gbContato.Controls.Add(this.txtEmail);
             this.gbContato.Controls.Add(this.txtNome);
             this.gbContato.Controls.Add(this.lblNumeroTel);
@@ -90,12 +90,13 @@
             this.gbContato.TabStop = false;
             this.gbContato.Text = "Contato";
             // 
-            // txtNumeroTel
+            // mskNumeroTel
             // 
-            this.txtNumeroTel.Location = new System.Drawing.Point(91, 91);
-            this.txtNumeroTel.Name = "txtNumeroTel";
-            this.txtNumeroTel.Size = new System.Drawing.Size(206, 22);
-            this.txtNumeroTel.TabIndex = 5;
+            this.mskNumeroTel.Location = new System.Drawing.Point(91, 94);
+            this.mskNumeroTel.Mask = "(00) 00 00000-0000";
+            this.mskNumeroTel.Name = "mskNumeroTel";
+            this.mskNumeroTel.Size = new System.Drawing.Size(119, 22);
+            this.mskNumeroTel.TabIndex = 6;
             // 
             // txtEmail
             // 
@@ -159,6 +160,14 @@
             this.gbEndereco.TabIndex = 1;
             this.gbEndereco.TabStop = false;
             this.gbEndereco.Text = "Endereço";
+            // 
+            // numNumero
+            // 
+            this.numNumero.Location = new System.Drawing.Point(270, 89);
+            this.numNumero.Name = "numNumero";
+            this.numNumero.Size = new System.Drawing.Size(55, 22);
+            this.numNumero.TabIndex = 3;
+            this.numNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtRua
             // 
@@ -269,48 +278,19 @@
             this.gbCompromisso.TabStop = false;
             this.gbCompromisso.Text = "Compromisso";
             // 
-            // lblTitulo
+            // dateTimePicker2
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(31, 33);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(40, 16);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Título";
+            this.dateTimePicker2.Location = new System.Drawing.Point(78, 168);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(246, 22);
+            this.dateTimePicker2.TabIndex = 7;
             // 
-            // lblDescricao
+            // dateTimePicker1
             // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Location = new System.Drawing.Point(7, 64);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(69, 16);
-            this.lblDescricao.TabIndex = 1;
-            this.lblDescricao.Text = "Descrição";
-            // 
-            // lblDataInicio
-            // 
-            this.lblDataInicio.AutoSize = true;
-            this.lblDataInicio.Location = new System.Drawing.Point(6, 142);
-            this.lblDataInicio.Name = "lblDataInicio";
-            this.lblDataInicio.Size = new System.Drawing.Size(70, 16);
-            this.lblDataInicio.TabIndex = 2;
-            this.lblDataInicio.Text = "Data início";
-            // 
-            // lblDataFim
-            // 
-            this.lblDataFim.AutoSize = true;
-            this.lblDataFim.Location = new System.Drawing.Point(20, 173);
-            this.lblDataFim.Name = "lblDataFim";
-            this.lblDataFim.Size = new System.Drawing.Size(56, 16);
-            this.lblDataFim.TabIndex = 3;
-            this.lblDataFim.Text = "Data fim";
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.Location = new System.Drawing.Point(78, 27);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(119, 22);
-            this.txtTitulo.TabIndex = 4;
+            this.dateTimePicker1.Location = new System.Drawing.Point(78, 137);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
+            this.dateTimePicker1.TabIndex = 6;
             // 
             // txtDescricao
             // 
@@ -322,27 +302,48 @@
             this.txtDescricao.Size = new System.Drawing.Size(246, 65);
             this.txtDescricao.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // txtTitulo
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(78, 137);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
-            this.dateTimePicker1.TabIndex = 6;
+            this.txtTitulo.Location = new System.Drawing.Point(78, 27);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(119, 22);
+            this.txtTitulo.TabIndex = 4;
             // 
-            // dateTimePicker2
+            // lblDataFim
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(78, 168);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(246, 22);
-            this.dateTimePicker2.TabIndex = 7;
+            this.lblDataFim.AutoSize = true;
+            this.lblDataFim.Location = new System.Drawing.Point(20, 173);
+            this.lblDataFim.Name = "lblDataFim";
+            this.lblDataFim.Size = new System.Drawing.Size(56, 16);
+            this.lblDataFim.TabIndex = 3;
+            this.lblDataFim.Text = "Data fim";
             // 
-            // numNumero
+            // lblDataInicio
             // 
-            this.numNumero.Location = new System.Drawing.Point(270, 89);
-            this.numNumero.Name = "numNumero";
-            this.numNumero.Size = new System.Drawing.Size(55, 22);
-            this.numNumero.TabIndex = 3;
-            this.numNumero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblDataInicio.AutoSize = true;
+            this.lblDataInicio.Location = new System.Drawing.Point(6, 142);
+            this.lblDataInicio.Name = "lblDataInicio";
+            this.lblDataInicio.Size = new System.Drawing.Size(70, 16);
+            this.lblDataInicio.TabIndex = 2;
+            this.lblDataInicio.Text = "Data início";
+            // 
+            // lblDescricao
+            // 
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Location = new System.Drawing.Point(7, 64);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(69, 16);
+            this.lblDescricao.TabIndex = 1;
+            this.lblDescricao.Text = "Descrição";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Location = new System.Drawing.Point(31, 33);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(40, 16);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Título";
             // 
             // contextMenuStrip1
             // 
@@ -373,16 +374,14 @@
             this.gbButtons.TabIndex = 5;
             this.gbButtons.TabStop = false;
             // 
-            // btnSalvar
+            // btnExcluir
             // 
-            this.btnSalvar.ForeColor = System.Drawing.Color.Black;
-            this.btnSalvar.Location = new System.Drawing.Point(23, 17);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
-            this.btnSalvar.TabIndex = 0;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            this.btnExcluir.Location = new System.Drawing.Point(249, 17);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 2;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnLimpar
             // 
@@ -394,14 +393,16 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // btnExcluir
+            // btnSalvar
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(249, 17);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 2;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnSalvar.ForeColor = System.Drawing.Color.Black;
+            this.btnSalvar.Location = new System.Drawing.Point(23, 17);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // FormCadastro
             // 
@@ -419,9 +420,9 @@
             this.gbContato.PerformLayout();
             this.gbEndereco.ResumeLayout(false);
             this.gbEndereco.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNumero)).EndInit();
             this.gbCompromisso.ResumeLayout(false);
             this.gbCompromisso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numNumero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbButtons.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -437,7 +438,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.GroupBox gbEndereco;
-        private System.Windows.Forms.TextBox txtNumeroTel;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.MaskedTextBox mskCEP;
@@ -467,6 +467,7 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.MaskedTextBox mskNumeroTel;
     }
 }
 
