@@ -39,9 +39,9 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.gbEndereco = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.cboUF = new System.Windows.Forms.ComboBox();
             this.lblNumero = new System.Windows.Forms.Label();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
@@ -142,9 +142,9 @@
             // 
             this.gbEndereco.BackColor = System.Drawing.SystemColors.ControlDark;
             this.gbEndereco.Controls.Add(this.numNumero);
-            this.gbEndereco.Controls.Add(this.textBox4);
-            this.gbEndereco.Controls.Add(this.textBox3);
-            this.gbEndereco.Controls.Add(this.textBox1);
+            this.gbEndereco.Controls.Add(this.txtRua);
+            this.gbEndereco.Controls.Add(this.txtBairro);
+            this.gbEndereco.Controls.Add(this.txtCidade);
             this.gbEndereco.Controls.Add(this.cboUF);
             this.gbEndereco.Controls.Add(this.lblNumero);
             this.gbEndereco.Controls.Add(this.mskCEP);
@@ -160,26 +160,26 @@
             this.gbEndereco.TabStop = false;
             this.gbEndereco.Text = "Endereço";
             // 
-            // textBox4
+            // txtRua
             // 
-            this.textBox4.Location = new System.Drawing.Point(65, 120);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(260, 22);
-            this.textBox4.TabIndex = 10;
+            this.txtRua.Location = new System.Drawing.Point(65, 120);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(260, 22);
+            this.txtRua.TabIndex = 10;
             // 
-            // textBox3
+            // txtBairro
             // 
-            this.textBox3.Location = new System.Drawing.Point(65, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtBairro.Location = new System.Drawing.Point(65, 92);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(133, 22);
+            this.txtBairro.TabIndex = 9;
             // 
-            // textBox1
+            // txtCidade
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtCidade.Location = new System.Drawing.Point(65, 60);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(133, 22);
+            this.txtCidade.TabIndex = 7;
             // 
             // cboUF
             // 
@@ -382,6 +382,7 @@
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
@@ -447,9 +448,9 @@
         private System.Windows.Forms.Label lblUF;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.ComboBox cboUF;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.GroupBox gbCompromisso;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.TextBox txtTitulo;

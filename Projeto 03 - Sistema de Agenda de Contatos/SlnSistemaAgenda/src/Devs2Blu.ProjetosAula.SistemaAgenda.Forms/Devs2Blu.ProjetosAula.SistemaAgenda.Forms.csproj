@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Devs2Blu.ProjetosAula.SistemaAgenda.Models\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj">
+      <Project>{fe3d5e1e-e47f-4177-afbf-7751e0ac0a86}</Project>
+      <Name>Devs2Blu.ProjetosAula.SistemaAgenda.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
