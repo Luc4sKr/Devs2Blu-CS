@@ -17,7 +17,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data
             try
             {
                 Server = "localhost";
-                DataBase = "sistemacadastro";
+                DataBase = "sistemaagendacontatos";
                 User = "root";
                 Password = "root";
                 ConnectionString = $"Persist Security Info=False;server={Server};database={DataBase};uid={User};server={Server};database={DataBase};uid={User};pwd='{Password}'";

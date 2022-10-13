@@ -413,6 +413,7 @@
             this.Controls.Add(this.gbContato);
             this.Name = "FormCadastro";
             this.Text = "Sistema de Agenda de Contatos";
+            this.Load += new System.EventHandler(this.FormCadastro_Load);
             this.gbContato.ResumeLayout(false);
             this.gbContato.PerformLayout();
             this.gbEndereco.ResumeLayout(false);

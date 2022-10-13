@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ConnectionMySQL.cs" />
+    <Compile Include="Data\EnderecoRepository.cs" />
+    <Compile Include="Data\EstadoRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

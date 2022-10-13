@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,21 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
         {
             InitializeComponent();
         }
+
+        #region Methods
+        private void PopulaComboEstados()
+        {
+            var listEstados = EstadoRepository.FetchAll();
+            cboUF.DataSource = new BindingSource(listEstados, null);
+            cboUF.DisplayMember = "uf";
+        }
+        #endregion
+
+        #region Events
+        private void FormCadastro_Load(object sender, EventArgs e)
+        {
+            PopulaComboEstados();
+        }
+        #endregion
     }
 }
