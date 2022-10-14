@@ -1,15 +1,10 @@
 ﻿using Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Models;
+using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Enum;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
 {
@@ -17,11 +12,11 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
     {
         public EnderecoRepository EnderecoRepository = new EnderecoRepository();
         public ContatoRepository ContatoRepository = new ContatoRepository();
-        
+        public CompromissoRepository CompromissoRepository = new CompromissoRepository();
 
         public static Endereco EnderecoCompromisso { get; set; }
         public static Contato Contato { get; set; }
-        public static Compromisso NovoCompromisso { get; set; }
+        public static Compromisso Compromisso { get; set; }
 
         public FormCadastro()
         {
@@ -59,7 +54,18 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
 
         private void SalvarCompromisso()
         {
+            Compromisso = new Compromisso();
+            Compromisso.Contato = Contato;
+            Compromisso.Endereco = EnderecoCompromisso;
+            Compromisso.Titulo = txtTitulo.Text;
+            Compromisso.Descricao = txtDescricao.Text;
 
+            var diaDaSemana = dtpDataInicio.Value.ToString("ddd", new CultureInfo("pt-BR")).ToUpper();
+            Compromisso.DiaSemana = diaDaSemana;
+
+            Compromisso.DataInicio = dtpDataInicio.Value;
+            Compromisso.DataFim = dtpDataFim.Value;
+            CompromissoRepository.Save();
         }
         #endregion
 
@@ -74,6 +80,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
         {
             SalvarEndereco();
             SalvarContato();
+            SalvarCompromisso();
         }
         #endregion
 

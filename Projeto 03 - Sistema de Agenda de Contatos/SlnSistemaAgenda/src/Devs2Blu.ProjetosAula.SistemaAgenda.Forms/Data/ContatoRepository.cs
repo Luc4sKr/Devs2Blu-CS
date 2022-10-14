@@ -52,6 +52,8 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data
                 cmd.Parameters.Add("@flstatus", MySqlDbType.Enum).Value = EnumFlstatus.A;
 
                 cmd.ExecuteNonQuery();
+
+                FormCadastro.Contato.Id = (int)cmd.LastInsertedId;
             }
             catch (MySqlException myExc)
             {

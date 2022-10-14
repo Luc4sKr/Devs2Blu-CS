@@ -53,6 +53,8 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data
                 cmd.Parameters.Add("@numero", MySqlDbType.Int32).Value = FormCadastro.EnderecoCompromisso.Numero;
 
                 cmd.ExecuteNonQuery();
+
+                FormCadastro.EnderecoCompromisso.Id = (int)cmd.LastInsertedId;
             }
             catch (MySqlException myExc)
             {

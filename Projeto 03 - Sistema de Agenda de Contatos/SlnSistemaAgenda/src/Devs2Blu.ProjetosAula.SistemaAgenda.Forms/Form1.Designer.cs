@@ -52,8 +52,8 @@
             this.lblBirro = new System.Windows.Forms.Label();
             this.lblRua = new System.Windows.Forms.Label();
             this.gbCompromisso = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataFim = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataInicio = new System.Windows.Forms.DateTimePicker();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblDataFim = new System.Windows.Forms.Label();
@@ -263,8 +263,8 @@
             // gbCompromisso
             // 
             this.gbCompromisso.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.gbCompromisso.Controls.Add(this.dateTimePicker2);
-            this.gbCompromisso.Controls.Add(this.dateTimePicker1);
+            this.gbCompromisso.Controls.Add(this.dtpDataFim);
+            this.gbCompromisso.Controls.Add(this.dtpDataInicio);
             this.gbCompromisso.Controls.Add(this.txtDescricao);
             this.gbCompromisso.Controls.Add(this.txtTitulo);
             this.gbCompromisso.Controls.Add(this.lblDataFim);
@@ -278,19 +278,19 @@
             this.gbCompromisso.TabStop = false;
             this.gbCompromisso.Text = "Compromisso";
             // 
-            // dateTimePicker2
+            // dtpDataFim
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(78, 168);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(246, 22);
-            this.dateTimePicker2.TabIndex = 7;
+            this.dtpDataFim.Location = new System.Drawing.Point(78, 168);
+            this.dtpDataFim.Name = "dtpDataFim";
+            this.dtpDataFim.Size = new System.Drawing.Size(246, 22);
+            this.dtpDataFim.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // dtpDataInicio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(78, 137);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(246, 22);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dtpDataInicio.Location = new System.Drawing.Point(78, 137);
+            this.dtpDataInicio.Name = "dtpDataInicio";
+            this.dtpDataInicio.Size = new System.Drawing.Size(246, 22);
+            this.dtpDataInicio.TabIndex = 6;
             // 
             // txtDescricao
             // 
@@ -458,8 +458,8 @@
         private System.Windows.Forms.Label lblDataInicio;
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDataFim;
+        private System.Windows.Forms.DateTimePicker dtpDataInicio;
         private System.Windows.Forms.NumericUpDown numNumero;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.DataGridView dataGridView1;

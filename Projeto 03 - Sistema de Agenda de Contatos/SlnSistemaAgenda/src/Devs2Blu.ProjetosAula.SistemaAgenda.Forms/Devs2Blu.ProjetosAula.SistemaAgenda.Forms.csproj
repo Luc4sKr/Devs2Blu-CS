@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\CompromissoRepository.cs" />
     <Compile Include="Data\ConnectionMySQL.cs" />
     <Compile Include="Data\ContatoRepository.cs" />
     <Compile Include="Data\EnderecoRepository.cs" />
