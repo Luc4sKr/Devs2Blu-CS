@@ -214,6 +214,7 @@
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(71, 22);
             this.mskCEP.TabIndex = 5;
+            this.mskCEP.TextChanged += new System.EventHandler(this.mskCEP_TextChanged);
             // 
             // lblCEP
             // 

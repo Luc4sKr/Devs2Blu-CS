@@ -1,6 +1,6 @@
 ﻿using Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Models;
-using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Enum;
+using Correios;
 using MySql.Data.MySqlClient;
 using System;
 using System.Windows.Forms;
@@ -91,6 +91,28 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
             PopulaGridContatos();
         }
 
+        private void mskCEP_TextChanged(object sender, EventArgs e)
+        {
+            if (mskCEP.Text.Length == 10)
+            {
+                try
+                {
+                    CorreiosApi correiosApi = new CorreiosApi();
+                    var retorno = correiosApi.consultaCEP(mskCEP.Text);
+                    txtBairro.Text = retorno.bairro;
+                    txtCidade.Text = retorno.cidade;
+                    txtRua.Text = retorno.end;
+                    cboUF.Text = retorno.uf;
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("CEP não encontrado!", erro.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    mskCEP.Text = "";
+                    mskCEP.Focus();
+                }
+            }
+        }
+
         #region Buttons
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -98,6 +120,7 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
             SalvarContato();
             SalvarCompromisso();
         }
+
 
         #endregion
 
