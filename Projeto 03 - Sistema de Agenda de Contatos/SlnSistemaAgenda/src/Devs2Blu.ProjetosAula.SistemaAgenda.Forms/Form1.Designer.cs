@@ -61,7 +61,7 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridContatos = new System.Windows.Forms.DataGridView();
             this.gbButtons = new System.Windows.Forms.GroupBox();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -70,7 +70,7 @@
             this.gbEndereco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNumero)).BeginInit();
             this.gbCompromisso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridContatos)).BeginInit();
             this.gbButtons.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -351,15 +351,15 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // dataGridView1
+            // gridContatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(364, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(706, 553);
-            this.dataGridView1.TabIndex = 4;
+            this.gridContatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridContatos.Location = new System.Drawing.Point(364, 13);
+            this.gridContatos.Name = "gridContatos";
+            this.gridContatos.RowHeadersWidth = 51;
+            this.gridContatos.RowTemplate.Height = 24;
+            this.gridContatos.Size = new System.Drawing.Size(706, 553);
+            this.gridContatos.TabIndex = 4;
             // 
             // gbButtons
             // 
@@ -409,12 +409,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1082, 578);
             this.Controls.Add(this.gbButtons);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridContatos);
             this.Controls.Add(this.gbCompromisso);
             this.Controls.Add(this.gbEndereco);
             this.Controls.Add(this.gbContato);
             this.Name = "FormCadastro";
             this.Text = "Sistema de Agenda de Contatos";
+            this.Activated += new System.EventHandler(this.FormCadastro_Activated);
             this.Load += new System.EventHandler(this.FormCadastro_Load);
             this.gbContato.ResumeLayout(false);
             this.gbContato.PerformLayout();
@@ -423,7 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numNumero)).EndInit();
             this.gbCompromisso.ResumeLayout(false);
             this.gbCompromisso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridContatos)).EndInit();
             this.gbButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -462,7 +463,7 @@
         private System.Windows.Forms.DateTimePicker dtpDataInicio;
         private System.Windows.Forms.NumericUpDown numNumero;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridContatos;
         private System.Windows.Forms.GroupBox gbButtons;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;

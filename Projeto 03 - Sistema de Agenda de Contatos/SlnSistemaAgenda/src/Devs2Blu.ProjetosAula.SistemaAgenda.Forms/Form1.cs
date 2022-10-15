@@ -10,9 +10,9 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
 {
     internal partial class FormCadastro : Form
     {
-        public EnderecoRepository EnderecoRepository = new EnderecoRepository();
-        public ContatoRepository ContatoRepository = new ContatoRepository();
-        public CompromissoRepository CompromissoRepository = new CompromissoRepository();
+        public EnderecoRepository EnderecoRepository { get; set; }
+        public ContatoRepository ContatoRepository { get; set; }
+        public CompromissoRepository CompromissoRepository { get; set;   }
 
         public static Endereco EnderecoCompromisso { get; set; }
         public static Contato Contato { get; set; }
@@ -28,7 +28,14 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
         {
             var listEstados = EstadoRepository.FetchAll();
             cboUF.DataSource = new BindingSource(listEstados, null);
+            cboUF.ValueMember = "uf";
             cboUF.DisplayMember = "uf";
+        }
+
+        private void PopulaGridContatos()
+        {
+            MySqlDataReader rdrContatos = ContatoRepository.FetchAll();
+            gridContatos.DataSource = new BindingSource(rdrContatos, null);
         }
 
         private void SalvarEndereco()
@@ -72,7 +79,16 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
         #region Events
         private void FormCadastro_Load(object sender, EventArgs e)
         {
+            this.EnderecoRepository = new EnderecoRepository();
+            this.ContatoRepository = new ContatoRepository();
+            this.CompromissoRepository = new CompromissoRepository();
+
             PopulaComboEstados();
+        }
+
+        private void FormCadastro_Activated(object sender, EventArgs e)
+        {
+            PopulaGridContatos();
         }
 
         #region Buttons
@@ -82,10 +98,11 @@ namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms
             SalvarContato();
             SalvarCompromisso();
         }
-        #endregion
 
         #endregion
 
+        #endregion
 
+        
     }
 }
