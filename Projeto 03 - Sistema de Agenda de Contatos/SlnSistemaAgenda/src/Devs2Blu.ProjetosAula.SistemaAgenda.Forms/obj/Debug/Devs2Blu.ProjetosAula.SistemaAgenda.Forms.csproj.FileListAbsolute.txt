@@ -2,6 +2,7 @@ C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.exe
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.pdb
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\AngleSharp.dll
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Correios.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -30,6 +31,7 @@ C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\K4os.Hash.xxHash.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.pdb
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\AngleSharp.xml
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Correios.pdb
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -57,5 +59,3 @@ C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.csproj.CopyComplete
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.exe
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Forms.pdb
-C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Correios.dll
-C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Forms\bin\Debug\Correios.pdb

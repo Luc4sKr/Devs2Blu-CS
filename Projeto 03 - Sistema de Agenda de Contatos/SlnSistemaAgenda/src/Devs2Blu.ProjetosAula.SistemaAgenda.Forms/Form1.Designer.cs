@@ -164,6 +164,11 @@
             // numNumero
             // 
             this.numNumero.Location = new System.Drawing.Point(270, 89);
+            this.numNumero.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
             this.numNumero.Name = "numNumero";
             this.numNumero.Size = new System.Drawing.Size(55, 22);
             this.numNumero.TabIndex = 3;
@@ -361,6 +366,7 @@
             this.gridContatos.RowTemplate.Height = 24;
             this.gridContatos.Size = new System.Drawing.Size(706, 553);
             this.gridContatos.TabIndex = 4;
+            this.gridContatos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridContatos_CellContentDoubleClick);
             // 
             // gbButtons
             // 
@@ -383,6 +389,7 @@
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -393,6 +400,7 @@
             this.btnLimpar.TabIndex = 1;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnSalvar
             // 

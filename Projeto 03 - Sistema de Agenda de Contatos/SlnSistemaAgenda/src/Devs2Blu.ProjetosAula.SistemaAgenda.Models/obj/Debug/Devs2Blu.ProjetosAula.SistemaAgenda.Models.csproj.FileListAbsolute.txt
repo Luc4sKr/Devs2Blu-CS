@@ -15,8 +15,6 @@ C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.CopyComplete
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.pdb
-C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.AssemblyReference.cache
-C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.CoreCompileInputs.cache
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.pdb
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\MySql.Data.dll
@@ -29,6 +27,8 @@ C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\K4os.Compression.LZ4.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\K4os.Hash.xxHash.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\bin\Debug\MySql.Data.xml
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.CoreCompileInputs.cache
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.csproj.CopyComplete
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.dll
 C:\Curso-CS-Devs2Blu\Projeto 03 - Sistema de Agenda de Contatos\SlnSistemaAgenda\src\Devs2Blu.ProjetosAula.SistemaAgenda.Models\obj\Debug\Devs2Blu.ProjetosAula.SistemaAgenda.Models.pdb

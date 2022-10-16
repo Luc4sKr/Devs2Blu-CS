@@ -1,86 +1,40 @@
-﻿using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Interfaces;
+﻿using Devs2Blu.ProjetosAula.SistemaAgenda.Models.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Windows.Forms;
 
 namespace Devs2Blu.ProjetosAula.SistemaAgenda.Forms.Data
 {
-    public class CompromissoRepository : IRepository
+    public class CompromissoRepository : BaseRepository
     {
-        #region FACADE
-        public MySqlDataReader FetchAll()
+        public ContatoRepository ContatoRepository { get; set; }
+        public EnderecoRepository EnderecoRepository { get; set; }
+
+        public CompromissoRepository() : base("compromisso")
         {
-            return FetchAllCompromisso();
+            ContatoRepository = new ContatoRepository();
+            EnderecoRepository = new EnderecoRepository();
         }
 
-        public void Save()
+        public new Compromisso FindById(int id)
         {
-            SaveCompromisso();
+            Compromisso compromisso = new Compromisso();
+            var r = base.FindById(id);
+            while(r.Read())
+            {
+                compromisso = new Compromisso(
+                    r.GetInt32("id"),
+                    ContatoRepository.FindById(r.GetInt32("id_contato")),
+                    EnderecoRepository.FindById(r.GetInt32("id_endereco")),
+                    r.GetString("titulo"),
+                    r.GetString("descricao"),
+                    r.GetString("dia_semana"),
+                    r.GetDateTime("data_inicio"),
+                    r.GetDateTime("data_fim"),
+                    GetStatus(r.GetString("flstatus")));
+            }
+
+            return compromisso;
         }
-        #endregion
-
-        private MySqlDataReader FetchAllCompromisso()
-        {
-            MySqlConnection connection = ConnectionMySQL.GetConnection();
-
-            try
-            {
-                MySqlCommand cmd = new MySqlCommand(SQL_SELECT_COMPROMISSO, connection);
-                MySqlDataReader dataReader = cmd.ExecuteReader();
-
-                return dataReader;
-            }
-            catch (MySqlException myExc)
-            {
-                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
-            }
-        }
-
-        private void SaveCompromisso()
-        {
-            MySqlConnection connection = ConnectionMySQL.GetConnection();
-
-            try
-            {
-                MySqlCommand cmd = new MySqlCommand(SQL_INSERT_COMPROMISSO, connection);
-
-                cmd.Parameters.Add("@id_contato", MySqlDbType.Int32).Value = FormCadastro.Compromisso.Contato.Id;
-                cmd.Parameters.Add("@id_endereco", MySqlDbType.Int32).Value = FormCadastro.Compromisso.Endereco.Id;
-                cmd.Parameters.Add("@titulo", MySqlDbType.VarChar, 45).Value = FormCadastro.Compromisso.Titulo;
-                cmd.Parameters.Add("@descricao", MySqlDbType.VarChar, 255).Value = FormCadastro.Compromisso.Descricao;
-                cmd.Parameters.Add("@dia_semana", MySqlDbType.Enum).Value = FormCadastro.Compromisso.DiaSemana;
-                cmd.Parameters.Add("@data_inicio", MySqlDbType.DateTime).Value = FormCadastro.Compromisso.DataInicio;
-                cmd.Parameters.Add("@data_fim", MySqlDbType.DateTime).Value = FormCadastro.Compromisso.DataFim;
-
-                cmd.ExecuteNonQuery();
-
-                FormCadastro.Compromisso.Id = (int)cmd.LastInsertedId;
-            }
-            catch (MySqlException myExc)
-            {
-                MessageBox.Show(myExc.Message, "Erro de MySQL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
-            }
-        }
-
-        private const String SQL_SELECT_COMPROMISSO = "SELECT * FROM compromisso";
-
-        private const String SQL_INSERT_COMPROMISSO = @"INSERT INTO compromisso
-                                                        (id_contato,
-                                                        id_endereco,
-                                                        titulo,
-                                                        descricao,
-                                                        dia_semana,
-                                                        data_inicio,
-                                                        data_fim)
-                                                        VALUES
-                                                        (@id_contato,
-                                                        @id_endereco,
-                                                        @titulo,
-                                                        @descricao,
-                                                        @dia_semana,
-                                                        @data_inicio,
-                                                        @data_fim)";
     }
 }
