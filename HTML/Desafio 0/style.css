@@ -21,17 +21,13 @@ header {
     background-color: rgb(37, 38, 45);
 }
 
-figure {
-    height: 100px;
-    display: inline-flex;
-}
-
 header > figure {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #ffff00;
+    height: 100px;
 }
 
 header > figure > img {
@@ -47,7 +43,7 @@ header > figure > figcaption {
 /* Main */
 div.wrapper {
     display: block;
-    width: 90%;
+    width: 50%;
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
@@ -61,6 +57,19 @@ main {
     /* border: 1px solid #ffff00; */
     /* box-shadow: 1px 1px 2px #ffff00; */
     background-color: rgb(37, 38, 45);
+}
+
+main > article > figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > article > figure > img {
+    width: 64px;
+    height: 64px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h2.title {
@@ -78,14 +87,59 @@ div.content {
 
 div.content > p {
     text-indent: 1.5em;
+    line-height: 25px;
     margin-bottom: 0.5em;
 }
 
+/* Footer */
 footer {
-    background-color: #03002b;
+    width: 100vw;
+    background-color: rgb(37, 38, 45);
     color: #ffff00;
 }
 
+div.contact {
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+div.contact > h3 {
+    margin-bottom: 10px;
+}
+
+div.contact > p {
+    font-size: 14px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+footer > figure {
+    display: flex;
+    align-items: center;
+}
+
 footer > figure > img {
-    
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+footer > figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+div.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.credits > p {
+    font-size: 10px;
+    margin-bottom: 10px;
 }
