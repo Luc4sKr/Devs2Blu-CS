@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #32cd32;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #919191;
+}
+
+header.top-page {
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+header.top-page > h1 {
+    font-size: 44px;
+    text-align: center;
+}
+
+div.wrapper {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+section#featured {
+    background-color: var(--main-color);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section#featured > h2 {
+    text-align: center;
+}
+
+div#featured-content > p {
+    text-align: justify;
+}
