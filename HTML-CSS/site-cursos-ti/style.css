@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.wrapper {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header.topo {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(30, 30, 30, 0.7);
+    margin-bottom: 1em;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo-container > img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+/* Section destaque */
+section#destaque {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.banner-container {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.banner-container > figure {
+    position: relative;
+    width: 100%;
+}
+
+.banner-container > img {
+    width: 100%;
+}
+
+.banner-container > figcaption {
+    position: absolute;
+    width: 80%;
+    top: 1em;
+    left: 1em;
+    text-align: justify;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.banner-container:hover figcaption {
+    display: block;
+}
+
+/* Main */
+main#home {
+    width: 100%;
+}
+
+div.lista.container {
+    display: block;
+}
+
+ul#lista-cursos {
+    list-style: none;
+}
+
+li.item-list {
+    margin: 50px;
+}
+
+ul#lista-cursos > li > a {
+    display: block;
+}
+
+figure.logo-linguagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure.logo-linguagem > img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(30, 30, 30, 0.7);
+    padding: 20px;
+}
+
+section.credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+section.credits > h3 {
+    font-size: 22px;
+}
+
+section.copy {
+    margin-top: 20px;
+}
+
+section.copy > span.copy-text {
+    font-size: 16px;
+}
