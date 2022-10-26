@@ -8,16 +8,55 @@
     <title>Introdução JS</title>
 </head>
 <body>
-    
-    <div id="bloco">
-
+    <div id="formulario">
+        <header>
+            <h2>Contatos</h2>
+        </header>
+        <div class="container">
+            <fieldset class="form-contato">
+                <legend>Formulário de Contato</legend>
+                <form onsubmit="return false">
+                    <div class="control-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" class="control">
+                    </div>
+                    <div class="control-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" class="control">
+                    </div>
+                    <div class="control-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" class="control">
+                    </div>
+                    <div id="endereco">
+                        <div class="control-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" class="control">
+                        </div>
+                        <div class="control-group">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf" class="control">
+                        </div>
+                    </div>
+                    <div class="control-group controles-form">
+                        <button class="btn btn-sucess" id="btn-salvar">Salvar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
     </div>
-
-    <script type="text/javascript">
-        console.log("Ok JS");
-        const NOME_SITE = "Introdução ao JS";
-
-    </script>
 
     <script src="script.js"></script>
 </body>

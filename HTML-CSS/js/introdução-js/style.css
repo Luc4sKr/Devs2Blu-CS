@@ -1,7 +1,118 @@
-#bloco {
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #fefae0;
+    --form-background-color: #606c38;
+    --header-background-color: #283618;
+    --controles-form-background-color: #283618;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+#formulario {
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#formulario header {
+    background-color: var(--header-background-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
+    font-size: 26px;
+}
+
+#formulario .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.form-contato {
+    padding: 0.5em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: var(--form-background-color);
+}
+
+.form-contato legend {
+    text-align: center;
     display: block;
-    border: 1px solid #000;
-    height: 100px;
-    width: 100px;
-    background-color: #123aaa;
+    padding: 0.2em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: var(--form-background-color);
+}
+
+.control-group {
+    display: flex;
+    height: 1.5em;
+    margin-top: 0.5em;
+}
+
+.control-group label {
+    width: 5em;
+    margin-right: 0.5em;
+    text-align: right;
+}
+
+.control {
+    border-radius: 1px;
+    padding: 0.3em;
+}
+
+.control:focus {
+    border: 2px solid #283618;
+    outline-color: #283618;
+    outline-width: 2px;
+}
+
+#endereco {
+    display: none;
+}
+
+.controles-form {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--controles-form-background-color);
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 6em;
+    height: 2em;
+    padding: 0.3em;
+    border: 2px solid #888888;
+    background-color: rgba(255, 255, 255, 0.813);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-sucess {
+    background-color: green;
+    color: #fff;
+}
+
+.btn-sucess:hover {
+    background-color: rgb(15, 200, 15);
+    border: 2px solid green;
 }

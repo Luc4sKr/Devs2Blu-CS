@@ -1,14 +1,46 @@
-console.log("Script loaded");
+// Variáveis
+const URL_VIACEP = "https://viacep.com.br/ws/@CEP/json/";
 
-var nome, idade;
+// Carregar a página
+addEventListener("load", (e) => {
+    console.log("Sistema carregado...");
 
-// nome = prompt("Informe seu nome")
-// console.log(`Nome: ${nome}`)
+    // Regista evento
+    $("#cep").addEventListener("blur", (e) => {
+        var valorCampo = e.target.value;
+        console.log(`Valor: ${valorCampo}`);
 
-// idade = prompt("Infome sua idade")
-// console.log(`Idade: ${idade}`)
+        if (valorCampo.length >= 8) {
+            $("#endereco").style.display = 'block';
+            var urlCep = URL_VIACEP.replace("@CEP", valorCampo);
+            getJson(urlCep).then((resp) => {
+                console.log(resp);
+                $("#rua").value = resp.logradouro;
+                $("#bairro").value = resp.bairro;
+                $("#cidade").value = resp.localidade;
+                $("#uf").value = resp.uf;
 
-// alert("Hello world")
+                $("#numero").focus();
+            });
+        }
+    });
 
-var bloco = document.getElementById("bloco");
-bloco.style.margin = "5em"
+    $("#btn-salvar").addEventListener("click", (e) => {
+        console.log("click");
+    });
+});
+
+const validaFormulario = () => {
+    if ($("nome").value === "") {
+        return false;
+    }
+}
+
+function getJson(url) {
+    return fetch(url).then((resposta) => resposta.json());
+}
+
+function $(querrySelector) {
+    return document.querySelector(querrySelector);
+}
+
