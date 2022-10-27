@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #000814;
+    --header-color: #001d3d;
+    --font-color :#fff;
+    --clock-color: #001d3d;
+    --clock-itens-color: #003566;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: var(--font-color);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h1:hover {
+    font-size: 46px;
+}
+
+/* Header */
+.header-top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-color);
+    padding: 20px;
+}
+
+/* Main */
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    width: 60%;
+    height: 400px;
+    background-color: var(--clock-color);
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clock > div {
+    background-color: var(--clock-itens-color);
+    padding: 10px;
+}
+
+.clock > div:last-child {
+    margin-right: 100px;
+}
+
+.clock > div:first-child {
+    margin-left: 100px;
+}
+
+.clock p {
+    font-size: 52px;
+    font-weight: 200;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--header-color);
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer > h2 {
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+}
