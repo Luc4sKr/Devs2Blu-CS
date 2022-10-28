@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    min-width: 600px;
+}
+
+.border-error {
+    border: 2px solid #dc3545 !important;
+}
+
+.border-error:focus {
+    box-shadow: 0px 0px 5px #dc3545;
+}
+
+
+
+/* Header */
+#header-top {
+    width: 100vw;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* Main */
+main {
+    width: 40% !important;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.group-name {
+    width: 49%;
+}
+

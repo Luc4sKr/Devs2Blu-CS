@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header id="header-top" class="bg-dark">
+        <h1 class="text-center text-white">Form with Bootstrap</h1>
+    </header>
+    <main class="container bg-dark text-white">
+        <fieldset id="form">
+            <legend class="text-center">Registration form</legend>
+            <form action="" class="">
+                <div id="name-field" class="d-flex justify-content-between">
+                    <div id="first-name-container" class="form-group group-name">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" class="form-control d-flex">
+                    </div>
+                    <div id="last-name-container" class="form-group group-name">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Email</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Password</label>
+                    <input type="password" id="password" class="form-control">
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                    <button type="submit" id="btn-submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
