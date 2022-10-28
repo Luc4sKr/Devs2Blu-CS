@@ -5,7 +5,20 @@ $(document).ready((e) => {
 
     $("#btn-salvar").click((e) => {
         e.preventDefault();
-        console.log(`Nome ${$("#nome").val()}`);
+        var nome = $("#nome");
+        var email = $("#email");
+        
+        if (nome.val() === "" ||
+            email.val() === "") {
+                $("#form").css({
+                    "border": "2px solid red",
+                });
+        } else {
+            $("#form").css({"border": "2px solid green"});
+            $("#nome-quadro").html(nome.val());
+            $("#email-quadro").html(email.val());
+            $("#quadro").show();
+        }
     });
 
     $("#email").on("change", (e) => {
@@ -13,13 +26,22 @@ $(document).ready((e) => {
         //console.log($(this).val());
         var email = e.target.value;
         var valid = String(email)
-        .toLowerCase()
-        .match();
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
 
         if (valid) {
             console.log("Email válido");
+            $("#email").css({
+                "outline": "0.5px solid black"
+            });
         } else {
             console.log("Email inválido");
+            e.target.focus();
+            $("#email").css({
+                "outline": "1px solid red"
+            });
         }
     });
 });
