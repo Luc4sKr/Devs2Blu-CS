@@ -6,6 +6,12 @@ body {
     overflow-x: hidden;
 }
 
+#container-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Content */
 #principal {
     width: 100vw;
@@ -24,28 +30,27 @@ body {
     text-indent: 30px;
 }
 
+/* Footer */
+footer {
+    background: #ebf4fa;
+}
 
-
-h5 {
+footer h5 {
     font-size: 1rem;
     line-height: 1.375;
-  font-family: Rubik,Arial,sans-serif;
+    font-family: Rubik, Arial, sans-serif;
     font-weight: 500;
     color: #030929;
 }
 
-a {
-  color: #818494;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: transparent;
+footer a {
+    color: #818494;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
 }
 
-a:hover {
-  color: #007bff;
-  text-decoration: none;
-}
-
-footer {
-  background: #ebf4fa;
+footer a:hover {
+    color: #007bff;
+    text-decoration: none;
 }
