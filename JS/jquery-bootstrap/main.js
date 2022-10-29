@@ -7,6 +7,7 @@ $(document).ready(() => {
 
     // Carregar página
     $("#intro-jquery").click((e) => {
+        console.log("Click")
         $.ajax({
             url: "introducao-jquery.html",
             context: document.body,
