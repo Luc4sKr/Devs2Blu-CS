@@ -67,6 +67,7 @@ main {
 }
 
 #cronometro {
+    min-width: 460px;
     flex-direction: column !important;
     height: 30vh;
     border-radius: 10px;
@@ -87,4 +88,18 @@ main {
 
 #footer p {
     font-size: 14px;
+}
+
+@media only screen and (max-width: 400px) {
+    #cronometro {
+        min-width: 300px;
+    }
+
+    #time {
+        font-size: 60px;
+    }
+
+    .btn {
+        width: 80px;
+    }
 }
