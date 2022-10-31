@@ -13,6 +13,10 @@ $(document).ready(() => {
         addContato();
         listarContatos();
     });
+
+    $("#btn-logof").click((e) => {
+        realizaLogoff();
+    });
 });
 
 // Functions

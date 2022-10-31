@@ -2,8 +2,6 @@ const LOGADO = "userLogado";
 const USER = "user";
 
 $(document).ready(() => {
-    //verificaLogin();
-
     // <Modal>
     $(".btn-login").click((e) => {
         $("#modal-login").modal("toggle");
@@ -21,7 +19,7 @@ $(document).ready(() => {
     // <Login>
     $("#btn-logar").click((e) => {
         const usuario = new Usuario("", $("#email-login-input").val(), $("#senha-login-input").val());
-        
+        console.log( $("#email-login-input").val())
         realizaLogin(usuario);
     });
     // </Login>
@@ -34,6 +32,7 @@ $(document).ready(() => {
         $("#senha-cadastro-input").val());
 
         insertRegistroStorage(USER, usuario);
+        $("#modal-cadastro").modal("hide");
     });
     // </Cadastro>
 
@@ -42,19 +41,18 @@ $(document).ready(() => {
 // Functions
 const realizaLogin = (user) => {
     localStorage.getItem(USER);
-    console.log(user.email, JSON.parse(localStorage.getItem(USER)).email)
 
-    if (user.email === JSON.parse(localStorage.getItem(USER)).email) {
-        if (user.senha === JSON.parse(localStorage.getItem(USER)).senha) {
+    if ((user.email === JSON.parse(localStorage.getItem(USER)).email) ||
+        (user.senha === JSON.parse(localStorage.getItem(USER)).senha)) {
             localStorage.setItem(LOGADO, "true");
             window.location.href = "_html/dashboard.html";
-        }
-    }
+    } 
 }
 
 const realizaLogoff = () => {
     localStorage.removeItem(LOGADO);
-    localStorage.removeItem(USER);
+    window.location.href = "../index.html";
+    // localStorage.removeItem(USER);
 }
 
 const verificaLogin = () => {
