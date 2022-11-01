@@ -1,0 +1,50 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    animation: change-color 3s infinite;
+    animation-delay: 2s; /* Delay de 2s para começar a animação */
+}
+
+@keyframes change-color {
+    0% {
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        background-color: olive;
+        width: 500px;
+        height: 500px;
+    }
+    100% {
+        background-color: royalblue;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+/* @keyframes change-color {
+    from {
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    }
+} */
