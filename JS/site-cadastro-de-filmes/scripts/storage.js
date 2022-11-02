@@ -19,3 +19,7 @@ const setJsonItem = (key, value) => {
 const removeItem = (key) => {
     localStorage.removeItem(key);
 }
+
+const getListaFilmes = (key) => {
+    return getJsonItem(key).listaFilmes;
+}

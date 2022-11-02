@@ -1,15 +1,19 @@
+var listaFilmes = getListaFilmes(USER_LOGADO);
+
 $(document).ready((e => {
     listarFilmes();
     atualizaValorNota();
 
     $("#btn-enviar").click((e) => {
-        if (getJsonItem(LISTA_FILMES) || getJsonItem(LISTA_FILMES) <= 0) {
-            listaFilmes = getJsonItem(LISTA_FILMES);
+        if (getListaFilmes(USER_LOGADO) ||
+            getListaFilmes(USER_LOGADO) <= 0) {
+            listaFilmes = getListaFilmes(USER_LOGADO);
         }
 
-        listaFilmes = new Array();
         listaFilmes.push(getFilme())
-        setJsonItem(LISTA_FILMES, listaFilmes)
+        var usuario = getJsonItem(USER_LOGADO);
+        usuario.listaFilmes = listaFilmes;
+        setJsonItem(USER_LOGADO, usuario);
 
         listarFilmes();
     });
@@ -28,7 +32,7 @@ function atualizaValorNota() {
 }
 
 function getFilme() {
-    let tamLista = getJsonItem(LISTA_FILMES) == null ? 0 : getJsonItem(LISTA_FILMES).length;
+    let tamLista = getJsonItem(USER_LOGADO).listaFilmes == null ? 0 : getJsonItem(USER_LOGADO).listaFilmes.length;
     let idInsert = tamLista + 1;
     return new Filme(idInsert, $("#input-titulo").val(), $("#input-nota").val(), $("#input-descricao").val());
 }
@@ -37,14 +41,12 @@ function listarFilmes() {
     let listHTML = $("#lista-filmes");
     listHTML.html("");
 
-    console.log(getJsonItem(LISTA_FILMES))
-
-    if (getJsonItem(LISTA_FILMES) == null ||
-        getJsonItem(LISTA_FILMES).length <= 0) {
+    if (getListaFilmes(USER_LOGADO) == null ||
+        getListaFilmes(USER_LOGADO) <= 0) {
         return false;
     }
-    
-    getJsonItem(LISTA_FILMES).forEach((filme) => {
+
+    getListaFilmes(USER_LOGADO).forEach((filme) => {
         let row = document.createElement("tr");
         var colID = document.createElement("td");
         var colTitulo = document.createElement("td");
@@ -68,11 +70,12 @@ function listarFilmes() {
 }
 
 function removeItemList(id) {
-    let i = getJsonItem(LISTA_FILMES).findIndex((filme) => filme.id === id);
-    listaFilmes = getJsonItem(LISTA_FILMES);
+    let i = getListaFilmes(USER_LOGADO).findIndex((filme) => filme.id === id);
+    listaFilmes = getListaFilmes(USER_LOGADO);
     listaFilmes.splice(i, 1);
 
-    setJsonItem(LISTA_FILMES, listaFilmes);
-    console.log()
+    var usuario = getJsonItem(USER_LOGADO);
+    usuario.listaFilmes = listaFilmes;
+    setJsonItem(USER_LOGADO, usuario);
     listarFilmes();
 }
