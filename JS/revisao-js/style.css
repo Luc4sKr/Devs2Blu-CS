@@ -1,53 +1,49 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
+header {
+    display: block;
+    width: 100vw;
+    position: relative;
 }
 
 body {
     box-sizing: border-box;
     overflow-x: hidden;
-    background: linear-gradient(45deg, #00187a, #200c64);
-}
-
-header {
-    display: block;
-    width: 100vw;
-    height: 60vh;
-    position: relative;
+    background: linear-gradient(#111, #888, #fff) no-repeat;
 }
 
 #estrelas {
     width: 100%;
     height: 60vh;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
 }
 
 #estrelas-img {
     position: absolute;
-    animation: estrela-animation 50s ease-in-out infinite;
-    opacity: 0.9;
+    animation: estrela-animation 30s ease-in-out infinite;
+    opacity: .9;
 }
+
+#card-estrela {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+
+/* Animations */
 
 @keyframes estrela-animation {
     0% {
         transform: scaleX(2);
     }
-    25% {
-        transform: scaleX(1.5);
-    }
     50% {
-        transform: scaleX(2);
-    }
-    75% {
-        transform: scaleX(1.5);
+        transform: scaleX(3);
     }
     100% {
         transform: scaleX(2);

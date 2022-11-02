@@ -1,24 +1,24 @@
 const usuario = {
-    nome: "",
-    login: "",
-    senha: ""
+    nome:'',
+    login: '',
+    senha: ''
 }
 
-const LOGADO = "userLogado";
-const USER = "user";
+const LOGADO = 'userLogado';
+const USER = 'user';
 
-$(document).ready(() => {
+$(document).ready(()=>{
+    console.log('JQuery loaded.');
+
     verificaLogin();
-
-    
 });
 
-
 // Functions
+
 const getPagina = (page, target) => {
     $.ajax({
         url: page,
-        dataType: "html",
+        dataType: 'html',
         success: (pResponse) => {
             $(target).html(pResponse);
         }
@@ -26,9 +26,9 @@ const getPagina = (page, target) => {
 }
 
 const realizaLogin = (user) => {
-    localStorage.setItem(LOGADO, "true");
+    localStorage.setItem(LOGADO, 'true');
     localStorage.setItem(USER, JSON.stringify(user));
-    window.location.href = "dashboard.html";
+    window.location.href = 'dashboard.html';
 }
 
 const realizaLogoff = () => {
@@ -37,16 +37,16 @@ const realizaLogoff = () => {
 }
 
 const verificaLogin = () => {
-    if (localStorage.getItem(LOGADO) == "true") {
-        console.log("logado");
+    if(localStorage.getItem(LOGADO) == 'true'){
+        console.log('Logado');
         return true;
     } else {
-        console.log("deslogado");
+        console.log('Deslogado');
         return false;
     }
 }
 
-const getRegistroStorage = (key) => {
+const getRegistroStorage = (key) =>{
     return localStorage.getItem(key);
 }
 
