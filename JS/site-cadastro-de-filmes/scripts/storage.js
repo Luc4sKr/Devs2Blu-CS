@@ -23,3 +23,12 @@ const removeItem = (key) => {
 const getListaFilmes = (key) => {
     return getJsonItem(key).listaFilmes;
 }
+
+const updateUsuarios = (key, usuario) => {
+    let lista_usuarios = getJsonItem(LISTA_USUARIOS);
+    console.log(lista_usuarios)
+    let i = lista_usuarios.usuarios.findIndex((user) => user.id === usuario.id)
+    lista_usuarios.usuarios.splice(i, 1, usuario);
+
+    setJsonItem(LISTA_USUARIOS, lista_usuarios)
+}

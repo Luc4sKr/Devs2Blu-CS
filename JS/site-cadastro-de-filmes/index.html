@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>Cadastro de Filmes</title>
 </head>
+
 <body>
     <header class="p-3 text-bg-dark">
         <div class="container">
@@ -19,8 +21,8 @@
                     </svg>
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Dashboard</a></li>
+                    <li><a href="./index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="./_views/dashboard.html" class="nav-link px-2 text-white">Dashboard</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
                 </ul>
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -28,14 +30,64 @@
                         aria-label="Search">
                 </form>
                 <div class="text-end">
-                    <button type="button" class="btn btn-warning">Logoff</button>
+                    <button type="button" id="index-btn-login" class="btn btn-warning">Login</button>
                 </div>
             </div>
         </div>
     </header>
 
-    
-    
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="_img/rocket.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <!-- </div>
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div> -->
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+    </main>
+
+
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -44,9 +96,9 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <!-- Script -->
-    <script src="../scripts/filme.js"></script>
-    <script src="../scripts/storage.js"></script>
-    <script src="../scripts/script.js" defer type="module"></script>    
-    <script src="../scripts/dashboard.js"></script>
+    <script src="scripts/filme.js"></script>
+    <script src="scripts/usuario.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
