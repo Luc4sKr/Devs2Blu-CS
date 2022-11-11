@@ -2,6 +2,8 @@ const URL_API = "https://rickandmortyapi.com/api/character";
 
 $(document).ready((e) => {
     getCharacter();
+
+    
 });
 
 
@@ -30,6 +32,10 @@ const getCharacter = () => {
                 $(columnImg).attr("id", `character-${i}`);
                 getImg(character.url, `#character-${i}`);
                 $(row).append(columnImg);
+
+                $(columnImg).click((e) => {
+                    console.log("AAAA");
+                });
 
                 let columnBody = document.createElement("div");
                 $(columnBody).addClass("col-md-8");
