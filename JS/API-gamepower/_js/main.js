@@ -9,18 +9,18 @@ function listGames(data) {
     listGames = new Array();
 
     data.forEach(game => {
-        console.log(game);
+        // console.log(game);
 
         let card = document.createElement("div");
         let img = document.createElement("img");
         let cardBody = document.createElement("div");
         let title = document.createElement("h5");
         
-        card.classList.add("card", "m-2");
+        card.classList.add("card", "game-card", "m-2", "p-0");
         card.style.width = "18rem";
 
         img.classList.add("card-img-top");
-        img.src = game.image;
+        img.src = game.thumbnail;
 
         cardBody.classList.add("card-body");
 
@@ -33,5 +33,10 @@ function listGames(data) {
         card.appendChild(cardBody);
 
         main.appendChild(card);
+
+        card.addEventListener("click", function() {
+            setGameId(game.id);
+        });
     });
 }
+

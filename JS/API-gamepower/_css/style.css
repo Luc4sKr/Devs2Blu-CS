@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    display: block;
+}
+
+/* Card */
+.game-card:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #000;
+}
+
+
+/* details.html */
+.card-desc {
+    max-width: 40em;
+}
+
+.game-informations p {
+    margin: 0;
+}
+
+#msr-card p {
+    margin: 0px;
+    margin-left: 15px;
+}

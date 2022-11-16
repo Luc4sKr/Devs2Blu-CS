@@ -1,13 +1,13 @@
 // Configs
-const URL_API = "https://gamerpower.p.rapidapi.com/api/giveaways";
-
+const URL_API = "https://free-to-play-games-database.p.rapidapi.com/api/games";
+const URL_API_BY_ID = "https://free-to-play-games-database.p.rapidapi.com/api/game?id=";
 
 const options = {
-    method: "GET",
-    headers: {
-        'X-RapidAPI-Key': '82f54b1863msha3da5df08279e2cp1e6b1djsn5664b20ca509',
-        'X-RapidAPI-Host': 'gamerpower.p.rapidapi.com'
-    }
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '82f54b1863msha3da5df08279e2cp1e6b1djsn5664b20ca509',
+		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+	}
 };
 
 // Functions
@@ -25,3 +25,7 @@ function getAPI(url, functionCallback) {
         );
 }
 
+function setGameId(gameId) {
+    setJsonItem("game", gameId);
+    window.location.href = "details.html";
+}
