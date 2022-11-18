@@ -28,3 +28,8 @@ function setGameId(gameId) {
     setJsonItem("game", gameId);
     window.location.href = "details.html";
 }
+
+function onlyNumbers(string) {
+    var numsStr = string.replace(/[^0-9]/g,'');
+    return parseInt(numsStr);
+}
