@@ -1,4 +1,4 @@
-var listCommentGames = new Array();
+var listGames = new Array();
 
 addEventListener("load", function () {
     getAPI(getItem("url"), listOfGames);
@@ -8,15 +8,14 @@ addEventListener("load", function () {
         this.window.location.reload(true);
     }
 
-    listCommentGames = getJsonItem("lista");
+    listGames = getJsonItem("lista");
 });
 
+// Lista os jogos no HTML
 function listOfGames(data) {
     let main = getElement("main");
 
     data.forEach(game => {
-        // console.log(game);
-
         let card = document.createElement("div");
         let img = document.createElement("img");
         let cardBody = document.createElement("div");
@@ -37,7 +36,34 @@ function listOfGames(data) {
         title.classList.add("card-title", "text-center");
         title.innerText = game.title;
 
-        fav.classList.add("fav", "fa-regular", "fa-heart");
+        listGames.forEach(listElement => {
+            if (game.id == listElement.id) {
+                if (listElement.fav) {
+                    fav.classList.add("fav", "fa-solid", "fa-heart");
+                } else {
+                    fav.classList.add("fav", "fa-regular", "fa-heart");
+                }
+            }
+        });
+
+        fav.addEventListener("click", function () {
+            let i = 0;
+            listGames.forEach(listElement => {
+                if (game.id == listElement.id) {
+                    if (listElement.fav) {
+                        listGames[i].fav = false;
+                        fav.className = "";
+                        fav.classList.add("fav", "fa-regular", "fa-heart");
+                    } else {
+                        listGames[i].fav = true;
+                        fav.className = "";
+                        fav.classList.add("fav", "fa-solid", "fa-heart");
+                    }
+                }
+                i++;
+                setJsonItem("lista", listGames);
+            });
+        });
 
         cardBody.appendChild(title);
         cardBody.appendChild(fav)
@@ -46,54 +72,6 @@ function listOfGames(data) {
         card.appendChild(cardBody);
 
         main.appendChild(card);
-    });
-}
-
-function showDetails(element) {
-    getElement("#modal-body").innerHTML = "";
-
-    let cardBody = `
-        <div id="c-${element.id}" class="card col-12 my-4">
-            <div id="" class="card-header bg-white">
-                <img class="card-img-top" src="${element.thumbnail}" alt="${element.title} Image">
-            </div>
-            <div class="card-body">
-                <h1 class="text-center">${element.title}</h1>
-                <article>
-                    <ul class="list-group">
-                        <li class="list-group-item text-center">${element.short_description}</li>
-                        <li class="list-group-item ">Genre: ${element.genre}</li>
-                        <li class="list-group-item ">Publisher: ${element.publisher}</li>
-                        <li class="list-group-item ">Developer: ${element.developer}</li>
-                        <li class="list-group-item ">Relase Date: ${element.relase_date}</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    `;
-
-    getElement("#modal-body").innerHTML = cardBody;
-    $("#gameModal").modal("show");
-
-    // Lista os comentários
-    listComments(onlyNumbers(getElement(`#c-${element.id}`).id))
-
-    getElement("#btn-comment").addEventListener("click", function(e) {
-        e.preventDefault();
-
-        let i = 0;
-        listCommentGames.forEach(comment => {
-            if (comment.id == onlyNumbers(getElement(`#c-${element.id}`).id)) {
-                comment.comments.push(getElement("#text-area-comment").value);
-                getElement("#text-area-comment").value = "";
-
-                listCommentGames[i].comments = comment.comments
-                setJsonItem("lista", listCommentGames);
-                listComments(comment.id);
-            }
-
-            i++;
-        });
     });
 }
 
@@ -127,7 +105,7 @@ function getListGames(element) {
     let tempList = [];
 
     element.forEach(game => {
-        tempList.push({ "id": game.id, "game": game.title, "fav": false, "comments": []});
+        tempList.push({ "id": game.id, "game": game.title, "fav": false, "comments": [] });
     });
 
     setJsonItem("lista", tempList);
