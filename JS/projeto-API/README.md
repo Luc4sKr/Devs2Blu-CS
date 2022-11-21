@@ -2,6 +2,7 @@
 
 ## API utilizada
 [Free-to-Play Games Database](https://rapidapi.com/digiwalls/api/free-to-play-games-database/)
+> Obs: a API precisa de uma chave de acesso para funcionar.
 
 ## Páginas
 
