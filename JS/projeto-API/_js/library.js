@@ -81,3 +81,39 @@ function showDetails(element) {
         });
     });
 }
+
+function listComments(id) {
+    let html = "";
+    getJsonItem("lista").forEach(element => {
+        if (element.id == id) {
+            element.comments.forEach(comment => {
+                let CardComment = `
+                    <div class="card m-4 mt-0">
+                        <div class="content m-3">
+                            <p class="content-text">
+                                ${comment}
+                            </p>
+                        </div>
+                    </div>
+                `;
+
+                html += CardComment;
+            });
+
+            getElement("#comments").innerHTML = html;
+
+            return;
+        }
+    });
+}
+
+// Guarda no localstorage uma lista com todos os jogos
+function getListGames(element) {
+    let tempList = [];
+
+    element.forEach(game => {
+        tempList.push({ "id": game.id, "game": game.title, "fav": false, "comments": [] });
+    });
+
+    setJsonItem("lista", tempList);
+}
