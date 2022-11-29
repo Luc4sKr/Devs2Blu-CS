@@ -1,4 +1,5 @@
 ﻿using ConsumoApiProject.Models;
+using ConsumoApiProject.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,15 +8,17 @@ namespace ConsumoApiProject.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApiService Service = new ApiService();
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var result = await Service.GetCharacter();
+            return View(result);
         }
 
         public IActionResult Privacy()

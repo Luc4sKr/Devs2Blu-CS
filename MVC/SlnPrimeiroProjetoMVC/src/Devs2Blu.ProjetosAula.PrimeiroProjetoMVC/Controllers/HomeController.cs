@@ -22,7 +22,7 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Controllers
         {
             return View();
         }
-        
+
         [Route("home/cadastro")]
         [Route("cadastro")]
         [Route("cadastre-se")]

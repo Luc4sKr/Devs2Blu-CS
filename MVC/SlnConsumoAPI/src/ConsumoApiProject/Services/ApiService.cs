@@ -19,7 +19,7 @@ namespace ConsumoApiProject.Services
 
         public async Task<HttpResponseMessage> GetAsync(string url)
         {
-            HttpRequestMessage getRequest = new HttpRequestMessage()
+            var getRequest = new HttpRequestMessage()
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri(url)

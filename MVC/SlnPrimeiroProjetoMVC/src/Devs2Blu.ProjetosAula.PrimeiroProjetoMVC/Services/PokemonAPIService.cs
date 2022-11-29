@@ -1,6 +1,5 @@
 ﻿using Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Models;
-using Microsoft.AspNetCore.Mvc.Formatters;
-using System.Security.Cryptography.Xml;
+using System.Net.Http.Headers;
 
 namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Services
 {
@@ -14,7 +13,7 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Services
             _httpClient = new HttpClient();
         }
 
-        public async Task<Pokemons> GetPokemnons()
+        public async Task<Pokemons> GetPokemons()
         {
             return await Get<Pokemons>(URL_API_PKMN);
         }
@@ -27,16 +26,27 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Services
                 return (T)(object)url;
 
             return await listHttp.Content.ReadFromJsonAsync<T>();
+
+        }
+
+        public async Task<List<T>> GetList<T>(string url)
+        {
+            var listHttp = await GetAsync(url);
+
+            if (!listHttp.IsSuccessStatusCode)
+                return new List<T>();
+
+            return await listHttp.Content.ReadFromJsonAsync<List<T>>();
+            
         }
 
         public async Task<HttpResponseMessage> GetAsync(string url)
         {
-            HttpRequestMessage getRequest = new HttpRequestMessage()
+            var getRequest = new HttpRequestMessage()
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri(url)
             };
-
             return await _httpClient.SendAsync(getRequest);
         }
     }

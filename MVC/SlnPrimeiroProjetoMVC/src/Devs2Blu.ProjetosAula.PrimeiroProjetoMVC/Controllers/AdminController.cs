@@ -3,24 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Controllers
 {
+    [Route("admin")]
     public class AdminController : Controller
     {
         public IActionResult Index()
         {
             List<User> users = new List<User>()
             {
-                new User {Id = 1, Name = "Lucas", Login = "lucas"},
-                new User {Id = 2, Name = "Maria", Login = "maria"},
-                new User {Id = 3, Name = "João", Login = "joao"},
-                new User {Id = 4, Name = "Felipe", Login = "felipe"},
-                new User {Id = 5, Name = "Yuri", Login = "yuri"}
+             new User { Id = 1, Name = "João Silva", Login = "joaos" }, 
+             new User { Id = 2, Name = "Marcos Santos", Login = "marcoss" }, 
+             new User { Id = 3, Name = "Carlos Lima", Login = "carlosl" }, 
+             new User { Id = 4, Name = "Augusto Bonatti", Login = "augustob" }, 
+             new User { Id = 5, Name = "Yuri Schmidt", Login = "yuris" }, 
+             new User { Id = 6, Name = "Yung Lee Tsu", Login = "yungt" }, 
+             new User { Id = 7, Name = "Ramon Lisboa", Login = "ramonl" } 
             };
-            
-
             return View(users);
         }
 
-        [Route("admin/indicadores")]
+        [Route("indicadores")]    
+        [Route("numbers")]    
         public IActionResult Indicadores()
         {
             return View();
@@ -29,6 +31,7 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Controllers
         [Route("cards")]
         public PartialViewResult CardsResultados()
         {
+            //var result = Service.GetLista();
             return PartialView();
         }
     }

@@ -3,11 +3,9 @@
 <h1>Seja bem-vindo</h1>
 
 <ul class="list-group">
-
-@foreach (var item in @Model) {
-	<li class="list-group-item">
-		@item.Id - @item.Name - @item.Login
-	</li>
+@foreach (var item in @Model)
+{
+    <li class="list-group-item"> @item.Id - @item.Name - @item.Login</li>
 }
-
 </ul>
+
