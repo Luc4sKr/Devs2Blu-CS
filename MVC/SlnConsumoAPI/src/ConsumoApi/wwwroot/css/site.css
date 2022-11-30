@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/* Consulta API*/
+.card-obj {
+    margin: 3px;
+}
+
+.card-obj:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.card-obj:active {
+    box-shadow: 0px 0px 10px #000;
+}

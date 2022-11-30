@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="text-center">
+    <div class="display-4">
+        <a class="btn btn-dark" asp-area="" asp-controller="ConsultaApi" asp-action="Character">Character</a>
+        <a class="btn btn-dark" asp-area="" asp-controller="ConsultaApi" asp-action="Locations">Locations</a>
+        <a class="btn btn-dark" asp-area="" asp-controller="ConsultaApi" asp-action="Episodes">Episodes</a>
+    </div>
+</div>
+
