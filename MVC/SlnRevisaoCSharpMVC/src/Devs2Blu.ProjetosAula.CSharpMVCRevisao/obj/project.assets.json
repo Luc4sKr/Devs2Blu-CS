@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
+      "projectUniqueName": "C:\\Curso-CS-Devs2Blu\\MVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
       "projectName": "Devs2Blu.ProjetosAula.CSharpMVCRevisao",
-      "projectPath": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\devs2blu\\CSharpMVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\obj\\",
+      "projectPath": "C:\\Curso-CS-Devs2Blu\\MVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Curso-CS-Devs2Blu\\MVC\\SlnRevisaoCSharpMVC\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
