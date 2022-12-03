@@ -16,3 +16,46 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Card */
+.card-container {
+    width: 300px;
+    height: 300px
+}
+
+.card-obj {
+   
+
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card {
+    width: 250px;
+}
+
+.img-card:hover {
+    width: 300px;
+}
+
+/* Maps */
+
+
+/* teste */
+.figure-teste {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-teste {
+    width: 100px;
+    position: absolute;
+    top: 0;
+}

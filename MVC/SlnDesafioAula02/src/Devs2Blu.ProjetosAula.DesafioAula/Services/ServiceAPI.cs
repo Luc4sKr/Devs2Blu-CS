@@ -1,13 +1,33 @@
-﻿namespace Devs2Blu.ProjetosAula.DesafioAula.Services
+﻿using Devs2Blu.ProjetosAula.DesafioAula.Models.API;
+
+namespace Devs2Blu.ProjetosAula.DesafioAula.Services
 {
     public class ServiceAPI
     {
         private readonly HttpClient _httpClient;
 
         #region CONSTS
+        private const string URL_API_AGENTS = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
+        private const string URL_API_MAPS = "https://valorant-api.com/v1/maps?isPlayableCharacter=true";
+
         private const string URL_API_AGENTS_BR = "https://valorant-api.com/v1/agents?language=pt-BR";
         #endregion
 
+        public ServiceAPI()
+        {
+            _httpClient = new HttpClient();
+        }
+
+
+        public async Task<Agents> GetAgents()
+        {
+            return await Get<Agents>(URL_API_AGENTS);
+        }
+
+        public async Task<Maps> GetMaps()
+        {
+            return await Get<Maps>(URL_API_MAPS);
+        }
 
 
         #region BaseMethods

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Maps";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="text-center">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Map Name</th>
+                <th>Coordinates</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Data) {
+            <tr>
+                <th>@item.DisplayName</th>
+                <th>@item.Coordinates</th>
+                <th>
+                    <img src="@item.ListViewIcon">
+                </th>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

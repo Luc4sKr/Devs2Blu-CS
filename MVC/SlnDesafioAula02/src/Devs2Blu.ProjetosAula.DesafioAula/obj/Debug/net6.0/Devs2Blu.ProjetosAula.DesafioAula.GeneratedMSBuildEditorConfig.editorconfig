@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Curso-CS-Devs2Blu\MVC\SlnDesafioAula02\src\Devs2Blu.ProjetosAula.DesafioAula
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Curso-CS-Devs2Blu/MVC/SlnDesafioAula02/src/Devs2Blu.ProjetosAula.DesafioAula/Views/ConsultaApi/Agents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFBcGlcQWdlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnDesafioAula02/src/Devs2Blu.ProjetosAula.DesafioAula/Views/ConsultaApi/Maps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFBcGlcTWFwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Curso-CS-Devs2Blu/MVC/SlnDesafioAula02/src/Devs2Blu.ProjetosAula.DesafioAula/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

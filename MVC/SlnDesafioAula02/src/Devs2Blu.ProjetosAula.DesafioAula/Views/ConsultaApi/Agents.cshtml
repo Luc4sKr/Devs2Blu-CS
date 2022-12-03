@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Agents";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<div class="text-center">
+    <div class="row justify-content-center">
+        @foreach (var item in Model.Data)
+        {
+            <div class="card-obj col-4" style="">
+                <figure>
+                    <img class="img-card" src="@item.FullPortrait"> 
+                    <figcaption>
+                        <p>@item.DisplayName</p>
+                    </figcaption>
+                </figure>
+            </div>
+         
+        }
+    </div>
+</div>
