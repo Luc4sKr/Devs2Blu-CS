@@ -14,7 +14,7 @@ namespace Devs2Blu.ProjetosAula.CSharpMVCRevisao.Services
 
         public async Task<List<CardDTO>> GetListCards()
         {
-            var objJSONResponse = await Get<GetListDataCardsDTO>(URL_API_PT);
+            var objJSONResponse = await Get<GetListDataCardsDTO>(URL_API);
             var listCards = objJSONResponse.Data;
             return listCards;
         }
