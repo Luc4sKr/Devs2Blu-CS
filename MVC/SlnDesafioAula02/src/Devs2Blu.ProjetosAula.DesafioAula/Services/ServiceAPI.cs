@@ -2,33 +2,46 @@
 
 namespace Devs2Blu.ProjetosAula.DesafioAula.Services
 {
-    public class ServiceAPI
+    public class ServiceApi
     {
         private readonly HttpClient _httpClient;
 
         #region CONSTS
-        private const string URL_API_AGENTS = "https://valorant-api.com/v1/agents?isPlayableCharacter=true";
-        private const string URL_API_MAPS = "https://valorant-api.com/v1/maps?isPlayableCharacter=true";
-
-        private const string URL_API_AGENTS_BR = "https://valorant-api.com/v1/agents?language=pt-BR";
+        private const string URL_API_CHARACTER = "https://rickandmortyapi.com/api/character";
+        private const string URL_API_LOCATIONS = "https://rickandmortyapi.com/api/location";
+        private const string URL_API_EPISODES = "https://rickandmortyapi.com/api/episode";
         #endregion
 
-        public ServiceAPI()
+        public ServiceApi()
         {
             _httpClient = new HttpClient();
         }
 
-
-        public async Task<Agents> GetAgents()
+        public async Task<CharacterResults> GetCharacters()
         {
-            return await Get<Agents>(URL_API_AGENTS);
+            return await Get<CharacterResults>($"{URL_API_CHARACTER}?page=1");
         }
 
-        public async Task<Maps> GetMaps()
+        public async Task<CharacterResults> GetCharacterByName(string name)
         {
-            return await Get<Maps>(URL_API_MAPS);
+            string urlSearch = $"{URL_API_CHARACTER}?name={name}";
+            var objJSONResponse = await Get<CharacterResults>(urlSearch);
+            return objJSONResponse;
         }
 
+
+        // Em desenvolvimento ----------------------------------------
+        public async Task<List<Character>> GetRandomCharacters()
+        {
+            string url = $"{URL_API_CHARACTER}/1,2,3";
+            return await Get<List<Character>>(url);
+        }
+        // -----------------------------------------------------------
+
+        public async Task<LocationResults> GetLocations()
+        {
+            return await Get<LocationResults>($"{URL_API_LOCATIONS}?page=1");
+        }
 
         #region BaseMethods
         public async Task<T> Get<T>(string url)

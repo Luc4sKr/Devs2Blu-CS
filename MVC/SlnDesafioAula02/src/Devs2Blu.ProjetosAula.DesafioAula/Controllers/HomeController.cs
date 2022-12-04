@@ -1,4 +1,5 @@
 ﻿using Devs2Blu.ProjetosAula.DesafioAula.Models;
+using Devs2Blu.ProjetosAula.DesafioAula.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,15 +8,17 @@ namespace Devs2Blu.ProjetosAula.DesafioAula.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ServiceApi Service = new ServiceApi();
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var result = Service.GetRandomCharacters();
+            return View(result);
         }
 
         public IActionResult Privacy()
