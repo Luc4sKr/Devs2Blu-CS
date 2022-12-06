@@ -8,16 +8,17 @@ namespace Devs2Blu.ProjetosAula.DesafioAula.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ServiceApi Service = new ServiceApi();
+        private readonly ServiceApi Service;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            Service = new ServiceApi();
         }
 
         public async Task<IActionResult> Index()
         {
-            var result = Service.GetRandomCharacters();
+            var result = await Service.GetRandomCharacters();
             return View(result);
         }
 

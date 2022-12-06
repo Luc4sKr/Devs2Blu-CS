@@ -44,3 +44,9 @@ body {
 .card-title {
     font-size: 1.2em;
 }
+
+/* Character */
+.page-item:hover {
+    cursor: pointer;
+}
+

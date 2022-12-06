@@ -1,10 +1,12 @@
 ﻿using Devs2Blu.ProjetosAula.DesafioAula.Models.API;
+using System.Numerics;
 
 namespace Devs2Blu.ProjetosAula.DesafioAula.Services
 {
     public class ServiceApi
     {
         private readonly HttpClient _httpClient;
+        private Random Random;
 
         #region CONSTS
         private const string URL_API_CHARACTER = "https://rickandmortyapi.com/api/character";
@@ -15,6 +17,7 @@ namespace Devs2Blu.ProjetosAula.DesafioAula.Services
         public ServiceApi()
         {
             _httpClient = new HttpClient();
+            Random = new Random();
         }
 
         public async Task<CharacterResults> GetCharacters()
@@ -29,14 +32,30 @@ namespace Devs2Blu.ProjetosAula.DesafioAula.Services
             return objJSONResponse;
         }
 
+        public async Task<CharacterResults> GetCharactersByPage(int page)
+        {
+            string url = $"{URL_API_CHARACTER}?page={page}";
+            return await Get<CharacterResults>(url);
+        }
 
-        // Em desenvolvimento ----------------------------------------
         public async Task<List<Character>> GetRandomCharacters()
         {
-            string url = $"{URL_API_CHARACTER}/1,2,3";
-            return await Get<List<Character>>(url);
+            List<int> randNumList = new List<int>();
+            for (int i=0; i<8; i++)
+            {
+                int num = Random.Next(1, 800);
+                randNumList.Add(num);
+            }
+            
+            string randomNumsString = "";
+            foreach (int num in randNumList)
+            {
+                randomNumsString += $",{num}";
+            }
+
+            string url = $"{URL_API_CHARACTER}/{randomNumsString}";
+            return await GetList<Character>(url);
         }
-        // -----------------------------------------------------------
 
         public async Task<LocationResults> GetLocations()
         {

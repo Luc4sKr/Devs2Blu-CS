@@ -2,11 +2,16 @@
 {
     public class CharacterResults
     {
+        public Info Info { get; set; }
+        public List<Character> Results { get; set; }
+    }
+
+    public class Info
+    {
         public int Count { get; set; }
         public int Pages { get; set; }
         public String Next { get; set; }
         public String Prev { get; set; }
-        public List<Character> Results { get; set; }
     }
 
     public class Character

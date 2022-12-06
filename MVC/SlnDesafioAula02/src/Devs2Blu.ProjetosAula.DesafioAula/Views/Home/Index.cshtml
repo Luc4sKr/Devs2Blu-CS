@@ -2,12 +2,25 @@
     ViewData["Title"] = "Rick and Morty API";
 }
 
-<div class="text-center">
+<div class="text-center mb-4">
     <h1 class="display-4">@ViewData["Title"]</h1>
 </div>
 
 <div class="text-center">
     <div class="row justify-content-center">
-        
+        @foreach (var item in @Model) {
+            <div class="card-container">
+                <div class="card-obj card col-4">
+                    <div class="card-header bg-white">
+                        <figure>
+                            <img class="card-img" src="@item.Image" alt="@item.Name Image">
+                        </figure>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">@item.Name</h2>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 </div>

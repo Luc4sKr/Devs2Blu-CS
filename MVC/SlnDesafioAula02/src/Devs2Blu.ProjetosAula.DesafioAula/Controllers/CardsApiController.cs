@@ -16,9 +16,17 @@ namespace Devs2Blu.ProjetosAula.DesafioAula.Controllers
         }
 
         [Route("characters")]
-        public async Task<IActionResult> Characters()
+        [Route("characters/page/{page}")]
+        public async Task<IActionResult> Characters(int page)
         {
-            var result = await Service.GetCharacters();
+            var result = await Service.GetCharactersByPage(page);
+            return View(result);
+        }
+
+        
+        public async Task<IActionResult> CharacterByPage(int page)
+        {
+            var result = await Service.GetCharactersByPage(page);
             return View(result);
         }
 

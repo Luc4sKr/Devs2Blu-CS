@@ -25,3 +25,18 @@
         }
     </div>
 </div>
+
+<div class="">
+    <nav aria-label="Navegação de página">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            
+            @for (int i=1; i <= Model.Info.Pages; i++) {
+                <li id="page-@i" class="page-item"><p class="page-link">@i</p></li>
+            }
+
+            <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+        </ul>
+    </nav>
+</div>
+
