@@ -1,4 +1,7 @@
 using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Models;
+using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Repository;
+using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Services.Implements;
+using Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +12,16 @@ builder.Services.AddControllersWithViews();
 // Context DB SQL Server
 builder.Services.AddDbContext<ContextoDatabase>
     (options => options.UseSqlServer($"Server=LAPTOP-K24VTQEH\\SQLEXPRESS;Database=ListaCompras;User Id=sa;Password=admin; TrustServerCertificate=True;"));
+
+/*
+ * Dependency Injection
+ */
+
+// Repositories
+builder.Services.AddScoped<CategoriaRepository, CategoriaRepository>();
+
+// Services
+builder.Services.AddScoped<ICategoriasService, CategoriasService>();
 
 var app = builder.Build();
 

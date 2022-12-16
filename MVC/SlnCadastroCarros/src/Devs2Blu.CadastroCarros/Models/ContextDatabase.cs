@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Devs2Blu.CadastroCarros.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Devs2Blu.CadastroCarros.Models
 {
@@ -8,5 +9,21 @@ namespace Devs2Blu.CadastroCarros.Models
         {
             
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Mapeamento de Relacionamento
+            modelBuilder.Entity<Carro>()
+                .HasOne(carro => carro.Marca)
+                .WithMany(categoria => categoria.Carros)
+                .HasForeignKey(carro => carro.MarcaId);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+        #region DbSets
+        public DbSet<Carro> Carro { get; set; }
+        public DbSet<Marca> Marca { get; set; }
+        #endregion
     }
 }

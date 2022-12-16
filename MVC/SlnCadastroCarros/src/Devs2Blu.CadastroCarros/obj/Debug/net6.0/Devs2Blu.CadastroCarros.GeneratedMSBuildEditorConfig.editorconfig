@@ -15,12 +15,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Curso-CS-Devs2Blu\MVC\SlnCadastroCarros\src\Devs2Blu.CadastroCarros
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Carros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Carros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Carros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Carros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Carros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Marcas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Marcas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Marcas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Marcas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Marcas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Curso-CS-Devs2Blu/MVC/SlnCadastroCarros/src/Devs2Blu.CadastroCarros/Views/Shared/Error.cshtml]
