@@ -1,4 +1,5 @@
-﻿using Devs2Blu.Cadastrojogos.Services.Interfaces;
+﻿using Devs2Blu.Cadastrojogos.Models.Entities;
+using Devs2Blu.Cadastrojogos.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,9 +21,9 @@ namespace Devs2Blu.Cadastrojogos.Controllers
         }
 
         // GET: EmpresaController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+            return View(await _service.Details(id));
         }
 
         // GET: EmpresaController/Create
@@ -34,15 +35,15 @@ namespace Devs2Blu.Cadastrojogos.Controllers
         // POST: EmpresaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create([Bind("Id,Nome")] Empresa empresa)
         {
-            try
+            if (ModelState.IsValid)
             {
+                await _service.Save(empresa);
                 return RedirectToAction(nameof(Index));
-            }
-            catch
+            } else
             {
-                return View();
+                return View(empresa);
             }
         }
 
@@ -68,24 +69,18 @@ namespace Devs2Blu.Cadastrojogos.Controllers
         }
 
         // GET: EmpresaController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            return View();
+            return View(await _service.Delete(id));
         }
 
         // POST: EmpresaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> Delete(int id, IFormCollection collection)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            await _service.DeleteConfirmed(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

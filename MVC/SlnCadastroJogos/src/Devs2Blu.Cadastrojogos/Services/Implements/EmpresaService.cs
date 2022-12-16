@@ -1,6 +1,7 @@
 ﻿using Devs2Blu.Cadastrojogos.Models.Entities;
 using Devs2Blu.Cadastrojogos.Repository;
 using Devs2Blu.Cadastrojogos.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Devs2Blu.Cadastrojogos.Services.Implements
 {
@@ -16,6 +17,26 @@ namespace Devs2Blu.Cadastrojogos.Services.Implements
         public async Task<IEnumerable<Empresa>> GetAllEmpresas()
         {
             return await _repository.GetAll();
+        }
+
+        public async Task<int> Save(Empresa empresa)
+        {
+            return await _repository.SaveEmpresa(empresa);
+        }
+
+        public async Task<Empresa> Details(int? id)
+        {
+            return await _repository.DetailsEmpresa(id);
+        }
+
+        public async Task<Empresa> Delete(int? id)
+        {
+            return await _repository.DeleteEmpresa(id);
+        }
+
+        public async Task<int> DeleteConfirmed(int? id)
+        {
+            return await _repository.DeleteConfirmEmpresa(id);
         }
     }
 }
