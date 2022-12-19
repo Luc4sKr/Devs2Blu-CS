@@ -480,3 +480,8 @@ C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.Primeir
 C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.pdb
 C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.genruntimeconfig.cache
 C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\ref\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\staticwebassets\msbuild.Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.props
+C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.props
+C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.props
+C:\Curso-CS-Devs2Blu\MVC\SlnPrimeiroProjetoMVC\src\Devs2Blu.ProjetosAula.PrimeiroProjetoMVC\obj\Debug\net6.0\staticwebassets.pack.json

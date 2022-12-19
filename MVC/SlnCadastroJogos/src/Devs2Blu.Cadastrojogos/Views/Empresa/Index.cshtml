@@ -5,7 +5,8 @@
 }
 
 <h1 class="text-center">Index</h1>
-<div>
+
+<div class="mb-2">
     <a class="btn btn-primary" asp-action="Create">Create New</a>
 </div>
 
@@ -27,7 +28,7 @@
     @foreach (var item in Model)
     {
         <tr>
-            <th>
+            <th class="">
                 @Html.DisplayFor(modelItem => item.Id)
             </th>
             <td>
