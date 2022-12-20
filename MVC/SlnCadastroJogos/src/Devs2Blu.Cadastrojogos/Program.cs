@@ -12,13 +12,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ContextDatabase>
     (options => options.UseSqlServer($"Server=LAPTOP-K24VTQEH\\SQLEXPRESS;Database=CadastroJogos;User Id=sa;Password=admin; TrustServerCertificate=True;"));
 
-
 // Repositories
 builder.Services.AddScoped<EmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<JogoRepository, JogoRepository>();
 
 // Services
 builder.Services.AddScoped<IEmpresaService, EmpresaService>();
-
+builder.Services.AddScoped<IJogoService, JogoService>();
 
 var app = builder.Build();
 

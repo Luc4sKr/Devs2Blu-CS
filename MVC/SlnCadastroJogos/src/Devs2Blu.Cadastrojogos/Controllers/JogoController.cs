@@ -1,40 +1,52 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Devs2Blu.Cadastrojogos.Models.Entities;
+using Devs2Blu.Cadastrojogos.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Devs2Blu.Cadastrojogos.Controllers
 {
     public class JogoController : Controller
     {
-        // GET: JogoController
-        public ActionResult Index()
+        private readonly IJogoService _service;
+
+        public JogoController(IJogoService service)
         {
-            return View();
+            _service = service;
+        }
+
+        // GET: JogoController
+        public async Task<ActionResult> Index()
+        {
+            return View(await _service.GetAllJogos());
         }
 
         // GET: JogoController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+            return View(await _service.Details(id));
         }
 
         // GET: JogoController/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
+            ViewData["EmpresaId"] = new SelectList( await _service.GetAllEmpresas(), "Id", "Id");
             return View();
         }
 
         // POST: JogoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create([Bind("Id,Nome,Preco,EmpresaId")] Jogo jogo)
         {
-            try
+            if (ModelState.IsValid)
             {
+                await _service.Save(jogo);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            else
             {
-                return View();
+                return View(jogo);
             }
         }
 

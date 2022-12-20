@@ -1,6 +1,7 @@
 ﻿using Devs2Blu.Cadastrojogos.Models.Entities;
 using Devs2Blu.Cadastrojogos.Repository;
 using Devs2Blu.Cadastrojogos.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Devs2Blu.Cadastrojogos.Services.Implements
@@ -17,6 +18,11 @@ namespace Devs2Blu.Cadastrojogos.Services.Implements
         public async Task<IEnumerable<Empresa>> GetAllEmpresas()
         {
             return await _repository.GetAll();
+        }
+
+        public async Task<Empresa> GetEmpresa(int id)
+        {
+            return await _repository.GetOne(id);
         }
 
         public async Task<int> Save(Empresa empresa)

@@ -2,6 +2,8 @@
 using Devs2Blu.Cadastrojogos.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace Devs2Blu.Cadastrojogos.Controllers
 {
@@ -48,8 +50,10 @@ namespace Devs2Blu.Cadastrojogos.Controllers
         }
 
         // GET: EmpresaController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
+            Empresa empresa = await _service.GetEmpresa(id);
+
             return View();
         }
 
