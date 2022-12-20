@@ -348,3 +348,8 @@ C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLSer
 C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\obj\Debug\net6.0\staticwebassets\msbuild.Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.props
+C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.props
+C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.props
+C:\Curso-CS-Devs2Blu\MVC\SlnMVCSQLServerApp2\src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\obj\Debug\net6.0\staticwebassets.pack.json
