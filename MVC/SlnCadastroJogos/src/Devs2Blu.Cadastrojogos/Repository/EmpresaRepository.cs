@@ -20,7 +20,7 @@ namespace Devs2Blu.Cadastrojogos.Repository
             return _context.Empresa.ToList();
         }
 
-        public async Task<Empresa> GetOne(int id)
+        public async Task<Empresa> GetOne(int? id)
         {
             return await _context.Empresa.FirstOrDefaultAsync(empresa => empresa.Id == id);
         }

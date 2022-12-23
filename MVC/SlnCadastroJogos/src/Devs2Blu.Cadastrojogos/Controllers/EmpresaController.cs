@@ -52,8 +52,7 @@ namespace Devs2Blu.Cadastrojogos.Controllers
         // GET: EmpresaController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            Empresa empresa = await _service.GetEmpresa(id);
-
+            //Empresa empresa = await _service.GetEmpresa(id);
             return View();
         }
 

@@ -20,9 +20,15 @@ namespace Devs2Blu.Cadastrojogos.Services.Implements
             return await _repository.GetAll();
         }
 
-        public async Task<Empresa> GetEmpresa(int id)
+        public async Task<Empresa> GetEmpresa(int? id)
         {
             return await _repository.GetOne(id);
+        }
+
+
+        public Task<int> Edit(Empresa empresa)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<int> Save(Empresa empresa)

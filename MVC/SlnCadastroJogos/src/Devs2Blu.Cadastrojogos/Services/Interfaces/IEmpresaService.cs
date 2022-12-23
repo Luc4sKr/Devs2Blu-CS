@@ -8,6 +8,7 @@ namespace Devs2Blu.Cadastrojogos.Services.Interfaces
         Task<IEnumerable<Empresa>> GetAllEmpresas();
         Task<Empresa> GetEmpresa(int? id);
         Task<int> Save(Empresa empresa);
+        Task<int> Edit(Empresa empresa);
         Task<Empresa> Details(int? id);
         Task<Empresa> Delete(int? id);
         Task<int> DeleteConfirmed(int? id);
