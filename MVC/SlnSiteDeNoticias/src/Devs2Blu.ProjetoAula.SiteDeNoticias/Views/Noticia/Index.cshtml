@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Devs2Blu.ProjetoAula.SiteDeNoticias.Models.Entities.Noticia>
+
+@{
+    ViewData["Title"] = "Notícias";
+}
+
+<div>
+    <h1 class="text-center">Notícias</h1>
+    <a asp-controller="Noticia" asp-action="Create" class="btn btn-primary">Cadastrar notícia</a>
+
+    <div class="row">
+
+        @if (@Model != null && Model.Any()) {
+            @foreach (var noticia in @Model)
+            {
+                <div class="card card-noticia">
+                    <div class="card-overflow">
+                        <h5 class="text-center">@noticia.Titulo</h5>
+                        <p>Categoria: @noticia.CategoriaId</p>
+                        <p class="">@noticia.Descricao</p>
+                    </div>
+                    <div class="position-absolute">
+                        <a class="btn btn-primary text-center" role="button">Clique aqui para ver mais</a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Nenhuma notícia cadastrada</p>
+        }
+
+        <div class="card">
+            <h5>loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem</h5>
+        </div>
+        <div class="card" style="width: 100px">
+            <h5>Teste</h5>
+        </div>
+        <div class="card" style="width: 100px">
+            <h5>Teste</h5>
+        </div>
+        <div class="card" style="width: 100px">
+            <h5>Teste</h5>
+        </div>
+
+    </div>
+</div>
