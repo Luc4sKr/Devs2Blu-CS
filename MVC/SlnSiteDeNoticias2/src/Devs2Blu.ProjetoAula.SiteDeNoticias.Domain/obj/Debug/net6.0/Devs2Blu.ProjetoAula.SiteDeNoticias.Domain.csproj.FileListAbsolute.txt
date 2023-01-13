@@ -1,0 +1,12 @@
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\bin\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.deps.json
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\bin\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\bin\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.AssemblyInfoInputs.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.AssemblyInfo.cs
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\refint\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\obj\Debug\net6.0\ref\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
