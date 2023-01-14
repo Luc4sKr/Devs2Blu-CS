@@ -1,4 +1,6 @@
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IRepositories;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Context;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,11 @@ builder.Services.AddControllersWithViews();
 // Context SQL Server
 builder.Services.AddDbContext<SQLServerContext>
     (options => options.UseSqlServer($"Server=LAPTOP-K24VTQEH\\SQLEXPRESS;Database=DB_NewsPage;User Id=sa;Password=admin; TrustServerCertificate=True;"));
+
+// # Dependency Injection
+// Repositories
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<INewsRepository, NewsRepository>();
 
 var app = builder.Build();
 
