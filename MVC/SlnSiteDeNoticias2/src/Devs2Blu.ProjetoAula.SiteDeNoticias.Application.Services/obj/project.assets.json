@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Devs2Blu.ProjetoAula.SiteDeNoticias.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Devs2Blu.ProjetoAula.SiteDeNoticias.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Devs2Blu.ProjetoAula.SiteDeNoticias.Domain/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj",
+      "msbuildProject": "../Devs2Blu.ProjetoAula.SiteDeNoticias.Domain/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Devs2Blu.ProjetoAula.SiteDeNoticias.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lucas\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Curso-CS-Devs2Blu\\MVC\\SlnSiteDeNoticias2\\src\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj": {
+              "projectPath": "C:\\Curso-CS-Devs2Blu\\MVC\\SlnSiteDeNoticias2\\src\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

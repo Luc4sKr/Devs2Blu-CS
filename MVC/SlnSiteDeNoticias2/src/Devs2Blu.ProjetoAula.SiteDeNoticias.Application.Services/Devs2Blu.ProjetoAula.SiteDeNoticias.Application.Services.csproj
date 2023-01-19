@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

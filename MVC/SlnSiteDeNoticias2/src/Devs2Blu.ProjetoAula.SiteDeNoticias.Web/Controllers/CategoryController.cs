@@ -1,5 +1,6 @@
 ﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
 {
@@ -15,11 +16,12 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
             _service = service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             // To list all categories
             // Get of CategoryRepository through Dependency Injection (ICategoryService)
-            return View();
+            var categoryList = _service.FindAll();
+            return View(await categoryList.ToListAsync());
         }
 
         public IActionResult Add()

@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Curso-CS-Devs2Blu\\MVC\\SlnSiteDeNoticias2\\src\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj": {
+                "projectPath": "C:\\Curso-CS-Devs2Blu\\MVC\\SlnSiteDeNoticias2\\src\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain\\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,4 +1,6 @@
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServices;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IRepositories;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Context;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +18,9 @@ builder.Services.AddDbContext<SQLServerContext>
 // Repositories
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<INewsRepository, NewsRepository>();
+
+// Services
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 
