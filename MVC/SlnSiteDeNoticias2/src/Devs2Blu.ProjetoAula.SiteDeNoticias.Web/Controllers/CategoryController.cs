@@ -20,8 +20,7 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
         {
             // To list all categories
             // Get of CategoryRepository through Dependency Injection (ICategoryService)
-            var categoryList = _service.FindAll();
-            return View(await categoryList.ToListAsync());
+            return View(_service.FindAll());
         }
 
         public IActionResult Add()

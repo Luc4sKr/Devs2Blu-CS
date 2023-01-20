@@ -10,3 +10,6 @@ C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNotic
 C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\obj\Debug\net6.0\refint\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.dll
 C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.pdb
 C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\obj\Debug\net6.0\ref\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\bin\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\bin\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services\obj\Debug\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.csproj.CopyComplete

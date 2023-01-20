@@ -1292,6 +1292,9 @@
         }
       },
       "Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services/1.0.0": {
+        "dependencies": {
+          "Devs2Blu.ProjetoAula.SiteDeNoticias.Domain": "1.0.0"
+        },
         "runtime": {
           "Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.dll": {}
         }

@@ -29,7 +29,20 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
             {
                 id = category.Id,
                 name = category.Name,
-                newsList = category.NewsList.Select(c => new NewsDTO() { }).ToList()
+                newsList = category.NewsList.Select(n => new NewsDTO() 
+                {
+                    id = n.Id,
+                    title = n.Title,
+                    description = n.Description,
+                    categoryId = n.CategoryId,
+                    createdOn = n.CreatedOn,
+                    published = n.Published,
+                    category = new CategoryDTO()
+                    {
+                        id = n.Category.Id,
+                        name = n.Category.Name
+                    }
+                }).ToList()
             };
         }
     }
