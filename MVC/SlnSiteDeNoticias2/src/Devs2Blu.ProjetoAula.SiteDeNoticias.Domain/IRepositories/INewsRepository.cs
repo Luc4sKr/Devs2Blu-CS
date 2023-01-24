@@ -1,4 +1,5 @@
-﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.Entities;
+﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

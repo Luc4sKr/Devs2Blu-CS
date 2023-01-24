@@ -18,8 +18,6 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // To list all categories
-            // Get of CategoryRepository through Dependency Injection (ICategoryService)
             return View(_service.FindAll());
         }
 
