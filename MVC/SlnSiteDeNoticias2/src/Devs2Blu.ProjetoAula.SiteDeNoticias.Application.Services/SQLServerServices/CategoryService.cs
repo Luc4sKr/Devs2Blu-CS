@@ -33,12 +33,12 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServ
             throw new NotImplementedException();
         }
 
-        public Task<int> Save(CategoryDTO entity)
+        public Task<int> Save(CategoryDTO entityDTO)
         {
-            throw new NotImplementedException();
+            return _repository.Save(entityDTO.mapToEntity());
         }
 
-        public Task<int> Delete(CategoryDTO entity)
+        public Task<int> Delete(CategoryDTO entityDTO)
         {
             throw new NotImplementedException();
         }

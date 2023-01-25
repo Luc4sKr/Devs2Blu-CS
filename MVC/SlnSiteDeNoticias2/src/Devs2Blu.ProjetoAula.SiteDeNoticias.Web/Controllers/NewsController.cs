@@ -10,12 +10,15 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
     {
         private readonly ILogger<NewsController> _logger;
         private readonly INewsService _service;
+        private readonly ICategoryService _categoryService;
 
         public NewsController(ILogger<NewsController> logger,
-                              INewsService service)
+                              INewsService service,
+                              ICategoryService categoryService)
         {
             _logger = logger;
             _service = service;
+            _categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()
@@ -25,34 +28,34 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
 
         public async Task<IActionResult> Create()
         {
-            ViewData["CategoriaId"] = new SelectList(_service.FindAll()
-                .Select(c => c.category.id), "id", "nome");
+            ViewData["categoryId"] = new SelectList(_categoryService.FindAll(), "id", "name", "Select...");
             return View();
         }
 
 
         [HttpPost]
-        public IActionResult Create(NewsDTO newsDTO)
+        public async Task<IActionResult> Create([Bind("id, title, description, createdOn, published, categoryId")] NewsDTO newsDTO)
         {
-            _service.Save(newsDTO);
-            return RedirectToAction("Index");
 
-            /*try
+            try
             {
                 if (ModelState.IsValid)
                 {
-                    _service.Save(newsDTO);
-                    TempData["SuccessMessage"] = "Successfully registered news";
-                    return RedirectToAction("Index");
+                    if (await _service.Save(newsDTO) > 0)
+                    {
+                        TempData["SuccessMessage"] = "Successfully registered news";
+                        return RedirectToAction("Index");
+                    }
                 }
 
+                ViewData["categoryId"] = new SelectList(_categoryService.FindAll(), "id", "name", "Select...");
                 return View(newsDTO);
             }
             catch (Exception error)
             {
                 TempData["ErrorMessage"] = $"Unable to register news, try again. Error detail: {error.Message}";
                 return RedirectToAction("Index");
-            }*/
+            }
         }
     }
 }

@@ -1,5 +1,8 @@
-﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
+﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServices;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
@@ -21,9 +24,32 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
             return View(_service.FindAll());
         }
 
-        public IActionResult Add()
+        public async Task<IActionResult> Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("id, name")] CategoryDTO categoryDTO)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    if (await _service.Save(categoryDTO) > 0)
+                    {
+                        TempData["SuccessMessage"] = "Successfully registered category";
+                        return RedirectToAction("Index");
+                    }
+                }
+
+                return View(categoryDTO);
+            }
+            catch (Exception error)
+            {
+                TempData["ErrorMessage"] = $"Unable to register category, try again. Error detail: {error.Message}";
+                return RedirectToAction("Index");
+            }
         }
     }
 }

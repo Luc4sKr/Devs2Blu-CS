@@ -1,6 +1,7 @@
 ﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
     public class CategoryDTO
     {
         public int id { get; set; }
+
+        [Required(ErrorMessage = "Set a name, please.")]
         public string name { get; set; }
 
         public virtual ICollection<NewsDTO>? newsList { get; set; }

@@ -1,6 +1,7 @@
 ﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -11,7 +12,12 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
     public class NewsDTO
     {
         public int id { get; set; }
+
+        [Required(ErrorMessage = "Set a title, please.")]
         public string title { get; set; }
+
+        [Required(ErrorMessage = "Set a description, please.")]
+        [MinLength(5, ErrorMessage = "Description should bigger than 5 characters")]
         public string description { get; set; }
         public DateTime? createdOn { get; set; }
         public bool published { get; set; }

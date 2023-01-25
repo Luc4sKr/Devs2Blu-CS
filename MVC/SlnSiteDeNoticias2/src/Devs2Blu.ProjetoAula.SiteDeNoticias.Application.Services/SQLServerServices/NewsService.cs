@@ -44,17 +44,15 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServ
             throw new NotImplementedException();
         }
 
-        public Task<int> Save(NewsDTO entity)
+        public Task<int> Save(NewsDTO entityDTO)
         {
-            entity.createdOn = DateTime.Now;
-            entity.published = true;
+            entityDTO.createdOn = DateTime.Now;
+            entityDTO.published = true;
 
-            News news = entity.mapToEntity();
-
-            return _repository.Save(news);
+            return _repository.Save(entityDTO.mapToEntity());
         }
 
-        public Task<int> Delete(NewsDTO entity)
+        public Task<int> Delete(NewsDTO entityDTO)
         {
             throw new NotImplementedException();
         }
