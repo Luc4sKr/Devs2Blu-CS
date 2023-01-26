@@ -39,13 +39,19 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServ
                 }).ToList();
         }
 
-        public Task<NewsDTO> FindById(int id)
+        public async Task<NewsDTO> FindById(int id)
         {
-            throw new NotImplementedException();
+            var dto = new NewsDTO();
+            return dto.mapToDTO(await _repository.FindById(id));
         }
 
         public Task<int> Save(NewsDTO entityDTO)
         {
+            if (entityDTO.id > 0)
+            {
+                return _repository.Update(entityDTO.mapToEntity());
+            }
+
             entityDTO.createdOn = DateTime.Now;
             entityDTO.published = true;
 

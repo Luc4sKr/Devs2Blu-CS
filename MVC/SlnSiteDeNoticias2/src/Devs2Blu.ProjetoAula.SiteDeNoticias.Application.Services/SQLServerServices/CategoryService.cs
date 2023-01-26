@@ -4,6 +4,7 @@ using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,13 +29,19 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServ
                 }).ToList();
         }
 
-        public Task<CategoryDTO> FindById(int id)
+        public async Task<CategoryDTO> FindById(int id)
         {
-            throw new NotImplementedException();
+            var dto = new CategoryDTO();
+            return dto.mapToDTO(await _repository.FindById(id));
         }
 
         public Task<int> Save(CategoryDTO entityDTO)
         {
+            if (entityDTO.id > 0)
+            {
+                return _repository.Update(entityDTO.mapToEntity());
+            }
+
             return _repository.Save(entityDTO.mapToEntity());
         }
 

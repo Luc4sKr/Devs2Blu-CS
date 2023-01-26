@@ -19,14 +19,28 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
             _service = service;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             return View(_service.FindAll());
         }
 
+        [HttpGet]
         public async Task<IActionResult> Create()
         {
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _service.FindById(id);
+            return View(category);
         }
 
         [HttpPost]
@@ -48,6 +62,29 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
             catch (Exception error)
             {
                 TempData["ErrorMessage"] = $"Unable to register category, try again. Error detail: {error.Message}";
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int? id, [Bind("id, name")] CategoryDTO categoryDTO)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    if (await _service.Save(categoryDTO) > 0)
+                    {
+                        TempData["SuccessMessage"] = "Successfully edit category";
+                        return RedirectToAction("Index");
+                    }
+                }
+
+                return View(categoryDTO);
+            }
+            catch (Exception error)
+            {
+                TempData["ErrorMessage"] = $"Unable to edit category, try again. Error detail: {error.Message}";
                 return RedirectToAction("Index");
             }
         }

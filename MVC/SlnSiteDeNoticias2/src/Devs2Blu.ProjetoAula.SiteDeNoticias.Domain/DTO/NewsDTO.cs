@@ -47,8 +47,11 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
                 createdOn = news.CreatedOn,
                 published = news.Published,
                 categoryId = news.CategoryId,
-                category = new CategoryDTO() { id = news.Category.Id,
-                                               name = news.Category.Name }
+                /*category = new CategoryDTO() 
+                { 
+                    id = news.Category.Id,
+                    name = news.Category.Name 
+                }*/
             };
         }
     }

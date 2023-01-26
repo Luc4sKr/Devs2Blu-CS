@@ -32,7 +32,7 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
             {
                 id = category.Id,
                 name = category.Name,
-                newsList = category.NewsList.Select(n => new NewsDTO() 
+                /*newsList = category.NewsList.Select(n => new NewsDTO() 
                 {
                     id = n.Id,
                     title = n.Title,
@@ -45,7 +45,7 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO
                         id = n.Category.Id,
                         name = n.Category.Name
                     }
-                }).ToList()
+                }).ToList()*/
             };
         }
     }

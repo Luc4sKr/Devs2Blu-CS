@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Repositories
 {
-    public class BaseRepository<T> : IBaseService<T> where T: class
+    public class BaseRepository<T> : IBaseService<T> where T : class
     {
         private readonly SQLServerContext _context;
 
@@ -31,6 +31,12 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Repositories
         public Task<int> Save(T entity)
         {
             _context.Set<T>().Add(entity);
+            return _context.SaveChangesAsync();
+        }
+
+        public Task<int> Update(T entity)
+        {
+            _context.Set<T>().Update(entity);
             return _context.SaveChangesAsync();
         }
 
