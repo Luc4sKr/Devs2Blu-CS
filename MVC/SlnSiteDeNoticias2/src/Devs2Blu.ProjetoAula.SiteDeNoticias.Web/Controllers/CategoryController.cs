@@ -4,6 +4,7 @@ using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Net.WebSockets;
 
 namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
 {
@@ -88,5 +89,32 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public async Task<JsonResult> Delete(int? id)
+        {
+            var retDel = new ReturnJsonDel
+            {
+                status = "Success",
+                code = "200"
+            };
+            
+
+            if (await _service.Delete(id ?? 0) <= 0)
+            {
+                retDel = new ReturnJsonDel
+                {
+                    status = "Success",
+                    code = "200"
+                };
+            }
+
+            return Json(retDel);
+        }
+    }
+
+    public class ReturnJsonDel
+    {
+        public string status { get; set; }
+        public string code { get; set; }
     }
 }

@@ -58,9 +58,10 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServ
             return _repository.Save(entityDTO.mapToEntity());
         }
 
-        public Task<int> Delete(NewsDTO entityDTO)
+        public async Task<int> Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = await _repository.FindById(id);
+            return await _repository.Delete(entity);
         }
     }
 }
