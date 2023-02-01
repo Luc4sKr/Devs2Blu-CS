@@ -1,8 +1,10 @@
 ﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Models.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Migrations.Internal;
 
 namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
 {
@@ -96,6 +98,19 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
                 TempData["ErrorMessage"] = $"Unable to edit news, try again. Error detail: {error.Message}";
                 return RedirectToAction("Index");
             }
+        }
+
+        [HttpPost]
+        public IActionResult ImagePost(int? id)
+        {
+
+            ImageFieldNews newsModel = new ImageFieldNews();
+            if (id != null)
+            {
+                newsModel.idNews = id ?? 0;
+            }
+
+            return View(newsModel);
         }
     }
 }

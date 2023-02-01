@@ -10,6 +10,8 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.Entities
         public string Description { get; set; }
         public DateTime? CreatedOn { get; set; }
         public bool Published { get; set; }
+        public string? Image { get; set; }
+
         public int CategoryId { get; set; }
         public virtual Category? Category { get; set; }
     }

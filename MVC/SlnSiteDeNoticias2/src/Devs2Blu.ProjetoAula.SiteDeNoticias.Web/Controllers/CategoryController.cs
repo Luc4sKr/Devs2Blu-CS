@@ -1,6 +1,7 @@
 ﻿using Devs2Blu.ProjetoAula.SiteDeNoticias.Application.Services.SQLServerServices;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.DTO;
 using Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.IServices;
+using Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -103,18 +104,12 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Web.Controllers
             {
                 retDel = new ReturnJsonDel
                 {
-                    status = "Success",
-                    code = "200"
+                    status = "Error",
+                    code = "400"
                 };
             }
 
             return Json(retDel);
         }
-    }
-
-    public class ReturnJsonDel
-    {
-        public string status { get; set; }
-        public string code { get; set; }
     }
 }

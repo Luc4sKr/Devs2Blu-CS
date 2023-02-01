@@ -79,6 +79,10 @@ namespace Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("Published")
                         .HasColumnType("bit");
 
