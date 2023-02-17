@@ -1,0 +1,12 @@
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\bin\Debug\net6.0\RevisaoWebAppApi.Domain.deps.json
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\bin\Debug\net6.0\RevisaoWebAppApi.Domain.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\bin\Debug\net6.0\RevisaoWebAppApi.Domain.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.AssemblyInfoInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.AssemblyInfo.cs
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\refint\RevisaoWebAppApi.Domain.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\RevisaoWebAppApi.Domain.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Domain\obj\Debug\net6.0\ref\RevisaoWebAppApi.Domain.dll

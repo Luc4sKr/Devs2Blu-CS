@@ -1,0 +1,17 @@
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Application.Services.deps.json
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Application.Services.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Application.Services.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Domain.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Domain.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\bin\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.AssemblyInfoInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.AssemblyInfo.cs
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.csproj.CopyComplete
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\refint\RevisaoWebAppApi.Application.Services.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\RevisaoWebAppApi.Application.Services.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Services\obj\Debug\net6.0\ref\RevisaoWebAppApi.Application.Services.dll

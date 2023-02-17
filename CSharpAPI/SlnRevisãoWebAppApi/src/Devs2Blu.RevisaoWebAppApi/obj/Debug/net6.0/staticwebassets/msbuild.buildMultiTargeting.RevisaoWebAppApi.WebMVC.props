@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RevisaoWebAppApi.WebMVC.props" />
+</Project>

@@ -12,6 +12,18 @@
           "bin/placeholder/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll": {}
         }
       }
+    },
+    "net6.0/win-x64": {
+      "Devs2Blu.ProjetoAula.SiteDeNoticias.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -85,6 +97,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

@@ -1,0 +1,17 @@
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.deps.json
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.runtimeconfig.json
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\bin\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Domain.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.AssemblyInfoInputs.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.AssemblyInfo.cs
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.csproj.CopyComplete
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\refint\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.dll
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.pdb
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.genruntimeconfig.cache
+C:\Curso-CS-Devs2Blu\MVC\SlnSiteDeNoticias2\src\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data\obj\Release\net6.0\ref\Devs2Blu.ProjetoAula.SiteDeNoticias.Infra.Data.dll

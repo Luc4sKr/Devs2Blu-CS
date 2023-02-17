@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "V3z2YQjxFBOs6+qnvdEcu8q0QLcHlF1WKQarXmB99uA=",
+  "Source": "RevisaoWebAppApi.Application.WebApi",
+  "BasePath": "_content/RevisaoWebAppApi.Application.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

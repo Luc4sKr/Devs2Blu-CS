@@ -1,0 +1,15 @@
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\bin\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.deps.json
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\bin\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\bin\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\bin\Debug\net6.0\RevisaoWebAppApi.Domain.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\bin\Debug\net6.0\RevisaoWebAppApi.Domain.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.csproj.AssemblyReference.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.AssemblyInfoInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.AssemblyInfo.cs
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.csproj.CoreCompileInputs.cache
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.csproj.CopyComplete
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\refint\RevisaoWebAppApi.Infra.Data.Repository.dll
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\RevisaoWebAppApi.Infra.Data.Repository.pdb
+C:\Curso-CS-Devs2Blu\CSharpAPI\SlnRevisãoWebAppApi\src\Devs2Blu.RevisaoWebAppApi.Repository\obj\Debug\net6.0\ref\RevisaoWebAppApi.Infra.Data.Repository.dll
