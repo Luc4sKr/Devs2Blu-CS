@@ -1,1 +1,10 @@
-<p>list works!</p>
+<div class="row">
+  <ul class="list-group">
+    <li *ngFor="let item of resultList$ | async;" class="list-group-item d-flex justify-between-content">
+      <span class="col"> {{ item.name | titlecase }} </span>
+      <span class="col"> {{ item.species }} </span>
+      <a href="{{item.image}}" class="btn btn-primary" style="width: 200px;"> Ver {{item.name}}</a>
+    </li>
+  </ul>
+</div>
+
