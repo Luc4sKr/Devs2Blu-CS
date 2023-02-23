@@ -1,10 +1,24 @@
 <div class="row">
-  <ul class="list-group">
-    <li *ngFor="let item of resultList$ | async;" class="list-group-item d-flex justify-between-content">
-      <span class="col"> {{ item.name | titlecase }} </span>
-      <span class="col"> {{ item.species }} </span>
-      <a href="{{item.image}}" class="btn btn-primary" style="width: 200px;"> Ver {{item.name}}</a>
-    </li>
-  </ul>
+  <div *ngFor="let item of resultList$ | async" class="character-card col">
+    <div class="card-head">
+      <figure>
+        <img src="{{ item.image }}" alt="">
+        <figcaption>
+          <h1>
+            {{ item.name }}
+          </h1>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card-body">
+      <p>{{ item.status }}</p>
+      <p>{{ item.species }}</p>
+      <p>{{ item.type }}</p>
+      <p>{{ item.gender }}</p>
+      <p>{{ item.origin?.name }}</p>
+      <p>{{ item.location?.name }}</p>
+    </div>
+  </div>
 </div>
+
 
