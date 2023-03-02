@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoNotas.Domain.Entities
+namespace ProjetoNotas.Domain.DTO
 {
-    public class Note
+    public class NoteDTO
     {
         public int Id { get; set; }
         public string Title { get; set; }
