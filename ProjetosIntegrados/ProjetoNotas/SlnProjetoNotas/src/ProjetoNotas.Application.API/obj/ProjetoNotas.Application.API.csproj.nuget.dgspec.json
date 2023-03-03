@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj": {}
+    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj": {}
   },
   "projects": {
-    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj": {
+    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj",
+        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj",
         "projectName": "ProjetoNotas.Application.API",
-        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj",
+        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\ProjetoNotas.Application.API.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\obj\\",
+        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj": {
-                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj"
+              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj": {
+                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj"
               },
-              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
-                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
+              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
+                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj": {
+    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
+        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
         "projectName": "ProjetoNotas.Application.Service",
-        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
+        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\obj\\",
+        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -125,11 +125,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
-                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
+              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
+                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
               },
-              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj": {
-                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj"
+              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj": {
+                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj"
               }
             }
           }
@@ -163,14 +163,14 @@
         }
       }
     },
-    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
+    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
+        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
         "projectName": "ProjetoNotas.Domain",
-        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
+        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\obj\\",
+        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -222,14 +222,14 @@
         }
       }
     },
-    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj": {
+    "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
+        "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
         "projectName": "ProjetoNotas.Infra.Data.Repository",
-        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
+        "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\obj\\",
+        "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -250,8 +250,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
-                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
+              "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
+                "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
               }
             }
           }

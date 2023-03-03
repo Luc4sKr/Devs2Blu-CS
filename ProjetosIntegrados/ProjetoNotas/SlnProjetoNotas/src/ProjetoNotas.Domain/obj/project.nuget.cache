@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0fOhzI8ufJLrQmd2hZUqQHg4FX7bLpe0w5LcK81g50gqaeBqOy7K/uDf/uN5BaUWzRfnOgyl5DaF7+f8Lko0kQ==",
+  "dgSpecHash": "4RqtSz/DRY+PpEsYJfspmrnzbZwFkgkDV3OR8wrOrpz8H5/MfmkyiRjPY5Jw1eH1pI25GznPdfCZhHP/xAQaqA==",
   "success": true,
-  "projectFilePath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
+  "projectFilePath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

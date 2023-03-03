@@ -3533,11 +3533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
+      "projectUniqueName": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
       "projectName": "ProjetoNotas.Infra.Data.Repository",
-      "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
+      "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\ProjetoNotas.Infra.Data.Repository.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\obj\\",
+      "outputPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Infra.Data.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3558,8 +3558,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
-              "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
+            "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj": {
+              "projectPath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Domain\\ProjetoNotas.Domain.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdcwXAOVoAflRkyKds2Dtcv/bf7nDEoqEXpYb1Rx9i+N55FQcuVvgtvhNsFe4VGyJ57veu3Yin+yDgT8ksn1Wg==",
+  "dgSpecHash": "Xf8fwAvHlPmAkLeQUnbVKYjV9AGXxjMkrrTdjSwsI55aZULk1vCL0Wb8BVd74WvXm1kSRCmPYTEg8woFI+7Oqw==",
   "success": true,
-  "projectFilePath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
+  "projectFilePath": "D:\\Devs2Blu-CS\\ProjetosIntegrados\\ProjetoNotas\\SlnProjetoNotas\\src\\ProjetoNotas.Application.Service\\ProjetoNotas.Application.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
