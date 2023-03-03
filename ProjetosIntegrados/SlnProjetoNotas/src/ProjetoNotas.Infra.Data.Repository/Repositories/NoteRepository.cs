@@ -1,4 +1,5 @@
-﻿using ProjetoNotas.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using ProjetoNotas.Domain.Entities;
 using ProjetoNotas.Domain.Interfaces.IRepository;
 using ProjetoNotas.Infra.Data.Repository.Context;
 using System;

@@ -17,17 +17,9 @@ namespace ProjetoNotas.Infra.Data.Repository.Repositories
             this._context = context;
         }
 
-        public Task<int> Delete(T entity)
+        public IQueryable<T> FindAll()
         {
-            this._context.Set<T>().Remove(entity);
-            return this._context.SaveChangesAsync();
-        }
-
-        public List<T> FindAll()
-        {
-            return this._context
-                        .Set<T>()
-                        .ToList<T>();
+            return this._context.Set<T>();
         }
 
         public async Task<T> FindById(int id)
@@ -53,6 +45,12 @@ namespace ProjetoNotas.Infra.Data.Repository.Repositories
                 var text = ex.Message;
                 return this._context.SaveChangesAsync();
             }
+        }
+
+        public Task<int> Delete(T entity)
+        {
+            this._context.Set<T>().Remove(entity);
+            return this._context.SaveChangesAsync();
         }
     }
 }
